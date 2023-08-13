@@ -84,10 +84,22 @@ Below are the steps for quick installation. For detailed instructions, please re
     
     requirements.txt is as follows:
     pandas
+    numpy
     torch
     tqdm
     peft 
     sentencepiece
+    openai
+    accelerate
+    colorama
+    cpm_kernels
+    sentencepiece
+    streamlit
+    transformers_stream_generator
+    transformers==4.31.0
+    tiktoken
+    einops
+    scipy
 ```
 
 ## Dataset Preparation
@@ -96,9 +108,9 @@ Download the dataset using Hugging Face datasets. Run the command to **manually 
 
 ```
 cd code
-git clone *----------------
-unzip xx.zip
-mv xx data
+wget https://huggingface.co/datasets/SUFE-AIFLM-Lab/FinEval/resolve/main/FinEval.zip
+unzip FinEval.zip
+mv FinEval data
 ```
 
 The format of the data folder is:

@@ -20,6 +20,11 @@ Large language models (LLMs) have demonstrated exceptional performance in variou
 
 FinEval is a collection of high-quality multiple-choice questions covering **finance,economy, accounting, and certificate**. It includes 4,661 questions spanning 34 different academic subjects. To ensure a comprehensive model performance evaluation, FinEval employs various methods, including zero-shot, few-shot, answer-only,and chain-of-thought prompts. Evaluating state-of-the-art Chinese and English LLMs on FinEval, the results show that only GPT-4 achieved a 60% accuracy in different prompt settings, indicating significant growth potential for LLMs in the financial domain knowledge. Our work offers a more comprehensive financial knowledge evaluation benchmark, utilizing data of mock exams and covering a wide range of evaluated LLMs.
 
+<div align="center">
+  <img src="docs/en/_static/image/FinEval.jpg" width="500px"/>
+  <br />
+  <br />
+
 
 ## Contents
 
@@ -35,7 +40,7 @@ FinEval is a collection of high-quality multiple-choice questions covering **fin
 
 We divide the evaluation into **Answer Only** and **Chain of Thought**. For examples of prompts for both methods, please refer to [zero-shot for Answer Only](/docs/en/prompt/zero_shot.md), [few-shot for Answer Only](/docs/en/prompt/few_shot.md), and [Chain of Thought](/docs/en/prompt/cot.md).
 
-Below is the average accuracy(%) on the validation split. We report the average accuracy over the subjects within each category. "Average" column indicates the average accuracy over all the subjects. Notably, we only report the results from each model under the best setting, which is determined by the highest average accuracy achieved among four settings (i.e., zero- and few-shot learning with and without CoT)
+Below is the average accuracy(%) on the test split. We report the average accuracy over the subjects within each category. "Average" column indicates the average accuracy over all the subjects. Notably, we only report the results from each model under the best setting, which is determined by the highest average accuracy achieved among four settings (i.e., zero- and few-shot learning with and without CoT)
 下面是模型的zero-shot和five-shot准确率:
 
 | Model            | Size | Finance | Economy | Accounting | Certificate | Average |

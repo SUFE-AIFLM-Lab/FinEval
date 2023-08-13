@@ -82,10 +82,22 @@ FinEval是一个包含高质量多项选择题的集合，涵盖**金融、经�
     
     requirements.txt 文件如下:
     pandas
+    numpy
     torch
     tqdm
     peft 
     sentencepiece
+    openai
+    accelerate
+    colorama
+    cpm_kernels
+    sentencepiece
+    streamlit
+    transformers_stream_generator
+    transformers==4.31.0
+    tiktoken
+    einops
+    scipy
 ```
 
 ## 准备数据集
@@ -94,9 +106,9 @@ FinEval是一个包含高质量多项选择题的集合，涵盖**金融、经�
 
 ```
 cd code
-git clone *----------------
-unzip xx.zip
-mv xx data
+wget https://huggingface.co/datasets/SUFE-AIFLM-Lab/FinEval/resolve/main/FinEval.zip
+unzip FinEval.zip
+mv FinEval data
 ```
 
 data文件夹格式为:

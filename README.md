@@ -24,8 +24,6 @@ FinEval comprises a collection of high-quality multiple-choice questions spannin
 ## Contents
 
 - [Performance Leaderboard](#Performance-leaderboard)
-  - [Answer Only](#Answer-only)
-  - [Chain of thought](#chain-of-thought)
 - [Installation](#Installation)
 - [Evaluation](#Evaluation)
 - [Dataset Preparation](#Dataset-Preparation)
@@ -37,124 +35,38 @@ FinEval comprises a collection of high-quality multiple-choice questions spannin
 
 We divide the evaluation into **Answer Only** and **Chain of Thought**. For examples of prompts for both methods, please refer to [zero-shot for Answer Only](/docs/en/prompt/zero_shot.md), [few-shot for Answer Only](/docs/en/prompt/few_shot.md), and [Chain of Thought](/docs/en/prompt/cot.md).
 
+Below is the average accuracy(%) on the validation split. We report the average accuracy over the subjects within each category. "Average" column indicates the average accuracy over all the subjects. Notably, we only report the results from each model under the best setting, which is determined by the highest average accuracy achieved among four settings (i.e., zero- and few-shot learning with and without CoT)
 下面是模型的zero-shot和five-shot准确率:
 
-
-### Answer Only
-
-#### Zero-shot
-| Model               | Finance | Accounting | Economy | Certificate | Average |
-| ------------------- | :-----: | :--------: | :-----: | :---------: | :-----: |
-| Random              | 25.0    |    25.0    |  25.0   |    25.0     |  25.0  |
-| GPT-4               | 65.2 |      74.7      |    62.5    | 64.7  |  **66.4**   |
-| GPT-3.5-turbo       | 49.0 |      58.0      |    48.8    | 50.4  |  51.0   |
-| Baichuan-7B         | 48.5 |      58.6      |    47.3    | 50.1  |  50.5   |
-| Baichuan-13B-base   | 39.1 |      53.0      |    47.7    | 42.7  |  44.3   |
-| Baichuan-13B-chat   | 36.7 |      55.8      |    47.7    | 43.0  |  44.0   |
-| LLaMA-7B-hf | 38.6 |      47.6      |    39.5    | 39.0  |  40.6   |
-| Chinese-Alpaca-Plus-7B    | 33.3 |      48.3      |    41.3    | 38.0  |  38.9   |
-| LLaMA-2-7B-base          | 32.6 |      41.2      |    34.1    | 33.0  |  34.7   |
-| LLaMA-2-13B-base   | 31.6 |      37.0      |    33.4    | 32.1  |  33.1   |
-| LLaMA-2-13B-chat   | 27.4 |      39.2      |    32.5    | 28.0  |  30.9   |
-| LLaMA2-70B-chat    | 28.8 |      32.9      |    29.7    | 28.0  |  29.6   |
-| ChatGLM-6B    | 28.8 |      32.9      |    29.7    | 28.0  |  29.6   |
-| ChatGLM2-6B    | 28.8 |      32.9      |    29.7    | 28.0  |  29.6   |
-| Bloomz-7B1    | 28.8 |      32.9      |    29.7    | 28.0  |  29.6   |
-| InternLM-7B-chat    | 28.8 |      32.9      |    29.7    | 28.0  |  29.6   |
-| Ziya-LLaMA-13B-v1    | 28.8 |      32.9      |    29.7    | 28.0  |  29.6   |
-| Falcon-7B    | 28.8 |      32.9      |    29.7    | 28.0  |  29.6   |
-| Falcon-40B    | 28.8 |      32.9      |    29.7    | 28.0  |  29.6   |
-| Aquila-7B    | 28.8 |      32.9      |    29.7    | 28.0  |  29.6   |
-| AquilaChat-7B    | 28.8 |      32.9      |    29.7    | 28.0  |  29.6   |
-| moss-moon-003-base    | 28.8 |      32.9      |    29.7    | 28.0  |  29.6   |
-| moss-moon-003-sft    | 28.8 |      32.9      |    29.7    | 28.0  |  29.6   |
-
-
-#### Five-shot
-| Model               | Finance | Accounting | Economy | Certificate | Average |
-| ------------------- | :-----: | :--------: | :-----: | :---------: | :-----: |
-| Random              | 25.0    |    25.0    |  25.0   |    25.0     |  25.0  |
-| GPT-4               | 65.2 |      74.7      |    62.5    | 64.7  |  **66.4**   |
-| GPT-3.5-turbo       | 49.0 |      58.0      |    48.8    | 50.4  |  51.0   |
-| Baichuan-7B         | 48.5 |      58.6      |    47.3    | 50.1  |  50.5   |
-| Baichuan-13B-base   | 39.1 |      53.0      |    47.7    | 42.7  |  44.3   |
-| Baichuan-13B-chat   | 36.7 |      55.8      |    47.7    | 43.0  |  44.0   |
-| LLaMA-7B-hf | 38.6 |      47.6      |    39.5    | 39.0  |  40.6   |
-| Chinese-Alpaca-Plus-7B    | 33.3 |      48.3      |    41.3    | 38.0  |  38.9   |
-| LLaMA-2-7B-base          | 32.6 |      41.2      |    34.1    | 33.0  |  34.7   |
-| LLaMA-2-13B-base   | 31.6 |      37.0      |    33.4    | 32.1  |  33.1   |
-| LLaMA-2-13B-chat   | 27.4 |      39.2      |    32.5    | 28.0  |  30.9   |
-| LLaMA2-70B-chat    | 28.8 |      32.9      |    29.7    | 28.0  |  29.6   |
-| ChatGLM-6B    | 28.8 |      32.9      |    29.7    | 28.0  |  29.6   |
-| ChatGLM2-6B    | 28.8 |      32.9      |    29.7    | 28.0  |  29.6   |
-| Bloomz-7B1    | 28.8 |      32.9      |    29.7    | 28.0  |  29.6   |
-| InternLM-7B-chat    | 28.8 |      32.9      |    29.7    | 28.0  |  29.6   |
-| Ziya-LLaMA-13B-v1    | 28.8 |      32.9      |    29.7    | 28.0  |  29.6   |
-| Falcon-7B    | 28.8 |      32.9      |    29.7    | 28.0  |  29.6   |
-| Falcon-40B    | 28.8 |      32.9      |    29.7    | 28.0  |  29.6   |
-| Aquila-7B    | 28.8 |      32.9      |    29.7    | 28.0  |  29.6   |
-| AquilaChat-7B    | 28.8 |      32.9      |    29.7    | 28.0  |  29.6   |
-| moss-moon-003-base    | 28.8 |      32.9      |    29.7    | 28.0  |  29.6   |
-| moss-moon-003-sft    | 28.8 |      32.9      |    29.7    | 28.0  |  29.6   |
-
-
-### Chain of thought
-
-#### Zero-shot
-| Model               | Finance | Accounting | Economy | Certificate | Average |
-| ------------------- | :-----: | :--------: | :-----: | :---------: | :-----: |
-| Random              | 25.0    |    25.0    |  25.0   |    25.0     |  25.0  |
-| GPT-4               | 65.2 |      74.7      |    62.5    | 64.7  |  **66.4**   |
-| GPT-3.5-turbo       | 49.0 |      58.0      |    48.8    | 50.4  |  51.0   |
-| Baichuan-7B         | 48.5 |      58.6      |    47.3    | 50.1  |  50.5   |
-| Baichuan-13B-base   | 39.1 |      53.0      |    47.7    | 42.7  |  44.3   |
-| Baichuan-13B-chat   | 36.7 |      55.8      |    47.7    | 43.0  |  44.0   |
-| LLaMA-7B-hf | 38.6 |      47.6      |    39.5    | 39.0  |  40.6   |
-| Chinese-Alpaca-Plus-7B    | 33.3 |      48.3      |    41.3    | 38.0  |  38.9   |
-| LLaMA-2-7B-base          | 32.6 |      41.2      |    34.1    | 33.0  |  34.7   |
-| LLaMA-2-13B-base   | 31.6 |      37.0      |    33.4    | 32.1  |  33.1   |
-| LLaMA-2-13B-chat   | 27.4 |      39.2      |    32.5    | 28.0  |  30.9   |
-| LLaMA2-70B-chat    | 28.8 |      32.9      |    29.7    | 28.0  |  29.6   |
-| ChatGLM-6B    | 28.8 |      32.9      |    29.7    | 28.0  |  29.6   |
-| ChatGLM2-6B    | 28.8 |      32.9      |    29.7    | 28.0  |  29.6   |
-| Bloomz-7B1    | 28.8 |      32.9      |    29.7    | 28.0  |  29.6   |
-| InternLM-7B-chat    | 28.8 |      32.9      |    29.7    | 28.0  |  29.6   |
-| Ziya-LLaMA-13B-v1    | 28.8 |      32.9      |    29.7    | 28.0  |  29.6   |
-| Falcon-7B    | 28.8 |      32.9      |    29.7    | 28.0  |  29.6   |
-| Falcon-40B    | 28.8 |      32.9      |    29.7    | 28.0  |  29.6   |
-| Aquila-7B    | 28.8 |      32.9      |    29.7    | 28.0  |  29.6   |
-| AquilaChat-7B    | 28.8 |      32.9      |    29.7    | 28.0  |  29.6   |
-| moss-moon-003-base    | 28.8 |      32.9      |    29.7    | 28.0  |  29.6   |
-| moss-moon-003-sft    | 28.8 |      32.9      |    29.7    | 28.0  |  29.6   |
-
-
-#### Five-shot
-| Model               | Finance | Accounting | Economy | Certificate | Average |
-| ------------------- | :-----: | :--------: | :-----: | :---------: | :-----: |
-| Random              | 25.0    |    25.0    |  25.0   |    25.0     |  25.0  |
-| GPT-4               | 65.2 |      74.7      |    62.5    | 64.7  |  **66.4**   |
-| GPT-3.5-turbo       | 49.0 |      58.0      |    48.8    | 50.4  |  51.0   |
-| Baichuan-7B         | 48.5 |      58.6      |    47.3    | 50.1  |  50.5   |
-| Baichuan-13B-base   | 39.1 |      53.0      |    47.7    | 42.7  |  44.3   |
-| Baichuan-13B-chat   | 36.7 |      55.8      |    47.7    | 43.0  |  44.0   |
-| LLaMA-7B-hf | 38.6 |      47.6      |    39.5    | 39.0  |  40.6   |
-| Chinese-Alpaca-Plus-7B    | 33.3 |      48.3      |    41.3    | 38.0  |  38.9   |
-| LLaMA-2-7B-base          | 32.6 |      41.2      |    34.1    | 33.0  |  34.7   |
-| LLaMA-2-13B-base   | 31.6 |      37.0      |    33.4    | 32.1  |  33.1   |
-| LLaMA-2-13B-chat   | 27.4 |      39.2      |    32.5    | 28.0  |  30.9   |
-| LLaMA2-70B-chat    | 28.8 |      32.9      |    29.7    | 28.0  |  29.6   |
-| ChatGLM-6B    | 28.8 |      32.9      |    29.7    | 28.0  |  29.6   |
-| ChatGLM2-6B    | 28.8 |      32.9      |    29.7    | 28.0  |  29.6   |
-| Bloomz-7B1    | 28.8 |      32.9      |    29.7    | 28.0  |  29.6   |
-| InternLM-7B-chat    | 28.8 |      32.9      |    29.7    | 28.0  |  29.6   |
-| Ziya-LLaMA-13B-v1    | 28.8 |      32.9      |    29.7    | 28.0  |  29.6   |
-| Falcon-7B    | 28.8 |      32.9      |    29.7    | 28.0  |  29.6   |
-| Falcon-40B    | 28.8 |      32.9      |    29.7    | 28.0  |  29.6   |
-| Aquila-7B    | 28.8 |      32.9      |    29.7    | 28.0  |  29.6   |
-| AquilaChat-7B    | 28.8 |      32.9      |    29.7    | 28.0  |  29.6   |
-| moss-moon-003-base    | 28.8 |      32.9      |    29.7    | 28.0  |  29.6   |
-| moss-moon-003-sft    | 28.8 |      32.9      |    29.7    | 28.0  |  29.6   |
-
+| Model            | Size | Finance | Economy | Accounting | Certificate | Average |
+| -----------------| :-----: | :-----: |:--------: | :-----: | :---------: | :-----: |
+| GPT-4            | unknown | **71.0**  | **74.5** | **59.3** | **70.4** |**68.6** |
+| GPT-3.5-turbo       | 175B |     59.3      |   61.6   | 45.2  | 55.1   | 55.0 |
+| Baichuan         |  7B  |     44.9      |   41.5    | 34.9  |  45.6   | 42.0 |
+| Baichuan-Base   | 13B |     52.6      |    50.2    | 43.4  |  53.5   | 50.1 |
+| Baichuan-Chat   | 13B |     51.6      |    51.1    | 41.7  |  52.8   | 49.4 |
+| LLaMA2-Base | 7B |      34.9      |   36.4    | 31.4  |  31.6   | 33.4 |
+| LLaMA2-Base | 13B |      39.5      |   38.6    | 31.6  |  39.6   | 37.4 |
+| LLaMA2-Chat | 7B  |      35.6      |   31.8    | 31.9  |  34.0   | 33.5 |
+| LLaMA2-Chat | 13B |      41.6      |   38.4    | 34.1  |  42.1   | 39.3 |
+| LLaMA2-Chat | 70B |      47.1      |   46.7    | 41.5  |  45.7   | 45.2 |
+| Chinese-LLaMA2 | 7B |      37.8      |   37.8    | 31.4  |  36.7   | 35.9 |
+| Chinese-Alpaca-Plus-7B | 7B |      30.5      |   33.4    | 32.7  |  38.5   | 34.0 |
+| LLaMA-13B-hf  | 13B |      33.1      |   29.7    | 27.2  |  33.6   | 31.1 |
+| ChatGLM  | 6B |      38.8      |   36.2    | 33.8  |  39.1   | 37.2 |
+| ChatGLM2  | 6B |      46.5      |   46.4    | 44.5  |  51.5   | 47.4 |
+| Bloomz-7b1-mt  | 7B |      41.4      |   42.1    | 32.5  |  39.7   | 38.8 |
+|  InternLM  | 7B |      49.0      |   49.2    | 40.5  |  49.4   | 47.1 |
+|  InternLM-Chat  | 7B |      48.4      |   49.1    | 40.8  |  49.5   | 47.0 |
+|  Ziya  | 13B |      43.3    |   36.9    | 34.3  |  41.2   | 39.3 |
+|  Falcon-7B  | 7B |      28.5    |   28.2   | 27.5  |  27.4   | 27.9 |
+|  Falcon-40B  | 40B |      45.4    |   43.2   | 35.8  |  44.8   | 42.4 |
+|   Aquila-7B  | 7B |      27.1    |   31.6   | 32.4  |  33.6   | 31.2 |
+|   AquilaChat-7B  | 7B |      34.2    |   31.3   | 29.8  |  36.2   | 33.1 |
+|   Moss-base  | 16B |      32.2    |   33.1   | 29.2  |  30.7   | 31.2 |
+|   Moss-sft  | 16B |      35.6    |   34.3   | 28.7  |  35.6   | 33.7 |
+|   Qwen-7B  | 7B |     54.5    |   54.4   | 50.3  |  55.8   | 53.8 |
+|   Qwen-7B-Chat  | 7B |     51.5    |   52.1   | 44.5  |  53.6   | 50.5 |
 
 ## Installation
 

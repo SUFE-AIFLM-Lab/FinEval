@@ -19,7 +19,7 @@
 FinEval是一个包含高质量多项选择题的集合，涵盖**金融、经济、会计和证书**等领域。它包括4,661个问题，涵盖了34个不同的学术科目。为了确保对模型性能进行全面的评估，FinEval采用了多种方法，包括zero-shot，few-shot，仅预测答案（answer-only）和思维链（chain-of-thought）提示词。通过在FinEval上评估最先进的中英文大语言模型，结果显示只有GPT-4在不同提示设置下达到了60%的准确率，表明大语言模型在金融领域知识方面具有显著的增长潜力。我们的工作提供了一个更全面的金融知识评估基准，利用了模拟考试数据，涵盖了广泛的大语言模型评估范围。
 
 <div align="center">
-  <img src="docs/en/_static/image/subjects.png" width="500px"/>
+  <img src="docs/en/_static/image/subjects.png" width="1000px" height="475px"/>
   <br />
   <br /></div>
 

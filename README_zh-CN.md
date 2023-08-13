@@ -3,11 +3,11 @@
   <br />
   <br />
 
-[![license](https://img.shields.io/badge/License-Apache--2.0-blue.svg)](https://github.com/InternLM/opencompass/blob/main/LICENSE)
+[![license](https://img.shields.io/badge/License-Apache--2.0-blue.svg)](https://github.com/SUFE-AIFLM-Lab/FinEval/blob/main/LICENSE)
 
-[🌐网站](https://opencompasstest1.readthedocs.io/zh_CN/latest/index.html) |
+[🌐网站](https://fineval.readthedocs.io/zh_CN/latest/) |
 [🤗Hugging Face](https://huggingface.co/datasets/SUFE-AIFLM-Lab/FinEval) |
-[📃论文](https://arxiv.org/abs/2305.08322)
+[📃论文]()
 
 [English](/README.md) | 简体中文
 </div>

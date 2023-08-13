@@ -4,9 +4,9 @@
 
 ```
 cd code
-git clone *----------------
-unzip xx.zip
-mv xx data
+wget https://huggingface.co/datasets/SUFE-AIFLM-Lab/FinEval/resolve/main/FinEval.zip
+unzip FinEval.zip
+mv FinEval data
 ```
 
 data文件夹格式为:

@@ -16,9 +16,9 @@ English | [简体中文](README_zh-CN.md)
 
 Welcome to **FinEval**
 
-Large Language Models (LLMs) have demonstrated impressive performance across various natural language processing tasks. However, their effectiveness in more challenging and domain-specific tasks remains largely unexplored. This article introduces FinEval, a benchmark designed specifically for assessing financial domain knowledge within LLMs.
+Large language models (LLMs) have demonstrated exceptional performance in various natural language processing tasks, yet their efficacy in more challenging and domain-specific tasks remains largely unexplored. This paper presents FinEval, a benchmark specifically designed for the financial domain knowledge in the LLMs.
 
-FinEval comprises a collection of high-quality multiple-choice questions spanning the fields of **finance, economics, accounting, and certifications**. It encompasses 4,661 questions, covering 34 distinct disciplines. To ensure a comprehensive evaluation of model performance, FinEval employs various methods such as zero-shot, few-shot, answer-only, and chain of thought prompts. Evaluating state-of-the-art Chinese and English LLMs on FinEval reveals that only GPT-4 achieves a 70% accuracy rate across different prompt settings, underscoring the significant growth potential of LLMs in financial domain knowledge. Our work provides a more comprehensive benchmark for evaluating financial knowledge, utilizing practical paper-based exercises that encompass a wide range of LLMs assessment scenarios.
+FinEval is a collection of high-quality multiple-choice questions covering **finance,economy, accounting, and certificate**. It includes 4,661 questions spanning 34 different academic subjects. To ensure a comprehensive model performance evaluation, FinEval employs various methods, including zero-shot, few-shot, answer-only,and chain-of-thought prompts. Evaluating state-of-the-art Chinese and English LLMs on FinEval, the results show that only GPT-4 achieved a 60% accuracy in different prompt settings, indicating significant growth potential for LLMs in the financial domain knowledge. Our work offers a more comprehensive financial knowledge evaluation benchmark, utilizing data of mock exams and covering a wide range of evaluated LLMs.
 
 
 ## Contents

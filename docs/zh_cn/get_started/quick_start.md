@@ -10,36 +10,36 @@
 
 - 下载模型权重，Llama-2-7b-hf权重到data的同级目录(FinEval/code文件夹下)
 
-  ```python
-  cd FinEval/code
-  git clone https://huggingface.co/NousResearch/Llama-2-7b-hf
-  ```
+```text
+cd FinEval/code
+git clone https://huggingface.co/NousResearch/Llama-2-7b-hf
+```
 
   以下为该项目结构目录
 
-  ```
-  Fineval/
-  ├── requirements
-  ├── docs
-  ├── README.md
-  ├── ...
-  ├── code  # 评测代码
-  │   ├── Llama-2-7b-hf  # 模型权重（模型位置可以任意放置，在run_eval.sh文件中model_path更改为模型权重绝对地址即可）
-  │   ├── data  # 数据集
-  │	     ├── dev 
-  │	     ├── val 
-  │	     ├── test
-  │   ├── evaluators
-  │	     ├── chatgpt.py
-  │	     ├── evaluator.py
-  │	     ├── unify_evaluator.py
-  │   ├── README.md
-  │   ├── eval.py # 基于权重的模型运行文件
-  │   ├── eval_chatgpt.py # 基于chatgpt的模型运行文件
-  │   ├── run_eval.sh # 基于模型权重的模型配置脚本
-  │   ├── subject_mapping.json # 文件配置信息 文件名称和data下文件名称对应
-  │   └── run_chatgpt_eval.sh # chatgpt的配置脚本
-  ```
+```text
+Fineval/
+├── requirements
+├── docs
+├── README.md
+├── ...
+├── code  # 评测代码
+│   ├── Llama-2-7b-hf  # 模型权重（模型位置可以任意放置，在run_eval.sh文件中model_path更改为模型权重绝对地址即可）
+│   ├── data  # 数据集
+│	     ├── dev 
+│	     ├── val 
+│	     ├── test
+│   ├── evaluators
+│	     ├── chatgpt.py
+│	     ├── evaluator.py
+│	     ├── unify_evaluator.py
+│   ├── README.md
+│   ├── eval.py # 基于权重的模型运行文件
+│   ├── eval_chatgpt.py # 基于chatgpt的模型运行文件
+│   ├── run_eval.sh # 基于模型权重的模型配置脚本
+│   ├── subject_mapping.json # 文件配置信息 文件名称和data下文件名称对应
+│   └── run_chatgpt_eval.sh # chatgpt的配置脚本
+```
 
 - FinEval的评测配置文件以配置.sh脚本为主，使用`run_eval.sh`启动。
 
@@ -56,7 +56,7 @@
 
 最终运行结果如下：
 
-```
+```text
 economic_law :16.0
 auditing : 34.375
 china_actuary :32.432432432432435international finance :23.529411764705884

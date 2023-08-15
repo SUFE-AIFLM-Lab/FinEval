@@ -4,7 +4,7 @@ When defining a new model, define the model type as auto to load the new model. 
 
 If the newly added model parameters are configured as AutoModelForCausalLM, AutoTokenizer loading, and the model type is auto, it can be evaluated.
 
-```
+```text
 #baichuan-13b
 model_type=auto #model_type=auto #If the model type does not exist, you can use the auto method to load, and use the AutoModelForCausalLM, AutoTokenizer method to load
 model_path=/data/sufeModel/MedicalGPT/Model/baichuan-13b

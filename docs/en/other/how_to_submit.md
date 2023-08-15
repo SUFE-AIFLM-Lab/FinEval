@@ -4,7 +4,7 @@ The location for saving the assessment results is: `output_path=$PROJ_HOME/outpu
 
 Instructions for the saving location can be found in the [How to run](/docs/en/user_guide/how_to_run.md) section.
 
-```
+```text
 ## The key inside each subject is the "id" field in the dataset
 {
     "banking_practitioner_qualification_certificate": {

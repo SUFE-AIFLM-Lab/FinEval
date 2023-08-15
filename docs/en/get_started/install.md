@@ -2,7 +2,7 @@
 
 1. Set up the FinEval environment:
 
-   ```python
+   ```shell
    conda create --name fineval_venv python=3.8
    conda activate fineval_venv
    ```
@@ -10,7 +10,7 @@
 
 2. Install FinEval:
 
-   ```python
+   ```shell
    git clone https://github.com/SUFE-AIFLM/FinEval
    cd FinEval
    pip install -r requirements.txt

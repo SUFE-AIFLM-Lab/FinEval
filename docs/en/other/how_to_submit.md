@@ -1,5 +1,9 @@
 # How to Submit Your Assessment
-You first need to prepare a UTF-8 encoded JSON file and write it in the following format.
+
+The location for saving the assessment results is: `output_path=$PROJ_HOME/output_dir/${exp_name}/$exp_date`. Within this folder, the `submission.json` file is generated automatically. Users only need to submit this file.
+
+Instructions for the saving location can be found in the [How to run](/docs/en/user_guide/how_to_run.md) section.
+
 ```
 ## The key inside each subject is the "id" field in the dataset
 {

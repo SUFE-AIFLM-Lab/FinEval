@@ -7,32 +7,32 @@
 
 1. 自定义增加模型加载信息,修改`/code/evaluators/unify_evaluator.py`文件，在transformers处进行导入此参数：
 
-    ```
-    from transformers import (
-        AutoModel,
-        AutoTokenizer,
-        AutoModelForCausalLM,
-        BloomForCausalLM,
-        BloomTokenizerFast,
-        LlamaTokenizer,
-        LlamaForCausalLM,
-        AutoConfig,
-        模型新的加载方式
-    )
-    ```
+```text
+from transformers import (
+    AutoModel,
+    AutoTokenizer,
+    AutoModelForCausalLM,
+    BloomForCausalLM,
+    BloomTokenizerFast,
+    LlamaTokenizer,
+    LlamaForCausalLM,
+    AutoConfig,
+    模型新的加载方式
+)
+```
 
 2. 加入自定义模型修改信息		
 
-    ```
-    MODEL_CLASSES = {
-        "bloom": (BloomForCausalLM, BloomTokenizerFast),
-        "chatglm": (AutoModel, AutoTokenizer),
-        "llama": (LlamaForCausalLM, LlamaTokenizer),
-        "baichuan": (AutoModelForCausalLM, AutoTokenizer),
-        "auto": (AutoModelForCausalLM, AutoTokenizer),
-        "moss":(AutoConfig, AutoTokenizer),
-        "自定义模型":(模型加载方式,分词器加载方式)
-    }
-    ```
+```text
+MODEL_CLASSES = {
+    "bloom": (BloomForCausalLM, BloomTokenizerFast),
+    "chatglm": (AutoModel, AutoTokenizer),
+    "llama": (LlamaForCausalLM, LlamaTokenizer),
+    "baichuan": (AutoModelForCausalLM, AutoTokenizer),
+    "auto": (AutoModelForCausalLM, AutoTokenizer),
+    "moss":(AutoConfig, AutoTokenizer),
+    "自定义模型":(模型加载方式,分词器加载方式)
+}
+```
 
 3. 在`/code/evaluators/unify_evaluator.py`中加入您新的模型加载逻辑。

@@ -2,33 +2,33 @@
 
 ## 1. Configuration instructions
 
-### The parameter combination of few-shot and cot can produce four evaluation methods:
+The parameter combination of few-shot and cot can produce four evaluation methods:
 
 - few-shot is False cot is False: that is, zero-shot adopts the method of only answering the answer.
 - few-shot is True and cot is False: that is, few-shot adopts the method of only answering the answer.
 - few-shot is False and cot is True: it means that the zero-shot method uses the CoT method to answer.
 - few-shot is True and cot is True: the few-shot method uses the CoT method to answer.
 
-### few-shot or zero-shot?
+few-shot or zero-shot?
 
 - Generally speaking, the effect of the few-shot model in the pretraining stage will always be better than zero-shot, but the model after instruction tuning, and if the instruction tuning does not have few-shot data, it is likely that zero-shot will be better.
 
-### Different model_types represent different model model reading configurations. For model_type, please choose from the following models:
+Different model_types represent different model model reading configurations. For model_type, please choose from the following models:
     
-    ```
-    "bloom": (BloomForCausalLM, BloomTokenizerFast),
-    "chatglm": (AutoModel, AutoTokenizer),
-    "llama": (LlamaForCausalLM, LlamaTokenizer),
-    "baichuan": (AutoModelForCausalLM, AutoTokenizer),
-    "auto": (AutoModelForCausalLM, AutoTokenizer),
-    "moss":(AutoConfig, AutoTokenizer)
-    ```
+```text
+"bloom": (BloomForCausalLM, BloomTokenizerFast),
+"chatglm": (AutoModel, AutoTokenizer),
+"llama": (LlamaForCausalLM, LlamaTokenizer),
+"baichuan": (AutoModelForCausalLM, AutoTokenizer),
+"auto": (AutoModelForCausalLM, AutoTokenizer),
+"moss":(AutoConfig, AutoTokenizer)
+```
 
 ## 2. Model configuration information
 
 The following is the model configuration information:
   
-```
+```text
 --model_type model name
 --model_path model path
 --cot  Whether to use Chain-of-thought

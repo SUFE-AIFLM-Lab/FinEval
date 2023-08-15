@@ -6,7 +6,7 @@ In the model_name field, please fill in the correct model name. If evaluating gp
 
 In addition, here openai_key recommends using the paid version, and the $5 version has a speed limit that affects the evaluation.
 
-```python
+```text
 export PROJ_HOME=$PWD
 export KMP_DUPLICATE_LIB_OK=TRUE
 

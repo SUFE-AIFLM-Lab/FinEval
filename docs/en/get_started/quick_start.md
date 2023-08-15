@@ -10,14 +10,14 @@ We will take the performance of the Llama-2-7b-hf model as an example to familia
 
 - Download model weights, Llama-2-7b-hf weights to the same directory as data (under the FinEval/code folder)
 
-  ```python
+  ```bash
   cd FinEval/code
   git clone https://huggingface.co/NousResearch/Llama-2-7b-hf
   ```
 
   The following is the project structure directory:
 
-  ```
+  ```bash
   Fineval/
   ├── requirements
   ├── docs

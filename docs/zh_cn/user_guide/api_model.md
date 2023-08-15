@@ -6,7 +6,7 @@ model_name名称处请填写正确的模型名称，若测评gpt4，请规范填
 
 此外此处openai_key建议使用付费版本，5美元版本有速度限制影响测评。
 
-```python
+```text
 export PROJ_HOME=$PWD
 export KMP_DUPLICATE_LIB_OK=TRUE
 

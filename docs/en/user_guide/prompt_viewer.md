@@ -6,7 +6,7 @@ The Alpaca model is recommended. Other models except the Alpaca model are not re
 
 It is measured that other models using this template will reduce their scores.
 
-```
+```text
 if with_prompt:
                 prompt_template = (
                     "Below is an instruction that describes a task. "

@@ -13,8 +13,7 @@ few-shot or zero-shot?
 
 - Generally speaking, the effect of the few-shot model in the pretraining stage will always be better than zero-shot, but the model after instruction tuning, and if the instruction tuning does not have few-shot data, it is likely that zero-shot will be better.
 
-Different model_types represent different model model reading configurations. For model_type, please choose from the following models:
-    
+Different model_types represent different model model reading configurations. For model_type, please choose from the following models:   
 ```text
 "bloom": (BloomForCausalLM, BloomTokenizerFast),
 "chatglm": (AutoModel, AutoTokenizer),
@@ -27,7 +26,6 @@ Different model_types represent different model model reading configurations. Fo
 ## 2. Model configuration information
 
 The following is the model configuration information:
-  
 ```text
 --model_type model name
 --model_path model path

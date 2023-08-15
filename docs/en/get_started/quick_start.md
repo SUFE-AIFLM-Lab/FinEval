@@ -10,36 +10,36 @@ We will take the performance of the Llama-2-7b-hf model as an example to familia
 
 - Download model weights, Llama-2-7b-hf weights to the same directory as data (under the FinEval/code folder)
 
-  ```shell
-  cd FinEval/code
-  git clone https://huggingface.co/NousResearch/Llama-2-7b-hf
-  ```
+```shell
+cd FinEval/code
+git clone https://huggingface.co/NousResearch/Llama-2-7b-hf
+```
 
   The following is the project structure directory:
 
-  ```text
-  Fineval/
-  ├── requirements
-  ├── docs
-  ├── README.md
-  ├── ...
-  ├── code  # Evaluation code
-  │   ├── Llama-2-7b-hf  # Model weight (the position of the model can be placed arbitrarily, just change the model_path to the absolute address of the model weight in the run_eval.sh file)
-  │   ├── data  # data set
-  │	     ├── dev 
-  │	     ├── val 
-  │	     ├── test
-  │   ├── evaluators
-  │	     ├── chatgpt.py
-  │	     ├── evaluator.py
-  │	     ├── unify_evaluator.py
-  │   ├── README.md
-  │   ├── eval.py # Weight-based model run file
-  │   ├── eval_chatgpt.py # Model run file based on chatgpt
-  │   ├── run_eval.sh # Model configuration script based on model weights
-  │   ├── subject_mapping.json # File configuration information The file name corresponds to the file name under data
-  │   └── run_chatgpt_eval.sh # chatgpt configuration script
-  ```
+```text
+Fineval/
+├── requirements
+├── docs
+├── README.md
+├── ...
+├── code  # Evaluation code
+│   ├── Llama-2-7b-hf  # Model weight (the position of the model can be placed arbitrarily, just change the model_path to the absolute address of the model weight in the run_eval.sh file)
+│   ├── data  # data set
+│	     ├── dev 
+│	     ├── val 
+│	     ├── test
+│   ├── evaluators
+│	     ├── chatgpt.py
+│	     ├── evaluator.py
+│	     ├── unify_evaluator.py
+│   ├── README.md
+│   ├── eval.py # Weight-based model run file
+│   ├── eval_chatgpt.py # Model run file based on chatgpt
+│   ├── run_eval.sh # Model configuration script based on model weights
+│   ├── subject_mapping.json # File configuration information The file name corresponds to the file name under data
+│   └── run_chatgpt_eval.sh # chatgpt configuration script
+```
 
 - FinEval's evaluation configuration file is mainly based on the configuration.sh script, which is started with `run_eval.sh`.
 

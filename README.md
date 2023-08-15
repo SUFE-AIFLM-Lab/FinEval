@@ -111,10 +111,9 @@ Below are the steps for quick installation. For detailed instructions, please re
 Download the dataset using Hugging Face datasets. Run the command to **manually download** and decompress, run the following command in the Fineval/code project directory, and rename it to data, and prepare the dataset to the FinEval/code/data directory.
 
 ```
-cd code
+cd code/data
 wget https://huggingface.co/datasets/SUFE-AIFLM-Lab/FinEval/resolve/main/FinEval.zip
 unzip FinEval.zip
-mv FinEval data
 ```
 
 The format of the data folder is:

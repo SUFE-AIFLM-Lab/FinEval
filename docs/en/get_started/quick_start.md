@@ -45,10 +45,10 @@ Fineval/
 
 - The model will appear on the screen if everything is ok
 
-  ```
-  0.0 Inference starts at 2023-07-27_12-06-31 on llama with subject of finance!
-  0% 0/58 [00:00<00:00,  2.61s/it]
-  ```
+```text
+0.0 Inference starts at 2023-07-27_12-06-31 on llama with subject of finance!
+0% 0/58 [00:00<00:00,  2.61s/it]
+```
 
 Note: You can use `ctrl+c` to interrupt program execution. During the running of the demo, let's explain in detail the detailed content and parameter configuration in this case.
 
@@ -56,7 +56,7 @@ Note: You can use `ctrl+c` to interrupt program execution. During the running of
 
 The final running result is as follows:
 
-```
+```text
 economic_law :16.0
 auditing : 34.375
 china_actuary :32.432432432432435international finance :23.529411764705884
@@ -91,12 +91,12 @@ Avg:
 
 ## 3. Model score interpretation:
 
-​ 1. The score under Accuracy_subject is the specific score of each subject, Accuracy_grouped is the specific score of the category to which each subject belongs, and Avg is the final score of the model (that is, the weighted average of the four categories based on the total number of categories)
+​1. The score under Accuracy_subject is the specific score of each subject, Accuracy_grouped is the specific score of the category to which each subject belongs, and Avg is the final score of the model (that is, the weighted average of the four categories based on the total number of categories)
 
 2. Choose one of the four, so the baseline is 25 points, but if the model is not trained well, it may be lower than 25 points.
 
-​ 3. CoT may not be able to significantly improve the model score, because CoT will be effective only after the model is strong enough to a certain extent in reasoning data tasks, which is why CoT is a typical emergent ability.
+​3. CoT may not be able to significantly improve the model score, because CoT will be effective only after the model is strong enough to a certain extent in reasoning data tasks, which is why CoT is a typical emergent ability.
 
-​ 4. Under the CoT mode, currently only the final answer is evaluated, and the intermediate process is not evaluated. This is because the intermediate process and the final answer are significantly positively correlated most of the time. The final answer is correct, and there will be no mistakes in the middle. Go; if there are too many mistakes in the middle, the final answer will not be right; this approach can bypass the difficult-to-evaluate problems in the middle process.
+​4. Under the CoT mode, currently only the final answer is evaluated, and the intermediate process is not evaluated. This is because the intermediate process and the final answer are significantly positively correlated most of the time. The final answer is correct, and there will be no mistakes in the middle. Go; if there are too many mistakes in the middle, the final answer will not be right; this approach can bypass the difficult-to-evaluate problems in the middle process.
 
 5. The significance of the specific score is also related to the inherent variance of the model, so it is recommended to run more experiments to observe.

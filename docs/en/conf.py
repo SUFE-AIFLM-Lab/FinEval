@@ -84,10 +84,6 @@ html_theme_options = {
             'name': 'GitHub',
             'url': 'https://github.com/SUFE-AIFLM-Lab/FinEval'
         },
-        {
-            'name': 'HomePage',
-            'url': 'https://github.com/SUFE-AIFLM-Lab/FinEval'
-        }
     ],
     # Specify the language of shared menu
     'menu_lang': 'en',

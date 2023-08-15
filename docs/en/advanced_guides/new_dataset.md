@@ -13,7 +13,7 @@
 	}
 ​	  The following is an example of tax law in `subject_mapping.json`:
 
-```bash
+```
 {
 	"tax_law":[
 	"Tax_law",

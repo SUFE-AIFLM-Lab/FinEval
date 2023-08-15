@@ -10,13 +10,13 @@ Let's continue to take the Llama-2-7b-hf model as an example to give a detailed 
 
   Run the following command to modify the configuration file
 
-  ```
+  ```text
   vi run_eval.sh
   ```
 
   After running the above command, the content of the configuration file is as follows.
 
-  ```
+  ```text
   export PROJ_HOME=$PWD
   export KMP_DUPLICATE_LIB_OK=TRUE
   
@@ -55,7 +55,7 @@ Let's continue to take the Llama-2-7b-hf model as an example to give a detailed 
 
 - Run the evaluation script `code/run_eval.sh`.
 
-  ```
+  ```text
   bash run_eval.sh
   ```
 

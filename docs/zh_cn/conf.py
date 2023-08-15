@@ -84,7 +84,7 @@ html_theme_options = {
     'menu': [
         {
             'name': 'GitHub',
-            'url': 'https://github.com/SUFE-AIFLM/FinEval'
+            'url': 'https://github.com/SUFE-AIFLM-Lab/FinEval'
         },
     ],
     # Specify the language of shared menu

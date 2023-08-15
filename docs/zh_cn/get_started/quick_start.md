@@ -45,10 +45,10 @@ Fineval/
 
 - 模型如果一切正常，屏幕上会出现
 
-  ```
-  0.0 Inference starts at 2023-07-27_12-06-31 on llama with subject of finance!
-  0% 0/58 [00:00<00:00,  2.61s/it]
-  ```
+```text
+0.0 Inference starts at 2023-07-27_12-06-31 on llama with subject of finance!
+0% 0/58 [00:00<00:00,  2.61s/it]
+```
 
 注：可以使用`ctrl+c`中断程序执行。运行demo期间，我们来详细讲解本案例中详细内容和参数配置。
 

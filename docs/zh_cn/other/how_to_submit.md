@@ -5,7 +5,7 @@
 在[如何运行](/docs/zh_cn/user_guide/how_to_run.md)中有保存位置的说明。
 
 
-```
+```text
 ## 每个学科内部的键名是数据集中的"id"字段
 {
     "banking_practitioner_qualification_certificate": {

@@ -57,49 +57,36 @@ Note: You can use `ctrl+c` to interrupt program execution. During the running of
 The final running result is as follows:
 
     ```
-    Accuracy_subject:
-    banking_practitioner_qualification_certificate :  37.57225433526011
-    financial_management :  25.0
-    economic_law :  26.923076923076923
-    certified_management_accountan :  12.5
-    auditing :  25.0
-    china_actuary :  31.03448275862069
-    international_finance :  33.333333333333336
-    investments :  29.545454545454547
-    central_banking :  52.0
-    public_finance :  40.0
-    financial_markets :  45.0
-    international_economics :  10.0
-    finance :  28.0
-    intermediate_financial_accounting :  15.384615384615385
-    commercial_bank_finance :  30.0
-    monetary_finance :  25.58139534883721
-    corporate_strategy_and_risk_management :  22.22222222222222
-    fund_qualification_certificate :  39.705882352941174
-    econometrics :  40.0
-    certified_practising_accountant :  23.529411764705884
-    insurance :  33.333333333333336
-    securities_practitioner_qualification_certificate :  18.181818181818183
-    statistics :  25.714285714285715
-    advanced_financial_accounting :  26.08695652173913
-    financial_engineering :  56.0
-    political_economy :  20.0
-    microeconomics :  61.111111111111114
-    corporate_finance :  32.432432432432435
-    tax_law :  37.77777777777778
-    cost_accounting :  44.11764705882353
-    futures_practitioner_qualification_certificate :  38.46153846153846
-    accounting :  19.444444444444443
-    management_accounting :  43.18181818181818
-    macroeconomics :  30.434782608695652
-    --------------------------------------------------------------------------------
+    economic_law :16.0
+    auditing : 34.375
+    china_actuary :32.432432432432435international finance :23.529411764705884
+    investments :28.94736842105263
+    central_banking : 35.714285714285715
+    public finance :35.0
+    financial markets :23.076923076923077
+    international economics :20.0
+    finance :36.0
+    intermediate_financial_accounting : 34.61538461538461
+    commercial bank finance :5.0
+    monetary finance :23.25581395348837
+    corporate_strategy_and_risk_management : 39.39393939393939fund qualification certificate :36.76470588235294
+    econometrics :44.44444444444444
+    38.23529411764706certified practising accountant 
+    insurance 30.303030303030305securities_practitioner_qualification_certificate :31.818181818181817statistics :25.714285714285715
+    advanced_financial_accounting : 28.571428571428573
+    financial_engineering : 46.15384615384615political economy :39.130434782608695
+    microeconomics :35.0
+    33,333333333333336corporate finance :
+    tax law :40.日
+    cost_accounting :58.8235294117647
+    futures_practitioner_qualification certificate :28.205128205128204accounting : 38.888888888888886
+    management_accounting : 37.93103448275862
+    macroeconomics :41.935483870967744
     Accuracy_grouped:
-    Accounting :  30.434782608695652
-    Certificate :  34.120734908136484
-    Economy :  32.16374269005848
-    Finance :  35.042735042735046
-    Avg: 
-    33.19467554076539
+    38.032786885245905Accounting :33.83233532934132Certificate :34.29951690821256Economy :
+    Finance :28.852459016393443
+    Avg:
+    33.70981754995656
     ```
 
 ## 3. Model score interpretation:

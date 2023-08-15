@@ -6,14 +6,14 @@
 
 	{
 		"filename":[
-		"英文名称",
-		"中文名称"
-		"类别"
+		"English name",
+		"Chineses name"
+		"categories"
 		]
 	}
 ​	  The following is an example of tax law in `subject_mapping.json`:
 
-```
+```text
 {
 	"tax_law":[
 	"Tax_law",

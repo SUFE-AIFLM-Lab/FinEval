@@ -134,7 +134,9 @@ data文件夹格式为:
 
 ## 如何提交
 
-您首先需要准备一个UTF-8编码的JSON文件，并按照以下格式编写。
+测评结果保存位置为：`output_path=$PROJ_HOME/output_dir/${exp_name}/$exp_date` ，该文件夹下自动生成`submission.json`，用户只需提交该文件。
+
+在[如何运行](/docs/zh_cn/user_guide/how_to_run.md)中有保存位置的说明。
 ```
 ## 每个学科内部的键名是数据集中的"id"字段
 {
@@ -153,7 +155,7 @@ data文件夹格式为:
     ....
 }
 ```
-然后你可以将准备好的JSON文件提交到zhang.liwen@shufe.edu.cn。
+你可以将准备好的JSON文件提交到zhang.liwen@shufe.edu.cn。
 
 ## 引用
 

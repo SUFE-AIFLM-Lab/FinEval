@@ -13,7 +13,7 @@
 	}
 ​	  以下为`subject_mapping.json`中税法例子:
 
-```
+```text
 {
 	"tax_law":[
 	"Tax_law",

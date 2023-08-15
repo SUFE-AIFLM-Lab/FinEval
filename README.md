@@ -134,7 +134,12 @@ If you need to incorporate a new dataset for evaluation, please refer to [Add a 
 If you need to load a new model, please refer to [Add a Model](/docs/zh_cn/advanced_guides/new_model.md).
 
 ## How to Submit
-First, you need to prepare a JSON file encoded in UTF-8 and follow the format below:
+
+
+The location for saving the assessment results is: `output_path=$PROJ_HOME/output_dir/${exp_name}/$exp_date`. Within this folder, the `submission.json` file is generated automatically. Users only need to submit this file.
+
+Instructions for the saving location can be found in the [How to run](/docs/en/user_guide/how_to_run.md) section.
+
 ```
 ## The keys within each subject correspond to the "id" field in the dataset
 {

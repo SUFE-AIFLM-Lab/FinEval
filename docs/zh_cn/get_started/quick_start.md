@@ -2,7 +2,7 @@
 
 ## 1. 测试Llama-2-7b-hf模型
 
-我们会以测试Llama-2-7b-hf模型的性能为例，带你熟悉FinEval的一些基本功能，默认为`zero-shot`和`answer-only`。
+我们会以**测评Llama-2-7b-hf模型**为例，带你熟悉FinEval的一些基本功能，默认为`zero-shot`和`answer-only`。
 
 - 运行前确保已经安装了FinEval，本次实验在单张A800显卡上成功运行。更大的参数量，请参考不同模型的推理资源大小，合理选择计算资源。
 
@@ -34,11 +34,11 @@ Fineval/
 │	     ├── evaluator.py
 │	     ├── unify_evaluator.py
 │   ├── README.md
-│   ├── eval.py # 基于权重的模型运行文件
+│   ├── eval.py # 基于本地模型权重的模型运行文件
 │   ├── eval_chatgpt.py # 基于chatgpt的模型运行文件
-│   ├── run_eval.sh # 基于模型权重的模型配置脚本
-│   ├── subject_mapping.json # 文件配置信息 文件名称和data下文件名称对应
-│   └── run_chatgpt_eval.sh # chatgpt的配置脚本
+│   ├── run_eval.sh # 基于本地模型权重的测评脚本
+│   ├── subject_mapping.json # 数据集配置文件
+│   └── run_chatgpt_eval.sh # chatgpt的测评脚本
 ```
 
 - FinEval的评测配置文件以配置.sh脚本为主，使用`run_eval.sh`启动。

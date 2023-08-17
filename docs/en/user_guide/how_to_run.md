@@ -2,9 +2,9 @@
 
 Let's continue to take the Llama-2-7b-hf model as an example to give a detailed explanation of the instructions for use. We complete a test and score four steps.
 
-- First place the dataset under the FinEval/code folder and name it data.
+1. First unzip [Dataset](docs/en/get_started/dataset_pre.md) under the FinEval/code/data folder.
 
-- Download the evaluation model weights.
+2. Download the evaluation model weights.
 
 - Modify the parameters of the evaluation script `code/run_eval.sh`.
 

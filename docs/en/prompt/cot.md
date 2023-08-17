@@ -2,7 +2,7 @@
 
 In the CoT mode, we need to add a sentence: Let us think step by step,
 
-- CoT zero-shot:
+- CoT&zero-shot:
 
 ```
 甲公司采用配股方式进行融资。每 10 股配 2 股，配股前股价为 6.2元。配股价为 5 元。如果除权日股价为 5.85 元。所有股东都参加了配股。除权日股价下跌____。
@@ -13,7 +13,7 @@ D. 0.0565
 答案：让我们一步一步思考，
 ```
 
-- CoT few-shot:
+- CoT&few-shot:
 
 ```
 以下是中国关于financial_management考试的单项选择题，请选出其中的正确答案。

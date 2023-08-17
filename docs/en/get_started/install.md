@@ -14,7 +14,7 @@ If you don't use conda, you can ignore this step.
 2. Install FinEval:
 
 ```shell
-git clone https://github.com/SUFE-AIFLM/FinEval
+git clone https://github.com/SUFE-AIFLM-Lab/FinEval
 cd FinEval
 pip install -r requirements.txt
 ```

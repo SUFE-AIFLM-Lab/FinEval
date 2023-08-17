@@ -4,14 +4,14 @@
 
 few-shot和cot进行参数组合，可以产生四种评测方式:
 
-- few-shot为False cot为False：即为zero-shot采用只回答答案的方式。
-- few-shot为True  cot为False: 即为few-shot采用只回答答案的方式。
-- few-shot为False cot为True: 即为zero-shot方式采用CoT方式回答。
-- few-shot为True cot为True: 即为few-shot方式采用CoT方式回答。
+- few-shot=False且cot=False：即为zero-shot采用只回答答案的方式。
+- few-shot=True且cot=False: 即为few-shot采用只回答答案的方式。
+- few-shot=False且cot=True: 即为zero-shot方式采用CoT方式回答。
+- few-shot=True且cot=True: 即为few-shot方式采用CoT方式回答。
 
-一般来说，pretraining阶段的模型few-shot 的效果总是会比 zero-shot 好一些，但是经过instruction tuning之后的模型，且instruction tuning没有few-shot data的话，很可能zero-shot会更好。
+一般来说，pretraining阶段的Base模型few-shot的效果会优于zero-shot，但是经过与人类偏好对齐的Chat模型很可能zero-shot效果会好于Base模型。
 
-不同的model_type代表不同的模型模型读取配置，model_type请从以下模型中选择：
+不同的model_type代表不同的模型模型读取配置，model_type可从以下配置中选择：
     
 ```text
 "bloom": (BloomForCausalLM, BloomTokenizerFast),
@@ -22,9 +22,9 @@ few-shot和cot进行参数组合，可以产生四种评测方式:
 "moss":(AutoConfig, AutoTokenizer)
 ```
 
-## 2. 模型配置信息
+## 2. 测评参数说明
 
-以下为模型配置信息：
+以下为测评参数说明：
   
 ```text
 --model_type 模型名称

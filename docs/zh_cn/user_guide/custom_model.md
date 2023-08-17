@@ -6,6 +6,13 @@
 以下是`run_eval.sh`的代码示例：
 
 ```text
+#! /bin/bash
+#/*******
+#1、增加CPU加载模型的选择，参数化配置
+#2、增加模型的类型选择，参数化配置
+#3、支持lora权重加载，参数化配置
+#4、支持GPU加载的数量设定
+
 #baichuan-13b
 model_type=auto #模型类型中不存在的，可以使用auto方式进行加载，采用AutoModelForCausalLM,AutoTokenizer方式加载
 model_path=/baichuan-13b

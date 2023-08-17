@@ -3,7 +3,7 @@
 ## 1. AO（Answer-Only）
 AO&few-shot
 
-A few-shot prompt that only predicts the answer: A dialog-format prompt is equivalent to us letting the big model learn the five questions we provide, and then the evaluation model actually only answers the final round of questions.
+A few-shot prompt to predict the answer: it allows the model to learn new categories with a limited number of examples. Compared with Zero-Shot, Few-Shot provides more training data, but still relatively less. This enables the model to learn new categories from a small number of examples and to answer when faced with new inputs.
 
 ```python
 以下是中国关于financial_management考试的单项选择题，请选出其中的正确答案。

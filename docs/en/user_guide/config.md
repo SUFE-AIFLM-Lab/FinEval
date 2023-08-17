@@ -4,10 +4,10 @@
 
 The parameter combination of few-shot and cot can produce four evaluation methods:
 
-- few-shot is False cot is False: that is, zero-shot adopts the method of only answering the answer.
-- few-shot is True and cot is False: that is, few-shot adopts the method of only answering the answer.
-- few-shot is False and cot is True: it means that the zero-shot method uses the CoT method to answer.
-- few-shot is True and cot is True: the few-shot method uses the CoT method to answer.
+- few-shot=False and cot=False: means that zero-shot only answers the answer.
+- few-shot=True and cot=False: means that few-shot only answers the answer.
+- few-shot=False and cot=True: The zero-shot method adopts the CoT method to answer.
+- few-shot=True and cot=True: The few-shot method uses the CoT method to answer.
 
 Generally speaking, the effect of the few-shot model in the pretraining stage will always be better than zero-shot, but the model after instruction tuning, and if the instruction tuning does not have few-shot data, it is likely that zero-shot will be better.
 

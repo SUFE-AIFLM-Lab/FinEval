@@ -34,11 +34,11 @@ Fineval/
 │	     ├── evaluator.py
 │	     ├── unify_evaluator.py
 │   ├── README.md
-│   ├── eval.py # Weight-based model run file
+│   ├── eval.py # Model run file based on local model weights
 │   ├── eval_chatgpt.py # Model run file based on chatgpt
-│   ├── run_eval.sh # Model configuration script based on model weights
-│   ├── subject_mapping.json # File configuration information The file name corresponds to the file name under data
-│   └── run_chatgpt_eval.sh # chatgpt configuration script
+│   ├── run_eval.sh # Evaluation script based on local model weights
+│   ├── subject_mapping.json # Dataset configuration file
+│   └── run_chatgpt_eval.sh # chatgpt evaluation script
 ```
 
 - FinEval's evaluation configuration file is mainly based on the configuration.sh script, which is started with `run_eval.sh`.
@@ -50,7 +50,7 @@ Fineval/
 0% 0/58 [00:00<00:00,  2.61s/it]
 ```
 
-Note: You can use `ctrl+c` to interrupt program execution. During the running of the demo, let's explain in detail the detailed content and parameter configuration in this case.
+Note: You can use `ctrl+c` to interrupt program execution. While the assessment is running, question information is printed on the screen.
 
 ## 2. Final running result
 

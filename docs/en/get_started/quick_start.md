@@ -92,7 +92,7 @@ Avg:
 
 ## 3. Interpretation of test scores
 
-​ 1. The score under Accuracy_subject is the specific score of each subject, Accuracy_grouped is the specific score of the category to which each subject belongs, and Avg is the final score of the model (that is, the weighted average of the four categories based on the total number of categories)
+​1. The score under Accuracy_subject is the specific score of each subject, Accuracy_grouped is the specific score of the category to which each subject belongs, and Avg is the final score of the model (that is, the weighted average of the four categories based on the total number of categories)
 
 2. Choose one of the four, so the baseline is 25 points, but if the model is not trained well, it may be lower than 25 points.
 

@@ -73,6 +73,12 @@ vi run_eval.sh
 
   After running the above command, the content of the configuration file is as follows.
 ```text
+#!/bin/bash
+#/*******
+#1, increase the choice of CPU loading model, parameterized configuration
+#2. Increase the type selection of the model and parameterize the configuration
+#3, support lora weight loading, parameterized configuration
+#4. Support the setting of the number of GPU loading
 export PROJ_HOME=$PWD
 export KMP_DUPLICATE_LIB_OK=TRUE
 

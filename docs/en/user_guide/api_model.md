@@ -31,3 +31,5 @@ python eval_chatgpt.py \
     --output_dir ${output_path} \
     --model_name gpt-4 # Please fill in the correct OpenAI model name
 ```
+
+Use [FastChat](https://github.com/lm-sys/FastChat) to provide the API of the open source LLM model, which can support the OpenAI API interface formal model evaluation.

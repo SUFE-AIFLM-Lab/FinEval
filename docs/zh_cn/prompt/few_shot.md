@@ -3,7 +3,7 @@
 ## 1. AO（Answer-Only）
 AO&few-shot
 
-仅预测答案的few-shot的prompt：对话格式的 prompt 相当于我们让大模型学习我们提供的五个问题，然后测评模型实际上只回答最后一轮的问题。
+仅预测答案的few-shot的prompt：它允许模型在有限数量的示例下学习新的类别。相比于Zero-Shot，Few-Shot提供了更多的训练数据，但仍然相对较少。这使得模型能够从少量示例中学习新的类别，并在面对新的输入时进行回答。
 
 ```python
 以下是中国关于financial_management考试的单项选择题，请选出其中的正确答案。

@@ -6,6 +6,13 @@ If the newly added model parameters are configured as AutoModelForCausalLM, Auto
 Here is a code sample of `run_eval.sh`:
 
 ```text
+#!/bin/bash
+#/*******
+#1, increase the choice of CPU loading model, parameterized configuration
+#2. Increase the type selection of the model and parameterize the configuration
+#3, support lora weight loading, parameterized configuration
+#4. Support the setting of the number of GPU loading
+
 #baichuan-13b
 model_type=auto #model_type=auto #If the model type does not exist, you can use the auto method to load, and use the AutoModelForCausalLM, AutoTokenizer method to load
 model_path=/baichuan-13b

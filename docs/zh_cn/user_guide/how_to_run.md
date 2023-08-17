@@ -2,7 +2,7 @@
 
 我们继续以Llama-2-7b-hf这个模型为例，进行使用说明的详细解释，我们完成一次测评分四步走。
 
-1. 首先在FinEval/code/data文件夹下解压[数据集](docs/zh_cn/get_started/dataset_pre.md)。
+1. 首先在FinEval/code/data文件夹下解压[数据集](https://huggingface.co/datasets/SUFE-AIFLM-Lab/FinEval)。
 
 2. 下载测评模型权重。
 

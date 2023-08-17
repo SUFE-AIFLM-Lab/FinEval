@@ -92,17 +92,18 @@ Below are the steps for quick installation. For detailed instructions, please re
 
 Download the dataset using Hugging Face datasets. Run the command to **manually download** and decompress, run the following command in the Fineval/code project directory, and rename it to data, and prepare the dataset to the FinEval/code/data directory.
 
-```
+```text
 cd code/data
 wget https://huggingface.co/datasets/SUFE-AIFLM-Lab/FinEval/resolve/main/FinEval.zip
 unzip FinEval.zip
 ```
 
-The format of the data folder is:
+After the dataset is decompressed, the file format is as follows:
+
 - -----data
-  - ----dev: The dev set for each subject contains five demonstration examples with explanations provided by the few-shot evaluation
-  - ----val: The val set is mainly used for hyperparameter adjustment
-  - ----test: Used for model evaluation, the labels of the test set will not be disclosed, and users need to submit their results to obtain the accurate value of the test
+   ----dev: The dev set for each subject contains five demonstration examples and explanations provided by the few-shot assessment
+   ----val: The val set is mainly used for the self-test model score, and the score can be obtained directly
+   ----test: used for the final evaluation of the model, the answers of the test set will not be made public, users are required to submit the evaluation results of `submission.json`, and the obtained scores will participate in the final leaderboard
 
 
 ## Evaluation
@@ -111,7 +112,7 @@ Please read [Get started quickly](/docs/en/get_started/quick_start.md) to learn 
 
 ## Supporting New Datasets and Models
 
-If you need to incorporate a new dataset for evaluation, please refer to [Add a dataset](/docs/zh_cn/advanced_guides/new_dataset.md).
+If you need to incorporate a new dataset for evaluation, please refer to [Add a dataset](/docs/en/advanced_guides/new_dataset.md).
 
 If you need to load a new model, please refer to [Add a Model](/docs/zh_cn/advanced_guides/new_model.md).
 

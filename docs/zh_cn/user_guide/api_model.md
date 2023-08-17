@@ -32,5 +32,5 @@ python eval_chatgpt.py \
     --model_name gpt-4 # 请填写正确的OpenAI模型名称
 ```
 
-
+使用 [FastChat](https://github.com/lm-sys/FastChat) 提供开源 LLM 模型的 API，以 OpenAI API 接口形式接入，提升 LLM 模型加载效果。
 

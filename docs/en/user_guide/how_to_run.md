@@ -6,63 +6,63 @@ Let's continue to take the Llama-2-7b-hf model as an example to give a detailed 
 
 2. Download the evaluation model weights. The following is the model address:
 
-百川：
-
-[Baichuan-Chat-13B](https://huggingface.co/baichuan-inc/Baichuan-13B-Chat)
-[Baichuan-7B](https://huggingface.co/baichuan-inc/Baichuan-7B)
-[Baichuan-Base-13B](https://huggingface.co/baichuan-inc/Baichuan-13B-Base)
-
-LLaMA:
-
-[llama-13b-hf](https://huggingface.co/yahma/llama-13b-hf)
-[Chinese-Alpaca-Plus-7B](https://github.com/ymcui/Chinese-LLaMA-Alpaca)
-[LLaMA2-chat-7B](https://huggingface.co/meta-llama/Llama-2-7b-chat-hf)
-[LLaMA2-base-7B](https://huggingface.co/meta-llama/Llama-2-7b-hf)
-[LLaMA2-base-13B](https://huggingface.co/meta-llama/Llama-2-13b-hf)
-[LLaMA2-chat-13B](https://huggingface.co/meta-llama/Llama-2-13b-chat-hf)
-[LLaMA2-chat-70B]
-[Chinese-llama2](https://huggingface.co/LinkSoul/Chinese-Llama-2-7b)
-[Ziya-13B-v1](https://huggingface.co/IDEA-CCNL/Ziya-LLaMA-13B-v1)
-
-ChatGLM:
-
-[ChatGLM](https://huggingface.co/THUDM/chatglm-6b)
-[ChatGLM2](https://huggingface.co/THUDM/chatglm2-6b)
-
-BLOOM:
-
-[Bloomz-7b1-mt](https://huggingface.co/bigscience/bloomz-7b1-mt)
-
-书生 浦语:
-
-InterLm：
-
-[InterLm-chat](https://huggingface.co/internlm/internlm-chat-7b)
-
-猎鹰：
-
-[falcon-7B](https://huggingface.co/tiiuae/falcon-7b)
-[falcon-40B](https://huggingface.co/tiiuae/falcon-40b)
-
-悟道 天鹰
-
-[AquilaChat-7B](https://huggingface.co/BAAI/AquilaChat-7B)
-[Aquila-7B](https://huggingface.co/BAAI/Aquila-7B)
-
-ChatGPT:
-
-[GPT-3.5-turbo]
-[GPT-4]
-
-Moss:
-
-[Moss-sft](https://huggingface.co/fnlp/moss-moon-003-sft)
-[Moss-base](https://huggingface.co/fnlp/moss-moon-003-base)
-
-通义千问：
-
-[Qwen-7B](https://huggingface.co/Qwen/Qwen-7B)
-[Qwen-7B-Chat](https://huggingface.co/Qwen/Qwen-7B-Chat)
+    百川：
+    
+    [Baichuan-Chat-13B](https://huggingface.co/baichuan-inc/Baichuan-13B-Chat)
+    [Baichuan-7B](https://huggingface.co/baichuan-inc/Baichuan-7B)
+    [Baichuan-Base-13B](https://huggingface.co/baichuan-inc/Baichuan-13B-Base)
+    
+    LLaMA:
+    
+    [llama-13b-hf](https://huggingface.co/yahma/llama-13b-hf)
+    [Chinese-Alpaca-Plus-7B](https://github.com/ymcui/Chinese-LLaMA-Alpaca)
+    [LLaMA2-chat-7B](https://huggingface.co/meta-llama/Llama-2-7b-chat-hf)
+    [LLaMA2-base-7B](https://huggingface.co/meta-llama/Llama-2-7b-hf)
+    [LLaMA2-base-13B](https://huggingface.co/meta-llama/Llama-2-13b-hf)
+    [LLaMA2-chat-13B](https://huggingface.co/meta-llama/Llama-2-13b-chat-hf)
+    [LLaMA2-chat-70B]
+    [Chinese-llama2](https://huggingface.co/LinkSoul/Chinese-Llama-2-7b)
+    [Ziya-13B-v1](https://huggingface.co/IDEA-CCNL/Ziya-LLaMA-13B-v1)
+    
+    ChatGLM:
+    
+    [ChatGLM](https://huggingface.co/THUDM/chatglm-6b)
+    [ChatGLM2](https://huggingface.co/THUDM/chatglm2-6b)
+    
+    BLOOM:
+    
+    [Bloomz-7b1-mt](https://huggingface.co/bigscience/bloomz-7b1-mt)
+    
+    书生 浦语:
+    
+    InterLm：
+    
+    [InterLm-chat](https://huggingface.co/internlm/internlm-chat-7b)
+    
+    猎鹰：
+    
+    [falcon-7B](https://huggingface.co/tiiuae/falcon-7b)
+    [falcon-40B](https://huggingface.co/tiiuae/falcon-40b)
+    
+    悟道 天鹰
+    
+    [AquilaChat-7B](https://huggingface.co/BAAI/AquilaChat-7B)
+    [Aquila-7B](https://huggingface.co/BAAI/Aquila-7B)
+    
+    ChatGPT:
+    
+    [GPT-3.5-turbo]
+    [GPT-4]
+    
+    Moss:
+    
+    [Moss-sft](https://huggingface.co/fnlp/moss-moon-003-sft)
+    [Moss-base](https://huggingface.co/fnlp/moss-moon-003-base)
+    
+    通义千问：
+    
+    [Qwen-7B](https://huggingface.co/Qwen/Qwen-7B)
+    [Qwen-7B-Chat](https://huggingface.co/Qwen/Qwen-7B-Chat)
 
 3. Modify the parameters of the evaluation startup script `FinEval/code/run_eval.sh`.
 
@@ -111,7 +111,7 @@ python eval.py \
 
   
 
-- Run the evaluation script `code/run_eval.sh`.
+4. Run the evaluation script `code/run_eval.sh`.
 ```text
 bash run_eval.sh
 ```

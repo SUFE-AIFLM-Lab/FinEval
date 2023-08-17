@@ -3,7 +3,7 @@
 ## 1. AO（Answer-Only）
 AO&few-shot
 
-Few-shot prompts with predicted answers only: Conversational format prompts are equivalent to us letting the AI ​​pretend to have answered five questions correctly, and then the AI ​​actually only answers the last round of questions.
+A few-shot prompt that only predicts the answer: A dialog-format prompt is equivalent to us letting the big model learn the five questions we provide, and then the evaluation model actually only answers the final round of questions.
 
 ```python
 以下是中国关于financial_management考试的单项选择题，请选出其中的正确答案。

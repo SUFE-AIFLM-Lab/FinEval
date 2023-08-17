@@ -3,7 +3,7 @@
 ## 1. AO（Answer-Only）
 AO zero-shot
 
-仅预测答案的zero-shot的prompt
+仅输出答案的zero-shot的prompt
 
 	下列有关组成部分重要性的说法中，错误的是____。
 	A. 组成部分重要性的汇总数可以高于集团财务报表整体的重要性

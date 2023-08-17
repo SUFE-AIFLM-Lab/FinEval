@@ -18,22 +18,22 @@ pip install -r requirements.txt
 ```
 
 requirements.txt 文件如下:
-pandas
-numpy
-torch
-tqdm
-peft 
-sentencepiece
-openai
-accelerate
-colorama
-cpm_kernels
-sentencepiece
-streamlit
-transformers_stream_generator
-transformers==4.31.0
-tiktoken
-einops
-scipy
+    pandas
+    numpy
+    torch
+    tqdm
+    peft 
+    sentencepiece
+    openai
+    accelerate
+    colorama
+    cpm_kernels
+    sentencepiece
+    streamlit
+    transformers_stream_generator
+    transformers==4.31.0
+    tiktoken
+    einops
+    scipy
 
     

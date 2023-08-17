@@ -19,6 +19,7 @@ vi run_eval.sh
   运行上述命令后，配置文件内容如下。
 
 ```text
+
 export PROJ_HOME=$PWD
 export KMP_DUPLICATE_LIB_OK=TRUE
 
@@ -26,9 +27,11 @@ export KMP_DUPLICATE_LIB_OK=TRUE
 # 修改模型名称确定模型权重加载方式，此处默认有五种加载方式，llama,bloom,auto,moss,chatglm,baichuan，一二代模型均支持
 model_type=llama 
 # 通过huggingface下载的模型权重的位置，此处采用相对位置路径，如果模型路径下载至其他位置，可以使用绝对路径。
-model_path=/Llama-2-7b-hf 
+model_path=Llama-2-7b-hf 
 # 模型结果生成的目录名称，如果以下参数do_save_csv格式为True,模型运行信息将保存在一个文件夹中，文件夹命名为目录生成名称。
 exp_name=Llama-2-7b-hf
+# 如果有训练完的Lora文件，在此加载
+exp_name=lora_model
 
 exp_date=$(date +"%Y%m%d%H%M%S")
 echo "exp_date": $exp_date
@@ -49,13 +52,13 @@ python eval.py \
     --do_save_csv True \
     --do_test False \
     --gpus 0 \ # 测评进行的显卡编号
-    --only_cpu False \ # 默认为False，如果为True将使用cpu进行评估，速度会减慢，不推荐使用cpu进行评估。
+    --only_cpu False \ # 默认为False，如果为True将使用cpu进行推理评估，速度会减慢，不推荐使用cpu进行评估。
     --output_dir ${output_path}
 ```
 
   
 
-- 运行评测脚本`code/run_eval.sh`
+4. 运行评测脚本`code/run_eval.sh`
 
 ```text
 bash run_eval.sh

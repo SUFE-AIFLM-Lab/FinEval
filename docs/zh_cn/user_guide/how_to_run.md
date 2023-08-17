@@ -4,9 +4,66 @@
 
 1. 首先在FinEval/code/data文件夹下解压[数据集](https://huggingface.co/datasets/SUFE-AIFLM-Lab/FinEval)。
 
-2. 下载测评模型权重。
+2. 下载测评模型权重。以下为模型地址：
 
-**模型地址**
+百川：
+
+[Baichuan-Chat-13B](https://huggingface.co/baichuan-inc/Baichuan-13B-Chat)
+[Baichuan-7B](https://huggingface.co/baichuan-inc/Baichuan-7B)
+[Baichuan-Base-13B](https://huggingface.co/baichuan-inc/Baichuan-13B-Base)
+
+LLaMA:
+
+[llama-13b-hf](https://huggingface.co/yahma/llama-13b-hf)
+[Chinese-Alpaca-Plus-7B](https://github.com/ymcui/Chinese-LLaMA-Alpaca)
+[LLaMA2-chat-7B](https://huggingface.co/meta-llama/Llama-2-7b-chat-hf)
+[LLaMA2-base-7B](https://huggingface.co/meta-llama/Llama-2-7b-hf)
+[LLaMA2-base-13B](https://huggingface.co/meta-llama/Llama-2-13b-hf)
+[LLaMA2-chat-13B](https://huggingface.co/meta-llama/Llama-2-13b-chat-hf)
+[LLaMA2-chat-70B]
+[Chinese-llama2](https://huggingface.co/LinkSoul/Chinese-Llama-2-7b)
+[Ziya-13B-v1](https://huggingface.co/IDEA-CCNL/Ziya-LLaMA-13B-v1)
+
+ChatGLM:
+
+[ChatGLM](https://huggingface.co/THUDM/chatglm-6b)
+[ChatGLM2](https://huggingface.co/THUDM/chatglm2-6b)
+
+BLOOM:
+
+[Bloomz-7b1-mt](https://huggingface.co/bigscience/bloomz-7b1-mt)
+
+书生 浦语:
+
+InterLm：
+
+[InterLm-chat](https://huggingface.co/internlm/internlm-chat-7b)
+
+猎鹰：
+
+[falcon-7B](https://huggingface.co/tiiuae/falcon-7b)
+[falcon-40B](https://huggingface.co/tiiuae/falcon-40b)
+
+悟道 天鹰
+
+[AquilaChat-7B](https://huggingface.co/BAAI/AquilaChat-7B)
+[Aquila-7B](https://huggingface.co/BAAI/Aquila-7B)
+
+ChatGPT:
+
+[GPT-3.5-turbo]
+[GPT-4]
+
+Moss:
+
+[Moss-sft](https://huggingface.co/fnlp/moss-moon-003-sft)
+[Moss-base](https://huggingface.co/fnlp/moss-moon-003-base)
+
+通义千问：
+
+[Qwen-7B](https://huggingface.co/Qwen/Qwen-7B)
+[Qwen-7B-Chat](https://huggingface.co/Qwen/Qwen-7B-Chat)
+
 
 3. 修改测评启动脚本`FinEval/code/run_eval.sh`的参数。
 

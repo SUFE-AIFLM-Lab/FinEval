@@ -28,13 +28,13 @@ FinEval is a collection of high-quality multiple-choice questions covering **fin
 
 ## Contents
 
-- [Performance Leaderboard](#Performance-leaderboard)
-- [Installation](#Installation)
-- [Evaluation](#Evaluation)
-- [Dataset Preparation](#Dataset-Preparation)
+- [Performance Leaderboard](#performance-leaderboard)
+- [Installation](#installation)
+- [Evaluation](#evaluation)
+- [Dataset Preparation](#dataset-preparation)
 - [Supporting New Datasets and Models](#supporting-new-datasets-and-models)
-- [How to Submit](#How-to-submit)
-- [Citation](#Citation)
+- [How to Submit](#how-to-submit)
+- [Citation](#citation)
 
 ## Performance Leaderboard
 

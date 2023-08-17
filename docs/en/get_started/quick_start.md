@@ -2,7 +2,7 @@
 
 ## 1. Testing the Llama-2-7b-hf model
 
-We will take the performance of the Llama-2-7b-hf model as an example to familiarize you with some basic functions of FinEval, which are `zero-shot` and `answer-only` by default.
+We will take the evaluation of the Llama-2-7b-hf model as an example to familiarize you with some basic functions of FinEval. The defaults are `zero-shot` and `answer-only`.
 
 - Make sure you have installed FinEval before running. This experiment runs successfully on a single A800 graphics card. For a larger number of parameters, please refer to the inference resource size of different models, and choose computing resources reasonably.
 

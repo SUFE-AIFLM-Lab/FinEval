@@ -76,7 +76,12 @@ vi run_eval.sh
   运行上述命令后，配置文件内容如下。
 
 ```text
-
+#! /bin/bash
+#/*******
+#1、增加CPU加载模型的选择，参数化配置
+#2、增加模型的类型选择，参数化配置
+#3、支持lora权重加载，参数化配置
+#4、支持GPU加载的数量设定
 export PROJ_HOME=$PWD
 export KMP_DUPLICATE_LIB_OK=TRUE
 

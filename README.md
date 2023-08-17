@@ -82,29 +82,11 @@ Below are the steps for quick installation. For detailed instructions, please re
  ```
 
 ```python
-    git clone https://github.com/SUFE-AIFLM/FinEval
+    git clone https://github.com/SUFE-AIFLM-Lab/FinEval
     cd FinEval
     pip install -r requirements.txt
-    
-    requirements.txt is as follows:
-    pandas
-    numpy
-    torch
-    tqdm
-    peft 
-    sentencepiece
-    openai
-    accelerate
-    colorama
-    cpm_kernels
-    sentencepiece
-    streamlit
-    transformers_stream_generator
-    transformers==4.31.0
-    tiktoken
-    einops
-    scipy
-```
+ ```   
+
 
 ## Dataset Preparation
 

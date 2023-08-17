@@ -12,9 +12,10 @@ conda activate fineval_venv
 2. 安装 FinEval：
 
 ```text
-git clone https://github.com/SUFE-AIFLM/FinEval
+git clone https://github.com/SUFE-AIFLM-Lab/FinEval
 cd FinEval
 pip install -r requirements.txt
+```
 
 requirements.txt 文件如下:
 pandas
@@ -34,5 +35,5 @@ transformers==4.31.0
 tiktoken
 einops
 scipy
-```
+
     

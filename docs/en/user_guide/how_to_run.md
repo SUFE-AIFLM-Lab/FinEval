@@ -33,7 +33,7 @@ Let's continue to take the Llama-2-7b-hf model as an example to give a detailed 
     
     [Bloomz-7b1-mt](https://huggingface.co/bigscience/bloomz-7b1-mt)
     
-    书生 浦语:
+    书生·浦语:
     
     InterLm：
     
@@ -44,7 +44,7 @@ Let's continue to take the Llama-2-7b-hf model as an example to give a detailed 
     [falcon-7B](https://huggingface.co/tiiuae/falcon-7b)
     [falcon-40B](https://huggingface.co/tiiuae/falcon-40b)
     
-    悟道 天鹰
+    悟道·天鹰
     
     [AquilaChat-7B](https://huggingface.co/BAAI/AquilaChat-7B)
     [Aquila-7B](https://huggingface.co/BAAI/Aquila-7B)

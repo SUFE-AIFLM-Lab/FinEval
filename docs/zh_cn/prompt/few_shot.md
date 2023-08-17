@@ -1,7 +1,7 @@
 # Few-shot
 
 ## 1. AO（Answer-Only）
-AO few-shot
+AO&few-shot
 
 仅预测答案的few-shot的prompt：对话格式的 prompt 相当于我们让 AI 假装已经正确回答了五个问题，然后 AI 实际上只回答最后一轮的问题。
 

@@ -1,6 +1,6 @@
 # Prompt overview
 
-In LLM's Supervised Fine-Tuning (SFT) process, we often inject some predefined strings into the dialogue according to actual requirements, so that the model can output content according to certain requirements.
+In LLMs' Supervised Fine-Tuning (SFT) process, we often inject some predefined strings into the dialogue according to actual requirements, so that the model can output content according to certain requirements.
 
 For example, in the fine-tuning of some `chat` models, we may add system-level instructions at the beginning of each dialog, and agree on a set of formats to represent the dialog between the user and the model. During evaluation, we also need to input questions in the agreed format so that the model can exert its maximum performance.
 

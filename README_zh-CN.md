@@ -81,28 +81,9 @@ FinEval是一个包含高质量多项选择题的集合，涵盖**金融、经�
  ```
 
 ```python
-    git clone https://github.com/SUFE-AIFLM/FinEval
+    git clone https://github.com/SUFE-AIFLM-Lab/FinEval
     cd FinEval
     pip install -r requirements.txt
-    
-    requirements.txt 文件如下:
-    pandas
-    numpy
-    torch
-    tqdm
-    peft 
-    sentencepiece
-    openai
-    accelerate
-    colorama
-    cpm_kernels
-    sentencepiece
-    streamlit
-    transformers_stream_generator
-    transformers==4.31.0
-    tiktoken
-    einops
-    scipy
 ```
 
 ## 准备数据集

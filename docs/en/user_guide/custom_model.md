@@ -3,11 +3,12 @@
 When defining a new model, define the model type as auto to load the new model. You can change other parameters by yourself. Here, the Baichuan model is taken as an example to load a custom model.
 
 If the newly added model parameters are configured as AutoModelForCausalLM, AutoTokenizer loading, and the model type is auto, it can be evaluated.
+Here is a code sample of `run_eval.sh`:
 
 ```text
 #baichuan-13b
 model_type=auto #model_type=auto #If the model type does not exist, you can use the auto method to load, and use the AutoModelForCausalLM, AutoTokenizer method to load
-model_path=/data/sufeModel/MedicalGPT/Model/baichuan-13b
+model_path=/baichuan-13b
 exp_name=baichuan13b
 
 exp_date=$(date +"%Y%m%d%H%M%S")

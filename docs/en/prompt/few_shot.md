@@ -1,7 +1,7 @@
 # Few-shot
 
 ## 1. AO（Answer-Only）
-AO few-shot
+AO&few-shot
 
 Few-shot prompts with predicted answers only: Conversational format prompts are equivalent to us letting the AI ​​pretend to have answered five questions correctly, and then the AI ​​actually only answers the last round of questions.
 

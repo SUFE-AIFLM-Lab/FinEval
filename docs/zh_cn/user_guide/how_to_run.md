@@ -2,13 +2,13 @@
 
 我们继续以Llama-2-7b-hf这个模型为例，进行使用说明的详细解释，我们完成一次测评分四步走。
 
-1.首先在FinEval/code/data文件夹下解压[数据集]()。
+1. 首先在FinEval/code/data文件夹下解压[数据集](docs/zh_cn/get_started/dataset_pre.md)。
 
-2.下载测评模型权重。
+2. 下载测评模型权重。
 
 **模型地址**
 
-- 修改评测脚本`code/run_eval.sh`的参数。
+3. 修改测评启动脚本`FinEval/code/run_eval.sh`的参数。
 
   运行下面命令，进行修改配置文件
 

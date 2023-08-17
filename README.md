@@ -114,17 +114,16 @@ Please read [Get started quickly](/docs/en/get_started/quick_start.md) to learn 
 
 If you need to incorporate a new dataset for evaluation, please refer to [Add a dataset](/docs/en/advanced_guides/new_dataset.md).
 
-If you need to load a new model, please refer to [Add a Model](/docs/zh_cn/advanced_guides/new_model.md).
+If you need to load a new model, please refer to [Add a Model](/docs/en/advanced_guides/new_model.md).
 
 ## How to Submit
-
 
 The location for saving the assessment results is: `output_path=$PROJ_HOME/output_dir/${exp_name}/$exp_date`. Within this folder, the `submission.json` file is generated automatically. Users only need to submit this file.
 
 Instructions for the saving location can be found in the [How to run](/docs/en/user_guide/how_to_run.md) section.
 
-```
-## The keys within each subject correspond to the "id" field in the dataset
+```text
+## The key inside each subject is the "id" field in the dataset
 {
     "banking_practitioner_qualification_certificate": {
         "0": "A",
@@ -141,7 +140,9 @@ Instructions for the saving location can be found in the [How to run](/docs/en/u
     ....
 }
 ```
-Once you have prepared the JSON file, you can submit it to zhang.liwen@shufe.edu.cn.
+
+You can submit the generated `submission.json` file to zhang.liwen@shufe.edu.cn by email.
+
 
 ## Citation
 

@@ -9,9 +9,9 @@ The parameter combination of few-shot and cot can produce four evaluation method
 - few-shot=False and cot=True: The zero-shot method adopts the CoT method to answer.
 - few-shot=True and cot=True: The few-shot method uses the CoT method to answer.
 
-Generally speaking, the effect of the few-shot model in the pretraining stage will always be better than zero-shot, but the model after instruction tuning, and if the instruction tuning does not have few-shot data, it is likely that zero-shot will be better.
+Generally speaking, the effect of the few-shot Base model in the pretraining stage will be better than zero-shot, but the Chat model that has been aligned with human preferences is likely to have a better zero-shot effect than the Base model.
 
-Different model_types represent different model model reading configurations. For model_type, please choose from the following models: 
+Different model_types represent different model model reading configurations, and model_type can be selected from the following configurations:
 
 ```text
 "bloom": (BloomForCausalLM, BloomTokenizerFast),

@@ -8,7 +8,7 @@
 
 - FinEval/code文件夹下放置数据集，并命名为data。
 
-- 下载模型权重，Llama-2-7b-hf权重到data的同级目录(FinEval/code文件夹下)
+- 下载模型权重，Llama-2-7b-hf权重到FinEval/code文件夹下(与data同级)。
 
 ```text
 cd FinEval/code

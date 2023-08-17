@@ -46,8 +46,16 @@ Fineval/
 - 模型如果一切正常，屏幕上会出现
 
 ```text
-0.0 Inference starts at 2023-07-27_12-06-31 on llama with subject of finance!
-0% 0/58 [00:00<00:00,  2.61s/it]
+exp_date: 时间戳
+output_path: your output_path
+[2023-08-17 22:37:28,483] [INFO] [real_accelerator.py:133:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+Namespace(constrained_decoding=True, cot=False, do_save_csv=True, do_test=False, few_shot=False, gpus='0,1', lora_model='', \
+model_path=your model_path, model_type='llama', n_times=1, ntrain=5, only_cpu='False', output_dir=your output_path, temperature=0.2, with_prompt=False)
+cuda:0
+The argument `trust_remote_code` is to be used with Auto classes. It has no effect here and is ignored.
+Loading checkpoint shards: 100%|█████████████████████████████████████████████████████████████████████████████2/2 [00:02<00:00,  1.28s/it]
+0.0 Inference starts at exp_date on your model_path with subject of banking_practitioner_qualification_certificate!
+  0%|                                                                                                                                                                                                            | 0/116 [00:00<?, ?it/s]
 ```
 
 注：可以使用`ctrl+c`中断程序执行。运行测评期间，屏幕上会打印题目信息。
@@ -57,36 +65,49 @@ Fineval/
 最终运行结果如下：
 
 ```text
-economic_law :16.0
-auditing : 34.375
-china_actuary :32.432432432432435international finance :23.529411764705884
-investments :28.94736842105263
-central_banking : 35.714285714285715
-public finance :35.0
-financial markets :23.076923076923077
-international economics :20.0
-finance :36.0
-intermediate_financial_accounting : 34.61538461538461
-commercial bank finance :5.0
-monetary finance :23.25581395348837
-corporate_strategy_and_risk_management : 39.39393939393939fund qualification certificate :36.76470588235294
-econometrics :44.44444444444444
-38.23529411764706certified practising accountant 
-insurance 30.303030303030305securities_practitioner_qualification_certificate :31.818181818181817statistics :25.714285714285715
-advanced_financial_accounting : 28.571428571428573
-financial_engineering : 46.15384615384615political economy :39.130434782608695
-microeconomics :35.0
-33,333333333333336corporate finance :
-tax law :40.日
-cost_accounting :58.8235294117647
-futures_practitioner_qualification certificate :28.205128205128204accounting : 38.888888888888886
-management_accounting : 37.93103448275862
-macroeconomics :41.935483870967744
+Accuracy_subject:
+banking_practitioner_qualification_certificate :  44.827586206896555
+certified_management_accountant :  27.77777777777778
+financial_management :  25.0
+economic_law :  32.0
+auditing :  25.0
+china_actuary :  21.62162162162162
+international_finance :  41.1764705882353
+investments :  28.94736842105263
+central_banking :  50.0
+public_finance :  47.5
+financial_markets :  43.58974358974359
+international_economics :  20.0
+finance :  24.0
+intermediate_financial_accounting :  15.384615384615385
+commercial_bank_finance :  35.0
+monetary_finance :  25.58139534883721
+corporate_strategy_and_risk_management :  12.121212121212121
+fund_qualification_certificate :  41.1764705882353
+econometrics :  33.333333333333336
+certified_practising_accountant :  23.529411764705884
+insurance :  36.36363636363637
+securities_practitioner_qualification_certificate :  22.727272727272727
+statistics :  22.857142857142858
+advanced_financial_accounting :  19.047619047619047
+financial_engineering :  53.84615384615385
+political_economy :  21.73913043478261
+microeconomics :  27.5
+corporate_finance :  38.888888888888886
+tax_law :  37.77777777777778
+cost_accounting :  32.35294117647059
+futures_practitioner_qualification_certificate :  38.46153846153846
+accounting :  19.444444444444443
+management_accounting :  44.827586206896555
+macroeconomics :  19.35483870967742
+--------------------------------------------------------------------------------
 Accuracy_grouped:
-38.032786885245905Accounting :33.83233532934132Certificate :34.29951690821256Economy :
-Finance :28.852459016393443
-Avg:
-33.70981754995656
+Accounting :  26.885245901639344
+Certificate :  36.22754491017964
+Economy :  28.502415458937197
+Finance :  37.049180327868854
+Avg: 
+32.580364900086884
 ```
 
 ## 3. 测评分数解读：

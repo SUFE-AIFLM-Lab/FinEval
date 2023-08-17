@@ -4,12 +4,13 @@
 
 We will take the evaluation of the Llama-2-7b-hf model as an example to familiarize you with some basic functions of FinEval. The defaults are `zero-shot` and `answer-only`.
 
-- Make sure you have installed FinEval before running. This experiment runs successfully on a single A800 graphics card. For a larger number of parameters, please refer to the inference resource size of different models, and choose computing resources reasonably.
+- Make sure that FinEval has been installed before running. This experiment runs successfully on a single A800 graphics card. For a larger number of parameters, please refer to the size of inference resources of different models, and choose computing resources reasonably.
 
 - Place the dataset under the FinEval/code folder and name it data.
 
-- Download model weights, Llama-2-7b-hf weights to the same directory as data (under the FinEval/code folder)
+- Download model weights, Llama-2-7b-hf weights to the FinEval/code folder (same level as data).
 
+  
 ```shell
 cd FinEval/code
 git clone https://huggingface.co/NousResearch/Llama-2-7b-hf
@@ -89,14 +90,14 @@ Avg:
 33.70981754995656
 ```
 
-## 3. Model score interpretation:
+## 3. Interpretation of test scores
 
-​1. The score under Accuracy_subject is the specific score of each subject, Accuracy_grouped is the specific score of the category to which each subject belongs, and Avg is the final score of the model (that is, the weighted average of the four categories based on the total number of categories)
+​ 1. The score under Accuracy_subject is the specific score of each subject, Accuracy_grouped is the specific score of the category to which each subject belongs, and Avg is the final score of the model (that is, the weighted average of the four categories based on the total number of categories)
 
 2. Choose one of the four, so the baseline is 25 points, but if the model is not trained well, it may be lower than 25 points.
 
-​3. CoT may not be able to significantly improve the model score, because CoT will be effective only after the model is strong enough to a certain extent in reasoning data tasks, which is why CoT is a typical emergent ability.
+3. CoT may not be able to significantly improve the model score, because CoT will be effective only after the model is strong to a certain extent in inference data tasks, which is why CoT is a typical emergent ability.
 
-​4. Under the CoT mode, currently only the final answer is evaluated, and the intermediate process is not evaluated. This is because the intermediate process and the final answer are significantly positively correlated most of the time. The final answer is correct, and there will be no mistakes in the middle. Go; if there are too many mistakes in the middle, the final answer will not be right; this approach can bypass the difficult-to-evaluate problems in the middle process.
+​4. In the CoT mode, currently only the final answer is evaluated, and the intermediate process is not evaluated. This is because the intermediate process and the final answer are significantly positively correlated most of the time. The final answer is correct, and there will be no mistakes in the middle. Where to go; if there are too many mistakes in the middle, the final answer will not be right; this approach can bypass the difficult-to-evaluate problems in the middle process.
 
 5. The significance of the specific score is also related to the inherent variance of the model, so it is recommended to run more experiments to observe.

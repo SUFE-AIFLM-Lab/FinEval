@@ -4,7 +4,7 @@
 
 AO zero-shot
 
-A zero-shot prompt that only predicts the answer.
+A zero-shot prompt that outputs only the answer.
 
 	下列有关组成部分重要性的说法中，错误的是____。
 	A. 组成部分重要性的汇总数可以高于集团财务报表整体的重要性

@@ -1,7 +1,7 @@
 # zero-shot
 
 ## 1. AO（Answer-Only）
-AO zero-shot
+AO&zero-shot
 
 仅输出答案的zero-shot的prompt
 

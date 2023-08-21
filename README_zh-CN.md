@@ -146,7 +146,7 @@ unzip FinEval.zip
 ## 引用
 
 ```bibtex
-@misc{2023opencompass,
+@misc{2023SUFE-AIFLM-Lab,
     title={SUFE-AIFLM-Lab: FinEval:A Chinese Financial Domain Knowledge Evaluation Benchmark for Large Language Models},
     author={Liwen Zhang, Weige Cai, Zhaowei Liu, Zhi Yang, Wei Dai, Yujie Liao, Qianru Qin, Yifei Li, Xingyu Liu, Zhiqiang Liu, Zhoufan Zhu, Anbo Wu, Xin Guo, Yun Chen},
     howpublished = {\url{https://github.com/SUFE-AIFLM-Lab/FinEval}},

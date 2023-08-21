@@ -147,9 +147,9 @@ unzip FinEval.zip
 
 ```bibtex
 @misc{2023opencompass,
-    title={OpenCompass: A Universal Evaluation Platform for Foundation Models},
-    author={OpenCompass Contributors},
-    howpublished = {\url{https://github.com/InternLM/OpenCompass}},
+    title={SUFE-AIFLM-Lab: FinEval:A Chinese Financial Domain Knowledge Evaluation Benchmark for Large Language Models},
+    author={Liwen Zhang, Weige Cai, Zhaowei Liu, Zhi Yang, Wei Dai, Yujie Liao, Qianru Qin, Yifei Li, Xingyu Liu, Zhiqiang Liu, Zhoufan Zhu, Anbo Wu, Xin Guo, Yun Chen},
+    howpublished = {\url{https://github.com/SUFE-AIFLM-Lab/FinEval}},
     year={2023}
 }
 ```

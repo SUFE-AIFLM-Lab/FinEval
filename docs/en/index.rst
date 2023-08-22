@@ -3,7 +3,7 @@ Welcome to FinEval
 
 This article introduces FinEval, developed by the team of Associate Professor Zhang Liwen from the School of Statistics and Management of Shanghai University of Finance and Economics, which is an evaluation benchmark specially designed for the Chinese financial sector.FinEval is a series of high-quality multiple-choice questions covering four topics: finance, economics, accounting and professionalism. It includes 4661 questions with 34 topics to ensure a comprehensive evaluation of model performance, FinEval employs various methods, including zero sample, few sample, answer only (AO, answer answer only) and Chain-of-Thought (CoT) The state-of-the-art Chinese and English large language models are evaluated on FinEval, and the results show that only GPT-4 has an average accuracy rate close to 70%, which shows that large language models have great growth potential in the financial field overall, this study provides a strong evaluation benchmark for future large-scale models, while its developmental constraints provide valuable tools.
 
-You can check out our dataset example in AdvancedGuides_ , or check out our paper(https://arxiv.org/abs/2308.09975) for more details.
+You can check out our dataset example in AdvancedGuides_ , or check out our paper (https://arxiv.org/abs/2308.09975) for more details.
 
 
 .. _GetStarted:

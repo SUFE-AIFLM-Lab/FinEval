@@ -7,7 +7,7 @@
 
 [🌐网站](https://fineval.readthedocs.io/zh_CN/latest/) |
 [🤗Hugging Face](https://huggingface.co/datasets/SUFE-AIFLM-Lab/FinEval) |
-[📃论文]()
+[📃论文](https://arxiv.org/abs/2308.09975)
 
 [English](/README.md) | 简体中文
 </div>
@@ -146,10 +146,10 @@ unzip FinEval.zip
 ## 引用
 
 ```bibtex
-@misc{2023SUFE-AIFLM-Lab,
-    title={SUFE-AIFLM-Lab: FinEval:A Chinese Financial Domain Knowledge Evaluation Benchmark for Large Language Models},
-    author={Liwen Zhang, Weige Cai, Zhaowei Liu, Zhi Yang, Wei Dai, Yujie Liao, Qianru Qin, Yifei Li, Xingyu Liu, Zhiqiang Liu, Zhoufan Zhu, Anbo Wu, Xin Guo, Yun Chen},
-    howpublished = {\url{https://github.com/SUFE-AIFLM-Lab/FinEval}},
-    year={2023}
+@misc{2308.09975,
+Author = {Liwen Zhang and Weige Cai and Zhaowei Liu and Zhi Yang and Wei Dai and Yujie Liao and Qianru Qin and Yifei Li and Xingyu Liu and Zhiqiang Liu and Zhoufan Zhu and Anbo Wu and Xin Guo and Yun Chen},
+Title = {FinEval: A Chinese Financial Domain Knowledge Evaluation Benchmark for Large Language Models},
+Year = {2023},
+Eprint = {arXiv:2308.09975},
 }
 ```

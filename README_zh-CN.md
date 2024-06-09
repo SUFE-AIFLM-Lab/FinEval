@@ -139,9 +139,20 @@ print(\"\\nDisney Monthly Average Volume:\")\nprint(monthly_avg_volume_dis)
 API检索：测试AI Agent在一系列可能的API中根据当前给定任务合理选择、组织、调用API并分析结果的能力。
 
 ```text
-为了防止敏感用户数据暴露给设备上的其他应用程序，Android应用程序开发人员在选择数据存储方式时应避免使用哪种方法？
-A: 使用MODE_PRIVATE的SharedPreferences存储用户偏好和设置。B: 在应用程序可访问的未加密SQLite数据库中存储用户凭据。C: 实现SQLCipher加密包含敏感用户信息的SQLite数据库。D: 在Android Keystore系统中保存加密的用户数据。
-答案：B
+下面是一些追问。你将看到一个过去的问题记录，以及一个关于这个问题的追问。请在原始问题的基础上思考追问问题。你只需要按照追问的指令进行回答即可。原始问题:你正在开发一个金融资讯应用，需要为用户提供最新的股票市场动态。你有以下API可以调用来实现功能:
+GetStockNews API(获取股票新闻API): 获取特定股票的最新新闻。参数包括stock_symbol(股票符号，字符串)。
+GetMarketTrends API(获取市场趋势API): 获取当前的市场趋势分析。参数包括market_segment(市场细分，字符串)。
+GetStockPrice API(获取股票价格API): 获取特定股票的当前价格。参数包括stock_symbol(股票符号，字符串)。
+SubscribeToAlerts API(订阅警报API): 为特定股票设置价格警报。参数包括stock_symbol(股票符号，字符串)，price_threshold(价格阈值，浮点数)。
+你的用户对科技股特别感兴趣，并希望获得AAPL和MSFT股票的最新新闻以及它们的当前价格。请详细描述你的操作过程。
+请根据你的需求，选择适合的API以及生成对应的参数，详细描述要达到你的目标所需要调用API的步骤以及需要传入的参数值。
+追问：用户对AAPL股票非常满意，并希望在其价格下降到150美元以下时收到警报。你应该怎样操作？
+答案: 为了让用户在AAPL股票价格下降到150美元以下时收到警报，你应该调用SubscribeToAlerts API来设置一个价格警报。以下是具体的操作步骤和所需参数：
+- **调用SubscribeToAlerts API设置AAPL股票的价格警报**
+- **API**: `SubscribeToAlerts`
+- **参数**:- `stock_symbol`: `\"AAPL\"` (股票符号为AAPL)\n- `price_threshold`: `150` (价格阈值设为150美元)
+调用此API后，每当AAPL的股票价格下降到150美元或以下时，用户将收到警报。这样，用户可以及时了解股票价格的变化，并根据自己的投资策略做出相应的决策。
+请确保在实施这一功能时，用户界面清晰地说明了警报的设置和触发条件，以便用户可以根据自己的需要轻松地管理这些警报。
 ```
 多文档问答：评估AI Agent在处理多个相关文档时，如何有效提取和整合信息以回答复杂的金融问题。
 

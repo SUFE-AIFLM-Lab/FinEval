@@ -20,13 +20,13 @@ FinEval金融领域评测基准依据定量的基本方法，通过长期客观�
 
 
 # 目录
-## [FinEval](#FinEval)
+## FinEval
 - [金融学术知识](#金融学术知识)
 - [金融行业知识](#金融行业知识)
 - [金融安全知识](#金融安全知识)
 - [金融智能体](#金融智能体)
 - [性能排行榜](#性能排行榜)
-## [使用说明](#使用说明)
+## 使用说明
 - [安装](#安装)
 - [评测](#评测)
 - [准备数据集](#准备数据集)
@@ -335,10 +335,11 @@ COT:思维链，RAG:检索增强，FT:金融任务，MC:长程对话，MD:多文
 
 ## 使用说明
 
+目前我们只开源了最初版本的FinEval的所有数据，即FinEval金融学术知识方面的所有数据，为了保证评测结果的公平有效，我们更新了FinEval金融学术知识，构建了金融行业知识、金融安全知识与金融智能体，以上所有数据暂不开源，如需评测请联系zhang.liwen@shufe.edu.cn以得到授权，所有授权的机构或个人均会在[FinEval](https://github.com/SUFE-AIFLM-Lab/FinEval)说明。
+
 ### 安装
 
 下面展示了快速安装的步骤，详细请参考[安装指南](docs/zh_cn/get_started/install.md)。
-目前我们只开源了最初版本的FinEval的所有数据，即FinEval金融学术知识方面的所有数据，为了保证评测结果的公平有效，我们更新了FinEval金融学术知识，构建了金融行业知识、金融安全知识与金融智能体，以上所有数据暂不开源，如需评测请联系zhang.liwen@shufe.edu.cn以得到授权，所有授权的机构或个人均会在[FinEval](https://github.com/SUFE-AIFLM-Lab/FinEval)说明。
 
  ```python
     conda create --name fineval_venv python=3.8

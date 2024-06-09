@@ -32,7 +32,7 @@ FinEval金融领域评测基准依据定量的基本方法，通过长期客观�
 - [准备数据集](#准备数据集)
 - [支持新数据集和模型](#支持新数据集和模型)
 - [如何提交](#如何提交)
-- [引用](#引用)
+## 引用
 
 ## FinEval
 ### 金融学术知识
@@ -335,7 +335,9 @@ COT:思维链，RAG:检索增强，FT:金融任务，MC:长程对话，MD:多文
 
 ## 使用说明
 
-目前我们只开源了最初版本的FinEval的所有数据，即FinEval金融学术知识方面的所有数据，为了保证评测结果的公平有效，我们更新了FinEval金融学术知识，构建了金融行业知识、金融安全知识与金融智能体，以上所有数据暂不开源，如需评测请联系zhang.liwen@shufe.edu.cn以得到授权，所有授权的机构或个人均会在[FinEval](https://github.com/SUFE-AIFLM-Lab/FinEval)说明。
+目前我们只开源了最初版本的FinEval的所有数据，即FinEval金融学术知识方面的所有数据，为了保证评测结果的公平有效，我们更新了FinEval金融学术知识，构建了金融行业知识、金融安全知识与金融智能体，以上所有数据暂不开源。如需评测请联系zhang.liwen@shufe.edu.cn以得到授权，所有授权的机构或个人均会在[FinEval](https://github.com/SUFE-AIFLM-Lab/FinEval)说明。
+
+以下说明适用于最初版本的FinEval，授权参与最新FinEval评测的个人或机构可以通过邮件中的说明文档进行评测。
 
 ### 安装
 
@@ -409,7 +411,7 @@ unzip FinEval.zip
 
 您可以将生成的`submission.json`文件以邮件形式提交到zhang.liwen@shufe.edu.cn。
 
-### 引用
+## 引用
 
 ```bibtex
 @misc{2308.09975,

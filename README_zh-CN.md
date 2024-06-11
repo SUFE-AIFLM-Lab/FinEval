@@ -40,7 +40,7 @@ FinEval金融领域评测基准依据定量的基本方法，通过长期客观�
 FinEval一代金融学术知识是包含高质量多项选择题的集合，涵盖金融、经济、会计和证书等领域。它包括4661个问题，涵盖了34个不同的学术科目。FinEval一代提供了一个更全面的金融学术知识能力评估基准，利用了模拟考试数据，涵盖了广泛的大语言模型评估范围。
 
 <div align="center">
-  <img src="docs/en/_static/image/subjects.png" width="1000px" height="475px"/>
+  <img src="docs/en/_static/image/subjects.png" width="800px" height="340px"/>
   <br />
   <br /></div>
 

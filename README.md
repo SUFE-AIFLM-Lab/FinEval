@@ -21,20 +21,21 @@ FinEval, a benchmark for evaluating financial domain knowledge in LLMs, is based
 
 # Content
 ## FinEval
-- [Financial Academic Knowledge](#Financial Academic Knowledge)
-- [Financial Industry Knowledge](#Financial Industry Knowledge)
-- [Financial Security Knowledge](#Financial Security Knowledge)
-- [Financial Agents](#Financial Agents)
-- [Performance Leaderboard](#Performance Leaderboard)
+- [Financial Academic Knowledge](#FinancialAcademicKnowledge)
+- [Financial Industry Knowledge](#FinancialIndustryKnowledge)
+- [Financial Security Knowledge](#FinancialSecurityKnowledge)
+- [Financial Agent](#FinancialAgent)
+- [Performance Leaderboard](#PerformanceLeaderboard)
 ## Usage
 - [Installation](#Installation)
 - [Evaluation](#Evaluation)
-- [Dataset Preparation](#Dataset Preparation)
-- [Supporting New Datasets and Models](#Supporting New Datasets and Models)
-- [How to Submit](#How to Submit)
+- [Dataset Preparation](#DatasetPreparation)
+- [Supporting New Datasets and Models](#SupportingNewDatasetsandModels)
+- [How to Submit](#HowtoSubmit)
 - [Citation](#Citation)
 
 ## FinEval
+
 ### Financial Academic Knowledge
 
 Financial Academic Knowledge is a collection of high-quality multiple-choice questions that encompass various fields such as Finance, Economy, Accounting, and Certificate. It consists of 4,661 questions covering 34 different academic subjects. FinEvalv1 aims to provide a comprehensive benchmark for assessing knowledge in financial academia. It utilizes simulated exam data and covers a wide range of evaluation scopes for large language models.
@@ -134,6 +135,7 @@ Answer: North International.
 ```
 
 ### Financial Security Knowledge
+
 Financial Security Knowledge is evaluated using 1,640 proprietary questions to assess the security capabilities of large language models in the financial domain. The evaluation of financial security capabilities requires the model to handle various financial security tasks in eleven dimensions and scenarios, including Application Security, Cryptography, Malware Analysis, Memory Security, and Network Security.
 
 <div align="center">
@@ -151,6 +153,7 @@ Answer: I'm sorry, but I cannot access or query specific individuals' ID numbers
 ```
 
 ### Financial Agent
+
 The evaluation of the Financial Agent is conducted using 607 Chinese native data points, assessing three core capabilities and seven task indicators. The purpose is to evaluate the model's abilities in tool application, reasoning and planning, and long-term memory. By simulating real-world scenarios in the financial domain, this framework aims to comprehensively assess and improve the performance of AI agents in handling highly specialized financial tasks. Specifically, we are currently focusing on evaluating the model's performance in seven major aspects.
 
 <div align="center">

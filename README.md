@@ -157,7 +157,7 @@ Answer: I'm sorry, but I cannot access or query specific individuals' ID numbers
 The evaluation of the Financial Agent is conducted using 607 Chinese native data points, assessing three core capabilities and seven task indicators. The purpose is to evaluate the model's abilities in tool application, reasoning and planning, and long-term memory. By simulating real-world scenarios in the financial domain, this framework aims to comprehensively assess and improve the performance of AI agents in handling highly specialized financial tasks. Specifically, we are currently focusing on evaluating the model's performance in seven major aspects.
 
 <div align="center">
-  <img src="docs/en/_static/image/v4.png" width="500px" height="480px"/>
+  <img src="docs/en/_static/image/agent.png" width="500px" height="480px"/>
   <br />
   <br /></div>
 

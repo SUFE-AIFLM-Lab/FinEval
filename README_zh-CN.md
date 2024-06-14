@@ -130,7 +130,7 @@ FinEval三代金融安全知识利用1640条专有多项选择题对金融大模
 FinEval四代金融智能体评测通过三大核心能力，八大任务指标共607条中文原生数据进行评测，旨在评估大模型在工具应用，推理规划以及长程记忆方面的能力。通过模拟金融环境中的真实场景，该框架旨在全面评估和促进AI Agent在处理高度专业化金融相关场景任务中的表现。具体而言，我们当前主要评估LLM在其中七大方面的性能表现
 
 <div align="center">
-  <img src="docs/en/_static/image/v4.png" width="500px" height="480px"/>
+  <img src="docs/en/_static/image/agent.png" width="500px" height="480px"/>
   <br />
   <br /></div>
 

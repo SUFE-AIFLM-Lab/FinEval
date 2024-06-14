@@ -9,7 +9,7 @@
 [🤗Hugging Face](https://huggingface.co/datasets/SUFE-AIFLM-Lab/FinEval) |
 [📃论文](https://arxiv.org/abs/2308.09975)
 
-[English](/README.md) | 简体中文
+[English](/README.md) | [简体中文](/README_zh-CN))
 </div>
 
 欢迎来到**FinEval**

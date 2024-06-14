@@ -22,16 +22,16 @@ FinEval, a benchmark for evaluating financial domain knowledge in LLMs, is based
 # Content
 ## FinEval
 - [Financial Academic Knowledge](#Financial-Academic-Knowledge)
-- [Financial Industry Knowledge](#Financial Industry Knowledge)
-- [Financial Security Knowledge](#Financial Security Knowledge)
-- [Financial Agent](#FinancialAgent)
-- [Performance Leaderboard](#PerformanceLeaderboard)
+- [Financial Industry Knowledge](#Financial-Industry-Knowledge)
+- [Financial Security Knowledge](#Financial-Security-Knowledge)
+- [Financial Agent](#Financial-Agent)
+- [Performance Leaderboard](#Performance-Leaderboard)
 ## Usage
 - [Installation](#Installation)
 - [Evaluation](#Evaluation)
-- [Dataset Preparation](#DatasetPreparation)
-- [Supporting New Datasets and Models](#SupportingNewDatasetsandModels)
-- [How to Submit](#HowtoSubmit)
+- [Dataset Preparation](#Dataset-Preparation)
+- [Supporting New Datasets and Models](#Supporting-NewDatasets-and-Models)
+- [How to Submit](#How-to-Submit)
 - [Citation](#Citation)
 
 ## FinEval

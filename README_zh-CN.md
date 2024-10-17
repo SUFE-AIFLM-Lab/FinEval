@@ -395,7 +395,7 @@ FinEval中文金融领域评测总排行榜汇总了FinEval一代至四代的所
 
 ## 使用说明
 
-目前我们只开源了最初版本的FinEval的所有数据，即FinEval金融学术知识方面的所有数据，紧接着我们构建了金融行业知识、金融安全知识与金融智能体，这三部分数据暂不开源。如需评测请联系zhang.liwen@shufe.edu.cn以得到授权，所有授权的机构或个人均会在[FinEval](https://github.com/SUFE-AIFLM-Lab/FinEval)说明。
+目前我们只开源了最初版本的FinEval的所有数据，即FinEval金融学术知识方面的所有数据，紧接着我们构建了金融行业知识、金融安全知识与金融智能体，这三部分数据暂不开源。如需评测请联系我们以得到授权，所有授权的机构或个人均会在[FinEval](https://github.com/SUFE-AIFLM-Lab/FinEval)说明。
 
 以下说明适用于最初版本的FinEval，授权参与最新FinEval评测的个人或机构可以通过邮件中的说明文档进行评测。
 
@@ -409,7 +409,7 @@ FinEval中文金融领域评测总排行榜汇总了FinEval一代至四代的所
  ```
 
 ```python
-    git clone https://github.com/SUFE-AIFLM-Lab/FinEval
+    git clone https://...
     cd FinEval
     pip install -r requirements.txt
 ```
@@ -420,7 +420,7 @@ FinEval中文金融领域评测总排行榜汇总了FinEval一代至四代的所
 
 ```text
 cd code/data
-wget https://huggingface.co/datasets/SUFE-AIFLM-Lab/FinEval/resolve/main/FinEval.zip
+wget https://...
 unzip FinEval.zip
 ```
 
@@ -469,7 +469,7 @@ unzip FinEval.zip
 }
 ```
 
-您可以将生成的`submission.json`文件以邮件形式提交到zhang.liwen@shufe.edu.cn。
+您可以将生成的`submission.json`文件以邮件形式提交到...。
 
 ### 引用
 

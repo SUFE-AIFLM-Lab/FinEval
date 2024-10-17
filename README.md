@@ -540,7 +540,7 @@ The "FinEval Chinese Financial Domain Evaluation Overall Ranking" summarizes the
 
 ## Usage
 
-Currently, we have only open-sourced the initial version of FinEval, which includes all the data related to academic knowledge in the field of finance. Subsequently, we have developed three additional parts: financial industry knowledge, financial security knowledge, and financial agents. However, these three parts of data are not currently open-source. If you need to evaluate them, please contact zhang.liwen@shufe.edu.cn to obtain authorization. All authorized institutions or individuals will be mentioned in the FinEval documentation.
+Currently, we have only open-sourced the initial version of FinEval, which includes all the data related to academic knowledge in the field of finance. Subsequently, we have developed three additional parts: financial industry knowledge, financial security knowledge, and financial agents. However, these three parts of data are not currently open-source. If you need to evaluate them, please contact us to obtain authorization. All authorized institutions or individuals will be mentioned in the FinEval documentation.
 
 The following instructions apply to the initial version of FinEval. Authorized individuals or institutions participating in the latest FinEval evaluation can refer to the instructions in the email's accompanying documentation for evaluation purposes.
 
@@ -554,7 +554,7 @@ Below are the steps for quick installation. For detailed instructions, please re
  ```
 
 ```python
-    git clone https://github.com/SUFE-AIFLM-Lab/FinEval
+    git clone https://...
     cd FinEval
     pip install -r requirements.txt
  ```   
@@ -566,7 +566,7 @@ Download the dataset using Hugging Face datasets. Run the command to **manually 
 
 ```text
 cd code/data
-wget https://huggingface.co/datasets/SUFE-AIFLM-Lab/FinEval/resolve/main/FinEval.zip
+wget https://...
 unzip FinEval.zip
 ```
 
@@ -613,7 +613,7 @@ Instructions for the saving location can be found in the [How to run](/docs/en/u
 }
 ```
 
-You can submit the generated `submission.json` file to zhang.liwen@shufe.edu.cn by email.
+You can submit the generated `submission.json` file by email.
 
 
 ### Citation

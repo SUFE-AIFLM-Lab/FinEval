@@ -612,15 +612,3 @@ Instructions for the saving location can be found in the [How to run](/docs/en/u
 ```
 
 You can submit the generated `submission.json` file by email.
-
-
-### Citation
-
-```bibtex
-@misc{2308.09975,
-Author = {Liwen Zhang and Weige Cai and Zhaowei Liu and Zhi Yang and Wei Dai and Yujie Liao and Qianru Qin and Yifei Li and Xingyu Liu and Zhiqiang Liu and Zhoufan Zhu and Anbo Wu and Xin Guo and Yun Chen},
-Title = {FinEval: A Chinese Financial Domain Knowledge Evaluation Benchmark for Large Language Models},
-Year = {2023},
-Eprint = {arXiv:2308.09975},
-}
-```

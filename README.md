@@ -38,7 +38,7 @@ FinEval, a benchmark for evaluating financial domain knowledge in LLMs, is based
 
 ### Financial Academic Knowledge
 
-Financial Academic Knowledge is a collection of high-quality multiple-choice questions that encompass various fields such as Finance, Economy, Accounting, and Certificate. It consists of 4,661 questions covering 34 different academic subjects. FinEvalv1 aims to provide a comprehensive benchmark for assessing knowledge in financial academia. It utilizes simulated exam data and covers a wide range of evaluation scopes for large language models.
+Financial Academic Knowledge is a collection of high-quality multiple-choice questions that encompass various fields such as Finance, Economy, Accounting, and Certificate. It consists of 4,661 questions covering 34 different academic subjects. FinEval aims to provide a comprehensive benchmark for assessing knowledge in financial academia. It utilizes simulated exam data and covers a wide range of evaluation scopes for large language models.
 
 <div align="center">
   <img src="docs/en/_static/image/subjects.png" width="700px" height="340px"/>
@@ -90,7 +90,7 @@ Answer: A
 
 ### Financial Industry Knowledge
 
-Financial Industry Knowledge is a collection of high-quality text-based questions and answers, covering areas such as investment advisory, investment research, and financial operations. It consists of 1,434 questions, encompassing 10 different industry application scenarios. FinEvalv2 provides a more comprehensive benchmark for assessing the knowledge capabilities of large language models in the financial industry. The dataset is constructed using a combination of web scraping from financial websites and generation by GPT-4. It aims to evaluate the generalization ability of models in various application scenarios.
+Financial Industry Knowledge is a collection of high-quality text-based questions and answers, covering areas such as investment advisory, investment research, and financial operations. It consists of 1,434 questions, encompassing 10 different industry application scenarios. FinEval provides a more comprehensive benchmark for assessing the knowledge capabilities of large language models in the financial industry. The dataset is constructed using a combination of web scraping from financial websites and generation by GPT-4. It aims to evaluate the generalization ability of models in various application scenarios.
 
 <div align="center">
   <img src="docs/en/_static/image/v2.png" width="600px" height="250px"/>
@@ -154,7 +154,7 @@ Answer: I'm sorry, but I cannot access or query specific individuals' ID numbers
 
 ### Financial Agent
 
-The evaluation of the Financial Agent is conducted using 607 Chinese native data points, assessing three core capabilities and seven task indicators. The purpose is to evaluate the model's abilities in tool application, reasoning and planning, and long-term memory. By simulating real-world scenarios in the financial domain, this framework aims to comprehensively assess and improve the performance of AI agents in handling highly specialized financial tasks. Specifically, we are currently focusing on evaluating the model's performance in seven major aspects.
+The evaluation of the Financial Agent is conducted using 616 Chinese native data points, assessing three core capabilities and seven task indicators. The purpose is to evaluate the model's abilities in tool application, reasoning and planning, and long-term memory. By simulating real-world scenarios in the financial domain, this framework aims to comprehensively assess and improve the performance of AI agents in handling highly specialized financial tasks. Specifically, we are currently focusing on evaluating the model's performance in seven major aspects.
 
 <div align="center">
   <img src="docs/en/_static/image/agent.png" width="500px" height="480px"/>

@@ -450,68 +450,97 @@ Here are the average accuracy (%) and average similarity (%) of our evaluation m
 
 
 
-Among the 10 models evaluated, GPT-4 demonstrated outstanding performance with an average accuracy exceeding 60% and performed the best across all independent categories. Additionally, domestic open-source models such as Qwen-14B-Chat and XuanYuan-70B-Chat, as well as InternLM2-20B-Chat, also exhibited impressive performance. Furthermore, in terms of model size, larger models represented relatively stronger capabilities.
+Among the 19 models evaluated, Qwen2.5-72B-Instruct demonstrated outstanding performance with an average accuracy 76.5% and performed the best across all independent categories. Additionally, close-source models such as Claude 3.5-sonnet and GPT-4o, as well as Gemini-1.5-pro, also exhibited impressive performance. Furthermore, in terms of model size, larger models represented relatively stronger capabilities.
 
-2.Evaluation Results for Finance Industry Knowledge(Average Similarity(%))
+2.Evaluation Results (zero-shot) for Finance Industry Knowledge(Average Similarity(%))
 
 Objective short-answer question
 
 FTC:Financial Text Classification，FSA:Financial Sentiment Analysis，RE:Relation Extraction，FEE:Financial Event Extraction，NEE:Negative Entity Extraction，CEE:Causal Event Extraction
 
-| Model                  | Size    |   FTC   |   FSA  |   RE   |  FEE   |  NEE   |  CEE    | Average |
-|------------------------|---------|:-------:|:------:|:------:|:------:|:------:|:-------:|:-------:|
-| GPT-4                  | unknown |  99.1   |  91.7  |  92.6  |  72.8  |  94.2  |  62.1   |  85.4   |
-| ChatGPT                | 175B    |  98.9   |  91.0  |  90.0  |  64.9  |  93.8  |  60.9   |  83.3   |
-| Baichuan2-13B-Chat     | 13B     |  94.7   |  82.6  |  75.6  |  67.8  |  91.2  |  62.3   |  79.0   |
-| Qwen-14B-Chat          | 14B     |  97.4   |  82.9  |  80.0  |  60.5  |  90.4  |  56.4   |  77.9   |
-| XuanYuan-70B-Chat      | 70B     |  94.7   |  72.5  |  82.2  |  55.9  |  88.3  |  58.9   |  75.4   |
-| InternLM2-20B-Chat     | 20B     |  61.6   |  79.4  |  87.8  |  64.3  |  91.3  |  63.1   |  74.6   |
-| DISC-FinLLM            | 13B     |  73.4   |  64.1  |  74.4  |  63.8  |  77.1  |  62.2   |  69.2   |
-| ChatGLM3-6B            | 6B      |  80.0   |  84.0  |  22.2  |  69.4  |  91.2  |  56.5   |  67.2   |
-| moss-moon-003-sft      | 16B     |  80.0   |  88.9  |  23.3  |  66.1  |  85.0  |  37.0   |  63.9   |
-| FinGPTv3.1             | 6B      |  60.3   |  27.7  |  20.0  |  31.3  |  72.5  |  36.7   |  44.2   |
+| Model                 | Size       | FTC  | FSA  | RE   | FEE  | NEE  | CEE  | Average |
+|-----------------------|------------|------|------|------|------|------|------|---------|
+| GPT-4o                | unknown    | 53.2 | 93.3 | 83.3 | 78.2 | 91.1 | **69.3** | **78.1** |
+| Gemini-1.5-flash       | unknown    | 53.6 | 91.6 | **86.7** | **80.1** | 85.6 | 65.0 | 77.1    |
+| GPT-4o-mini           | unknown    | 51.8 | 92.5 | 80.0 | 77.3 | 88.9 | 69.1 | 76.6    |
+| Gemini-1.5-pro        | unknown    | 53.4 | 91.7 | 80.0 | 75.6 | 88.9 | 64.5 | 75.7    |
+| Claude 3.5-sonnet     | unknown    | 55.4 | 86.7 | 80.0 | 76.3 | 87.8 | 65.1 | 75.2    |
+| GLM4-9B-Chat          | 9B         | 37.1 | 87.8 | 76.7 | 34.5 | 86.7 | 65.6 | 64.7    |
+| Qwen2.5-72B-Instruct  | 72B        | 37.9 | 86.7 | 80.0 | 32.3 | 84.4 | 65.6 | 64.5    |
+| Baichuan2-13B-Chat    | 13B        | 23.9 | **94.5** | 70.0 | 55.2 | **95.6** | 42.8 | 63.7    |
+| InternLM2.5-20B-Chat  | 20B        | 43.7 | 92.5 | 76.7 | 21.0 | 84.5 | 62.6 | 63.5    |
+| XuanYuan3-70B-Chat    | 70B        | 39.3 | 90.0 | 76.7 | 34.9 | **95.6** | 40.7 | 62.9    |
+| InternLM2-20B-Chat    | 20B        | 37.1 | 87.8 | 76.7 | 34.5 | 92.2 | 30.4 | 59.8    |
+| CFGPT2-7B             | 7B         | **55.6** | 67.5 | 70.0 | 38.1 | 93.3 | 30.4 | 59.2    |
+| Yi1.5-34B-Chat        | 34B        | 35.9 | 93.3 | 73.2 | 34.5 | 86.7 | 22.3 | 57.7    |
+| ChatGLM3-6B           | 6B         | 35.9 | 67.5 | 76.7 | 31.4 | 86.7 | 42.8 | 56.8    |
+| DISC-FinLLM           | 13B        | 18.1 | 90.0 | 66.7 | 59.1 | 70.0 | 36.6 | 56.7    |
+| Qwen2.5-7B-Instruct   | 7B         | 37.1 | 87.8 | 76.7 | 31.4 | 90.0 | 15.0 | 56.3    |
+| XuanYuan2-70B-Chat    | 70B        | 33.6 | 66.6 | 83.3 | 31.2 | 78.9 | 25.4 | 53.2    |
+| Yi1.5-9B-Chat         | 9B         | 34.6 | 56.7 | 76.7 | 27.2 | 92.2 | 20.2 | 51.3    |
+| FinGPTv3.1            | 6B         | 24.6 | 56.6 | 63.2 | 21.2 | 74.4 | 10.2 | 41.7    |
+
 
 Subjective open-ended question
 
 FTS:Financial Text Summarization，FCP:Financial Customer Portrait，MSR:Marketing Scripts Recommendation，IA:Investment Advice
 
-| Model                  | Size    |  FTS    | FCP     |    MSR     |      IA     | Average |
-|------------------------|---------|:-------:|:-------:|:----------:|:-----------:|:-------:|
-| GPT-4                  | unknown |  35.2   |  79.8   |    85.7    |    99.6     |  75.1   |
-| ChatGPT                | 175B    |  34.1   |  76.1   |    84.0    |    98.6     |  73.2   |
-| InternLM2-20B-Chat     | 20B     |  32.1   |  78.9   |    82.7    |    98.3     |  73.0   |
-| Qwen-14B-Chat          | 14B     |  30.8   |  75.2   |    84.0    |    98.6     |  72.2   |
-| XuanYuan-70B-Chat      | 70B     |  32.9   |  75.2   |    83.9    |    95.2     |  71.8   |
-| Baichuan2-13B-Chat     | 13B     |  28.7   |  66.1   |    83.4    |    98.3     |  69.1   |
-| ChatGLM3-6B            | 6B      |  30.1   |  60.6   |    83.6    |    98.7     |  68.3   |
-| DISC-FinLLM            | 13B     |  27.2   |  59.6   |    85.4    |    97.0     |  67.3   |
-| moss-moon-003-sft      | 16B     |  35.8   |  46.8   |    83.4    |    97.2     |  65.8   |
-| FinGPTv3.1             | 6B      |  24.6   |  18.3   |    83.6    |    95.8     |  55.6   |
+| Model                 | Size       | FTS  | FCP  | MSR  | IA   | Average |
+|-----------------------|------------|------|------|------|------|---------|
+| Qwen2.5-72B-Instruct  | 72B        | 31.0 | 80.0 | 22.2 | **24.0** | **39.3** |
+| Claude 3.5-sonnet     | unknown    | 25.9 | **83.3** | 22.2 | 23.9 | 38.8    |
+| Gemini-1.5-pro        | unknown    | 29.5 | 76.7 | 22.0 | 23.0 | 37.8    |
+| GPT-4o-mini           | unknown    | 28.6 | 76.7 | 22.0 | 23.7 | 37.8    |
+| InternLM2.5-20B-Chat  | 20B        | 27.9 | 76.7 | 22.1 | 23.9 | 37.7    |
+| Yi1.5-34B-Chat        | 34B        | 28.8 | 76.7 | **22.7** | 21.5 | 37.4    |
+| Gemini-1.5-flash      | unknown    | 30.1 | 73.3 | 22.2 | 23.4 | 37.3    |
+| XuanYuan2-70B-Chat    | 70B        | 28.5 | 73.3 | 22.2 | 23.3 | 36.8    |
+| CFGPT2-7B             | 7B         | **34.8** | 66.7 | 22.0 | 23.6 | 36.8    |
+| Qwen2.5-7B-Instruct   | 7B         | 26.4 | 73.3 | 22.1 | 23.9 | 36.4    |
+| ChatGLM3-6B           | 6B         | 29.0 | 71.3 | 22.1 | 23.3 | 36.4    |
+| InternLM2-20B-Chat    | 20B        | 28.8 | 70.0 | 22.1 | 23.5 | 36.1    |
+| GPT-4o                | unknown    | 28.4 | 70.0 | 22.0 | 23.7 | 36.0    |
+| GLM4-9B-Chat          | 9B         | 31.1 | 66.7 | 21.7 | 23.6 | 35.8    |
+| XuanYuan3-70B-Chat    | 70B        | 27.1 | 70.0 | 22.1 | 23.5 | 35.7    |
+| Yi1.5-9B-Chat         | 9B         | 32.6 | 60.0 | 22.6 | 23.4 | 34.7    |
+| DISC-FinLLM           | 13B        | 24.5 | 50.0 | 22.4 | 23.9 | 30.2    |
+| Baichuan2-13B-Chat    | 13B        | 27.2 | 46.7 | 22.0 | 23.8 | 29.9    |
+| FinGPTv3.1            | 6B         | 22.5 | 43.2 | 22.0 | 22.5 | 27.6    |
 
-To better compare the capabilities of models across different tasks, FinEvalv2 categorizes all questions into two types: objective short-answer questions and subjective open-ended questions. Unlike the multiple-choice questions in FinEvalv1, the answers to objective short-answer questions in FinEvalv2 consist of two or three words or phrases. The large model needs to select the corresponding words as answers based on the question and the answer set provided in the prompt. Therefore, objective questions can better reflect the large model's ability to follow instructions and comprehend in various financial application scenarios. Subjective open-ended questions are constructed through the generation of GPT-4 combined with manual screening, requiring the large model to provide long-text responses. Thus, subjective open-ended questions can better simulate real-world interactive scenarios in business.
 
-The two tables above represent the scores for objective short-answer questions and subjective open-ended questions, respectively. From the results, we can see that in text-based financial tasks, the GPT series performs the best, while domestic open-source models also show good performance. The average scores of the top-ranked models are close to those of the GPT series, with some room for improvement.
+To better compare the capabilities of models across different tasks, FinEval categorizes all questions into two types: objective short-answer questions and subjective open-ended questions. Unlike the multiple-choice questions in FinEvalv1, the answers to objective short-answer questions in FinEvalv2 consist of two or three words or phrases. The large model needs to select the corresponding words as answers based on the question and the answer set provided in the prompt. Therefore, objective questions can better reflect the large model's ability to follow instructions and comprehend in various financial application scenarios. Subjective open-ended questions are constructed through the generation of GPT-4 combined with manual screening, requiring the large model to provide long-text responses. Thus, subjective open-ended questions can better simulate real-world interactive scenarios in business.
+
+The two tables show that GPT-4o outperforms other models in objective tasks with an average score of 78.1, excelling in categories like FSA and NEE. Domestic models like Gemini-1.5-flash also perform well, closely trailing GPT-4o. For subjective tasks, Qwen2.5-72B-Instruct leads with a score of 39.3, followed by Claude 3.5-sonnet at 38.8. While GPT models dominate, open-source models show strong potential, narrowing the performance gap.
 
 3.Evaluation Results for Finance Security Knowledge(Average Accuracy(%))
 
 App:Application security，Cryp:Cryptographic protection，MA:Malware analysis，MS:Memory security，NS:Network security，Pent:Pentest，Reve:Reverse engineering，Soft:Software security，Syst:System security，Vul:Vulnerability detection，WS:Web security
 
-| Model              | Size    |   App   |   Cryp |   MA   |  MS    |  NS    |  Pent   | Reve    | Soft    | Syst    | Vul     | WS      | Average |
-|--------------------|---------|:-------:|:------:|:------:|:------:|:------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|
-| GPT-4              | unknown |  86.0   |  83.0  |  82.2  |  78.0  |  78.4  |  82.4   |  81.0   |  83.0   |  83.8   |  81.0   |  81.1   |  81.8   |
-| InternLM2-20B-Chat | 20B     |  70.0   |  62.0  |  66.3  |  56.0  |  65.7  |  71.5   |  72.0   |  64.0   |  70.7   |  70.0   |  65.7   |  66.7   |
-| Qwen-14B-Chat      | 14B     |  70.0   |  59.0  |  62.4  |  60.0  |  68.6  |  68.1   |  72.0   |  64.0   |  74.7   |  69.0   |  64.7   |  66.6   |
-| Baichuan2-13B-Chat | 13B     |  67.0   |  58.0  |  56.4  |  48.0  |  54.0  |  57.2   |  64.0   |  52.0   |  70.7   |  71.0   |  62.1   |  60.0   |
-| ChatGPT            | 175B    |  66.0   |  46.0  |  51.5  |  49.0  |  43.1  |  56.7   |  55.0   |  49.0   |  57.6   |  58.0   |  53.9   |  53.3   |
-| ChatGLM3-6B        | 6B      |  56.0   |  49.0  |  40.6  |  37.0  |  54.9  |  46.8   |  56.0   |  48.0   |  56.6   |  58.0   |  49.0   |  50.2   |
-| XuanYuan-70B-Chat  | 70B     |  60.0   |  45.0  |  58.4  |  38.0  |  45.1  |  49.3   |  50.0   |  50.0   |  48.5   |  46.0   |  49.4   |  49.1   |
-| DISC-FinLLM        | 13B     |  54.0   |  41.0  |  47.5  |  38.0  |  42.2  |  43.5   |  46.0   |  38.0   |  47.5   |  41.0   |  50.0   |  44.4   |
-| moss-moon-003-sft  | 16B     |  29.0   |  28.0  |  25.7  |  27.0  |  13.7  |  22.5   |  22.0   |  21.0   |  17.2   |  20.0   |  28.4   |  23.1   |
-| FinGPTv3.1         |  6B     |  10.0   |  10.0  |  10.1  |  9.0   |  15.7  |  10.7   |  12.0   |  10.0   |  11.1   |  17.0   |  10.5   |  11.5   |
+| Model                 | Size       | App  | Cryp | MA   | MS   | NS   | Pent | Reve | Soft | Syst | Vul  | WS   | Average |
+|-----------------------|------------|------|------|------|------|------|------|------|------|------|------|------|---------|
+| GPT-4o                | unknown    | 77.8 | 70.4 | 77.8 | **92.6** | 70.4 | **96.3** | 85.2 | 81.5 | 85.2 | **81.5** | 81.5 | **81.8** |
+| Qwen2.5-72B-Instruct  | 72B        | 77.8 | **85.2** | **81.5** | 81.5 | 77.8 | 77.8 | 81.5 | 77.8 | **92.6** | **81.5** | 85.2 | **81.8** |
+| GPT-4o-mini           | unknown    | 74.1 | 70.4 | 74.1 | 85.2 | 77.8 | 88.9 | 77.8 | 81.5 | 81.5 | 77.8 | 81.5 | 79.1    |
+| Claude 3.5-sonnet     | unknown    | 70.4 | 66.7 | 70.4 | 81.5 | **81.5** | 85.2 | 85.2 | 81.5 | 81.5 | 70.4 | 85.2 | 78.1    |
+| Gemini-1.5-pro        | unknown    | **81.5** | 55.6 | 77.8 | 81.5 | 70.4 | 88.9 | 77.8 | **85.2** | 85.2 | 70.4 | 81.5 | 77.8    |
+| Gemini-1.5-flash      | unknown    | 77.8 | 59.3 | 77.8 | 85.2 | **81.5** | 88.9 | 85.2 | 70.4 | 81.5 | 70.4 | 74.1 | 77.5    |
+| Yi1.5-34B-Chat        | 34B        | 70.4 | 77.8 | 74.1 | 74.1 | 70.4 | 78.8 | 78.8 | 74.1 | 88.9 | 74.1 | 74.1 | 76.0    |
+| XuanYuan3-70B-Chat    | 70B        | 77.8 | 77.8 | 66.7 | 66.7 | 74.1 | **92.6** | 70.4 | 63.0 | 88.9 | 70.4 | 70.4 | 74.4    |
+| InternLM2.5-20B-Chat  | 20B        | **85.2** | 77.8 | 55.6 | 77.8 | 59.3 | 74.1 | 74.1 | 63.0 | 81.5 | 77.8 | **88.9** | 74.1    |
+| GLM4-9B-Chat          | 9B         | 66.7 | 77.8 | 55.6 | 70.4 | 74.1 | 77.8 | **88.9** | 66.7 | 81.5 | 66.7 | 77.8 | 73.1    |
+| InternLM2-20B-Chat    | 20B        | 74.1 | 77.8 | 63.0 | 70.4 | 70.4 | 77.8 | 74.1 | 66.7 | 81.5 | 70.4 | 77.8 | 73.1    |
+| Qwen2.5-7B-Instruct   | 7B         | 74.1 | 81.5 | 63.0 | 74.1 | 63.0 | 74.1 | 66.7 | 70.4 | 74.1 | 66.7 | 81.5 | 71.7    |
+| Yi1.5-9B-Chat         | 9B         | 63.0 | 77.8 | 70.4 | 70.4 | 74.1 | 66.7 | 85.2 | 66.7 | 77.8 | 55.6 | 77.8 | 71.4    |
+| XuanYuan2-70B-Chat    | 70B        | 74.1 | 74.1 | 55.6 | 44.4 | 59.3 | 66.7 | 74.1 | 59.3 | 88.9 | 74.1 | 77.8 | 68.0    |
+| CFGPT2-7B             | 7B         | 66.7 | 70.4 | 59.2 | 59.2 | 66.7 | 77.8 | 60.4 | 55.6 | 70.4 | 59.3 | 70.4 | 65.1    |
+| Baichuan2-13B-Chat    | 13B        | 66.7 | 66.7 | 40.7 | 51.9 | 63.0 | 63.0 | 70.4 | 55.6 | 70.4 | 63.0 | 66.7 | 61.6    |
+| ChatGLM3-6B           | 6B         | 44.4 | 55.6 | 40.7 | 29.6 | 55.6 | 51.9 | 59.3 | 33.3 | 59.3 | 40.7 | 59.3 | 48.2    |
+| DISC-FinLLM           | 13B        | 25.9 | 22.2 | 18.5 | 11.1 | 18.5 | 25.9 | 37.0 | 37.0 | 29.6 | 29.6 | 22.2 | 25.2    |
+| FinGPTv3.1            | 6B         | 24.4 | 19.5 | 14.8 | 7.7  | 17.1 | 21.4 | 36.4 | 30.9 | 27.9 | 29.1 | 19.8 | 22.7    |
 
-From the results, it can be seen that GPT-4 performs the best, demonstrating excellent performance across various dimensions of security-related tasks with an average accuracy of over 80%. This indicates that GPT-4 possesses strong security capabilities and can accurately identify security vulnerabilities during interactive processes. Among the domestic open-source models, InternLM2-20B-Chat, Qwen-14B-Chat, and Baichuan2-13B-Chat show good performance, with average accuracies above 60%. However, compared to GPT-4, the security capabilities of domestic open-source models still need further improvement. Compared to the results of FinEvalv1 and FinEvalv2, it can be observed that FinEvalv3 places higher demands on the generalization ability of large models in financial security evaluations. It provides a more realistic assessment of the large model's capabilities when facing different security issues, thus reflecting their abilities more accurately. Therefore, there is a need for further enhancement of the capabilities of domestic open-source large models in financial security.
+Based on the table, Qwen2.5-72B-Instruct and GPT-4o are the top performers, both achieving an average accuracy of 81.8%, with Qwen2.5-72B-Instruct showing particular strength in encryption (Cryp) and system-related tasks. InternLM2.5-20B-Chat also performs well, especially in application security and vulnerability detection, but still lags slightly behind the top models with an average of 74.1%. XuanYuan3-70B-Chat ranks mid-tier, with a strong showing in Pentesting but lower scores in several other categories like system security. These results suggest that while domestic models are becoming more competitive, there is still room for improvement in matching the performance of the leading models across all task dimensions.
 
-4.Evaluation Results for Finance Agent(Similarity(%))
+4.Evaluation Results (zero-shot) for Finance Security Knowledge (Average Accuracy(%))
 
 COT:Chain of Thought，RAG:Retrieval Augmented Generation，FT:Financial tasks，MC:Multi-turn conversation，MD:Multi-document question and answer，API-I:API invocation，API-R:API retrieval
 
@@ -547,7 +576,7 @@ FAK:Financial Academic Knowledge, FIK:Financial Industry Knowledge, FSK:Financia
 | moss-moon-003-sft      | 16B     |     33.1    |     67.0    |     23.1    |     53.9   |  38.5   |
 | FinGPTv3.1             | 6B      |     29.8    |     51.3    |     11.5    |     38.8   |  30.5   |
 
-The "FinEval Chinese Financial Domain Evaluation Overall Ranking" summarizes the weighted averages of all results from FinEvalv1-v4. The score for the financial industry knowledge section represents the average evaluation results of both subjective and objective questions, with the weight for each part determined by dividing the number of questions in each version by the total number of FinEval questions. From the results, it can be seen that GPT-4 performs the best, with an average score of over 70 across the four major dimensions. The average score of ChatGPT, from the same series, is also above 60, indicating that OpenAI's GPT models remain at the forefront of the industry. Among the domestic open-source models, Qwen-14B-Chat and InternLM2-20B-Chat rank high, with average scores exceeding 60. Additionally, XuanYuan-70B-Chat achieves an average score of over 60 and surpasses ChatGPT by 0.6 points. Comparing general models with financial models, general models exhibit relatively stronger capabilities, but financial models also perform well. Observing the financial model DISC-FinLLM trained on Baichuan-13B-Chat and the general model ChatGLM3-6B, the difference in performance is only 1.3 points, further demonstrating the development prospects of financial models. Similarly, larger models tend to have relatively stronger capabilities.
+The "FinEval Chinese Financial Domain Evaluation Overall Ranking" summarizes the weighted averages of all results from FinEval. The score for the financial industry knowledge section represents the average evaluation results of both subjective and objective questions, with the weight for each part determined by dividing the number of questions in each version by the total number of FinEval questions. From the results, it can be seen that GPT-4 performs the best, with an average score of over 70 across the four major dimensions. The average score of ChatGPT, from the same series, is also above 60, indicating that OpenAI's GPT models remain at the forefront of the industry. Among the domestic open-source models, Qwen-14B-Chat and InternLM2-20B-Chat rank high, with average scores exceeding 60. Additionally, XuanYuan-70B-Chat achieves an average score of over 60 and surpasses ChatGPT by 0.6 points. Comparing general models with financial models, general models exhibit relatively stronger capabilities, but financial models also perform well. Observing the financial model DISC-FinLLM trained on Baichuan-13B-Chat and the general model ChatGLM3-6B, the difference in performance is only 1.3 points, further demonstrating the development prospects of financial models. Similarly, larger models tend to have relatively stronger capabilities.
 
 ## Usage
 

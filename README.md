@@ -16,7 +16,7 @@ Welcome to **FinEval**
 
 Large Language Models (LLMs) have demonstrated remarkable performance in various natural language processing tasks, but their effectiveness in more challenging and domain-specific tasks remains largely unexplored. This article introduces FinEval, a benchmark designed specifically for financial domain knowledge in LLMs.
 
-FinEval, a benchmark for evaluating financial domain knowledge in LLMs, is based on quantitative foundational methods. It consists of 8,342 question types that closely align with real-world application scenarios, including multiple-choice questions, subjective open-ended questions and objective short-answer  questions, reasoning planning, and retrieval-based QA. These questions cover topics such as Financial Academic Knowledge, Financial Industry Knowledge, Financial Security Knowledge and Financial Agent. To ensure a comprehensive assessment of model performance, FinEval combines objective and subjective evaluation criteria such as Accuracy, Rouge-L, and expert evaluation guidelines, utilizing zero-shot, five-shot, zero-shot CoT and five-shot CoT methods for evaluation. By evaluating state-of-the-art LLMs on FinEval, the results show that Claude 3.5-Sonnet achieves the highest weighted average score of 72.9 across all financial domain categories under zero-shot setting, indicating significant growth potential of LLMs in financial domain knowledge. Our work provides a more comprehensive benchmark for evaluating financial knowledge, incorporating simulated exam data and open-ended questions, covering a wide range of evaluation scopes for large language models.
+FinEval, a benchmark for evaluating financial domain knowledge in LLMs, is based on quantitative foundational methods. It consists of 8,351 question types that closely align with real-world application scenarios, including multiple-choice questions, subjective open-ended questions and objective short-answer  questions, reasoning planning, and retrieval-based QA. These questions cover topics such as Financial Academic Knowledge, Financial Industry Knowledge, Financial Security Knowledge and Financial Agent. To ensure a comprehensive assessment of model performance, FinEval combines objective and subjective evaluation criteria such as Accuracy, Rouge-L, and expert evaluation guidelines, utilizing zero-shot, five-shot, zero-shot CoT and five-shot CoT methods for evaluation. By evaluating state-of-the-art LLMs on FinEval, the results show that Claude 3.5-Sonnet achieves the highest weighted average score of 72.9 across all financial domain categories under zero-shot setting, indicating significant growth potential of LLMs in financial domain knowledge. Our work provides a more comprehensive benchmark for evaluating financial knowledge, incorporating simulated exam data and open-ended questions, covering a wide range of evaluation scopes for large language models.
 
 
 # Content
@@ -423,20 +423,31 @@ Answer: Krutrim becoming India's first AI unicorn signifies India's rise and pot
 
 Here are the average accuracy (%) and average similarity (%) of our evaluation model on each section of the test questions. The average accuracy per category represents the average accuracy across all subjects or scenarios in that category, and the last column represents the overall average accuracy or average similarity of the model across all subjects or scenarios. Additionally, we only provide the results for the prompt settings that yielded the highest average accuracy or average similarity across all subjects or scenarios.
 
-1.Evaluation Results for Finance Academic Knowledge(Average Accuracy(%))
+1.Evaluation Results (zero-shot CoT) for Finance Academic Knowledge(Average Accuracy(%))
 
-| Model                  | Size    | Finance | Economy | Accounting | Certificate | Average |
-|------------------------|---------|:-------:|:-------:|:----------:|:-----------:|:-------:|
-| GPT-4                  | unknown |  67.5   |  68.1   |    63.6    |    68.6     |  66.9   |
-| Qwen-14B-Chat          | 14B     |  60.3   |  61.7   |    55.9    |    60.9     |  59.7   |
-| XuanYuan-70B-Chat      | 70B     |  58.5   |  57.8   |    55.8    |    62.5     |  58.8   |
-| InternLM2-20B-Chat     | 20B     |  60.0   |  60.9   |    48.7    |    59.1     |  57.1   |
-| ChatGPT                | 175B    |  59.3   |  54.1   |    48.9    |    55.7     |  54.6   |
-| Baichuan2-13B-Chat     | 13B     |  50.9   |  52.5   |    45.8    |    55.0     |  51.1   |
-| ChatGLM3-6B            | 6B      |  47.7   |  47.9   |    38.4    |    47.6     |  45.4   |
-| DISC-FinLLM            | 13B     |  50.1   |  44.6   |    38.3    |    46.9     |  45.2   |
-| moss-moon-003-sft      | 16B     |  34.4   |  36.2   |   29.3     |    32.9     |  33.1   |
-| FinGPTv3.1             | 6B      |  28.9   |  27.7   |    27.3    |    34.2     |  29.8   |
+
+| Model                 | Size       | Finance  | Economy  | Accounting  | Certificate | Average |
+|-----------------------|------------|----------|----------|-------------|-------------|---------|
+| Qwen2.5-72B-Instruct   | 72B        | **74.8** | 78.8     | **78.5**    | **76.5**    | **76.5**|
+| Claude 3.5-sonnet      | unknown    | 73.3     | **83.6** | 70.7        | **76.5**    | 74.4    |
+| GPT-4o                | unknown    | 73.3     | 79.3     | 66.6        | 70.9        | 72.1    |
+| Qwen2.5-7B-Instruct    | 7B         | 62.6     | 62.7     | 75.9        | 73.5        | 69.7    |
+| Gemini-1.5-pro         | unknown    | 69.3     | 74.1     | 61.1        | 70.9        | 68.9    |
+| InternLM2.5-20B-Chat   | 20B        | 67.0     | 69.3     | 68.5        | 64.0        | 67.3    |
+| GLM4-9B-Chat           | 9B         | 63.0     | 68.3     | 66.7        | 68.3        | 66.6    |
+| Yi1.5-34B-Chat         | 34B        | 61.3     | 63.4     | 63.4        | 66.7        | 65.0    |
+| Yi1.5-9B-Chat          | 9B         | 59.6     | 62.1     | 63.6        | 65.6        | 62.7    |
+| GPT-4o-mini            | unknown    | 64.4     | 66.6     | 52.6        | 66.5        | 61.9    |
+| Gemini-1.5-flash       | unknown    | 61.5     | 66.7     | 58.1        | 59.8        | 61.2    |
+| InternLM2-20B-Chat     | 20B        | 60.7     | 63.3     | 56.7        | 60.8        | 60.3    |
+| CFGPT2-7B              | 7B         | 60.4     | 52.4     | 57.9        | 55.3        | 56.5    |
+| XuanYuan3-70B-Chat     | 70B        | 61.2     | 63.8     | 49.5        | 54.6        | 57.2    |
+| XuanYuan2-70B-Chat     | 70B        | 60.7     | 71.4     | 52.2        | 55.0        | 58.3    |
+| Baichuan2-13B-Chat     | 13B        | 50.7     | 47.1     | 45.6        | 47.4        | 47.7    |
+| DISC-FinLLM            | 13B        | 49.3     | 45.9     | 41.4        | 46.4        | 45.7    |
+| ChatGLM3-6B            | 6B         | 46.3     | 43.4     | 45.6        | 41.8        | 44.3    |
+| FinGPTv3.1             | 6B         | 31.3     | 28.4     | 30.6        | 26.8        | 29.3    |
+
 
 
 Among the 10 models evaluated, GPT-4 demonstrated outstanding performance with an average accuracy exceeding 60% and performed the best across all independent categories. Additionally, domestic open-source models such as Qwen-14B-Chat and XuanYuan-70B-Chat, as well as InternLM2-20B-Chat, also exhibited impressive performance. Furthermore, in terms of model size, larger models represented relatively stronger capabilities.

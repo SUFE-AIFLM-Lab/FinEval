@@ -15,3 +15,7 @@ transformers==4.31.0
 tiktoken
 einops
 scipy
+jieba
+rouge_chinese
+nltk
+FlagEmbedding

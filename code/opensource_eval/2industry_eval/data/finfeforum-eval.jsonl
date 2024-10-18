@@ -1,0 +1,182 @@
+[
+    {
+        "id": "eval-182",
+        "input": "跨境是不是要起飞了，难怪今天往死里砸",
+        "gold_answer": "积极情绪",
+        "source": "finfeforum"
+    },
+    {
+        "id": "eval-184",
+        "input": "收盘全是利好",
+        "gold_answer": "积极情绪",
+        "source": "finfeforum"
+    },
+    {
+        "id": "eval-105",
+        "input": "好，明天全面暴涨稳了，同意的给我狠狠的点赞",
+        "gold_answer": "积极情绪",
+        "source": "finfeforum"
+    },
+    {
+        "id": "eval-276",
+        "input": "涨停后急剧缩量，明天大概率继续涨停。",
+        "gold_answer": "积极情绪",
+        "source": "finfeforum"
+    },
+    {
+        "id": "eval-29",
+        "input": "还以为啥呢，这不天天都有嘛",
+        "gold_answer": "消极情绪",
+        "source": "finfeforum"
+    },
+    {
+        "id": "eval-123",
+        "input": "严重低估、买进，名副其实的文化传媒股。",
+        "gold_answer": "积极情绪",
+        "source": "finfeforum"
+    },
+    {
+        "id": "eval-90",
+        "input": "还有人信吗？越信越亏。",
+        "gold_answer": "消极情绪",
+        "source": "finfeforum"
+    },
+    {
+        "id": "eval-135",
+        "input": "股市已经出现系统性风险",
+        "gold_answer": "消极情绪",
+        "source": "finfeforum"
+    },
+    {
+        "id": "eval-155",
+        "input": "演一天戏很累吧",
+        "gold_answer": "消极情绪",
+        "source": "finfeforum"
+    },
+    {
+        "id": "eval-236",
+        "input": "又缩量了，死球，3057连续三天站不稳必回调",
+        "gold_answer": "消极情绪",
+        "source": "finfeforum"
+    },
+    {
+        "id": "eval-120",
+        "input": "明天涨停",
+        "gold_answer": "积极情绪",
+        "source": "finfeforum"
+    },
+    {
+        "id": "eval-21",
+        "input": "别太乐观，明天涨一、二个点就很好了！",
+        "gold_answer": "消极情绪",
+        "source": "finfeforum"
+    },
+    {
+        "id": "eval-243",
+        "input": "牛市已经结束了",
+        "gold_answer": "消极情绪",
+        "source": "finfeforum"
+    },
+    {
+        "id": "eval-54",
+        "input": "蛟龙出水，势不可挡，今天放巨量了，后期逢低介入均匀肉吃，还会有新高。",
+        "gold_answer": "积极情绪",
+        "source": "finfeforum"
+    },
+    {
+        "id": "eval-200",
+        "input": "就这个业绩，都洗洗睡吧。",
+        "gold_answer": "消极情绪",
+        "source": "finfeforum"
+    },
+    {
+        "id": "eval-158",
+        "input": "放心，演练小牛走势，缓涨急跌",
+        "gold_answer": "消极情绪",
+        "source": "finfeforum"
+    },
+    {
+        "id": "eval-154",
+        "input": "没有买卖，没有伤害。",
+        "gold_answer": "消极情绪",
+        "source": "finfeforum"
+    },
+    {
+        "id": "eval-274",
+        "input": "没有好涨，很快又要杀跌",
+        "gold_answer": "消极情绪",
+        "source": "finfeforum"
+    },
+    {
+        "id": "eval-38",
+        "input": "烦死了，每天都是低开低走",
+        "gold_answer": "消极情绪",
+        "source": "finfeforum"
+    },
+    {
+        "id": "eval-79",
+        "input": "国外业绩好的会大涨，A股业绩好的主力就出货套现。",
+        "gold_answer": "消极情绪",
+        "source": "finfeforum"
+    },
+    {
+        "id": "eval-258",
+        "input": "周一准备回调了！恭喜今天盘未减仓股民！历史验证过的！",
+        "gold_answer": "积极情绪",
+        "source": "finfeforum"
+    },
+    {
+        "id": "eval-215",
+        "input": "舍不得取消转融通，还是没有逼到墙角，为什么不能一步到位？这样不是试探大家的底线吗？",
+        "gold_answer": "消极情绪",
+        "source": "finfeforum"
+    },
+    {
+        "id": "eval-222",
+        "input": "保持仓位和交易的灵活性",
+        "gold_answer": "消极情绪",
+        "source": "finfeforum"
+    },
+    {
+        "id": "eval-238",
+        "input": "人生三大幻觉：股票要涨，牛市来了，买到牛股。",
+        "gold_answer": "消极情绪",
+        "source": "finfeforum"
+    },
+    {
+        "id": "eval-57",
+        "input": "别硬撑了，下来吧。",
+        "gold_answer": "消极情绪",
+        "source": "finfeforum"
+    },
+    {
+        "id": "eval-150",
+        "input": "涨一天跌五天，又开始了，没办法",
+        "gold_answer": "消极情绪",
+        "source": "finfeforum"
+    },
+    {
+        "id": "eval-171",
+        "input": "挺好看的抛物线",
+        "gold_answer": "积极情绪",
+        "source": "finfeforum"
+    },
+    {
+        "id": "eval-249",
+        "input": "全球一起反弹见顶，更大的下跌潮即将开始",
+        "gold_answer": "消极情绪",
+        "source": "finfeforum"
+    },
+    {
+        "id": "eval-15",
+        "input": "仍然花费大量时间处理瑞士信贷事务。",
+        "gold_answer": "消极情绪",
+        "source": "finfeforum"
+    },
+    {
+        "id": "eval-121",
+        "input": "希望越大，失望越大。",
+        "gold_answer": "消极情绪",
+        "source": "finfeforum"
+    }
+]

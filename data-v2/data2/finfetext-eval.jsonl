@@ -1,0 +1,182 @@
+[
+    {
+        "id": "eval-74",
+        "input": "存货周转率非常低，低到国际一流水平。",
+        "gold_answer": "消极",
+        "source": "finfetext"
+    },
+    {
+        "id": "eval-97",
+        "input": "招标进程推进,业绩增速持续恢复。",
+        "gold_answer": "积极",
+        "source": "finfetext"
+    },
+    {
+        "id": "eval-94",
+        "input": "中国面临依靠货币政策对抗这一风险这些都是值得注意的。",
+        "gold_answer": "积极",
+        "source": "finfetext"
+    },
+    {
+        "id": "eval-43",
+        "input": "中长波小功率电台是海格的强项，市场占有率有55%。",
+        "gold_answer": "积极",
+        "source": "finfetext"
+    },
+    {
+        "id": "eval-33",
+        "input": "需求端下降，叠加原材料上涨，势必压缩企业的经营利润。",
+        "gold_answer": "消极",
+        "source": "finfetext"
+    },
+    {
+        "id": "eval-42",
+        "input": "种种迹象表明，中国经济很有可能结束了长期的下行周期。",
+        "gold_answer": "积极",
+        "source": "finfetext"
+    },
+    {
+        "id": "eval-9",
+        "input": "去年的爆涨行情，其实就有纳入沪深300指数和纳入两融标带来的增量资金。",
+        "gold_answer": "积极",
+        "source": "finfetext"
+    },
+    {
+        "id": "eval-136",
+        "input": "大批权重股的业绩同比增速在50%左右，为指数的上涨提供了基本的保证。",
+        "gold_answer": "积极",
+        "source": "finfetext"
+    },
+    {
+        "id": "eval-107",
+        "input": "实际结果是我寄予厚望的港股指数确实高开低走了且地雷不断甚至惨过2018年。",
+        "gold_answer": "消极",
+        "source": "finfetext"
+    },
+    {
+        "id": "eval-53",
+        "input": "货币政策的边际效应越来越弱，最终只能影响资本市场，资产泡沫越来越大。",
+        "gold_answer": "消极",
+        "source": "finfetext"
+    },
+    {
+        "id": "eval-18",
+        "input": "展望未来的十年，哪些投资原则是我会十年如一始终坚守的。我之前写的所有文章几乎都在分析自己已经持有的股票。",
+        "gold_answer": "积极",
+        "source": "finfetext"
+    },
+    {
+        "id": "eval-3",
+        "input": "自10月以来的这波大跌，最主要就是杠杆资金爆仓，强制平仓导致的。",
+        "gold_answer": "消极",
+        "source": "finfetext"
+    },
+    {
+        "id": "eval-47",
+        "input": "加仓新能源车领域。二季度，高瓴资本增持了蔚来和小鹏汽车，增持幅度分别为575.47%和36.12%。",
+        "gold_answer": "积极",
+        "source": "finfetext"
+    },
+    {
+        "id": "eval-127",
+        "input": "回过头看，虽然此类重组时点不明确，但机会显而易见。",
+        "gold_answer": "积极",
+        "source": "finfetext"
+    },
+    {
+        "id": "eval-138",
+        "input": "从管理层今年的表现来看，貌似前所未有的更自信。",
+        "gold_answer": "积极",
+        "source": "finfetext"
+    },
+    {
+        "id": "eval-71",
+        "input": "在东南亚，澳洲等地方，销售还是大好一片，毛利率也增高。",
+        "gold_answer": "积极",
+        "source": "finfetext"
+    },
+    {
+        "id": "eval-128",
+        "input": "但理想还是输给了现实，最终摘桃子的还是那些坏人。",
+        "gold_answer": "消极",
+        "source": "finfetext"
+    },
+    {
+        "id": "eval-7",
+        "input": "你允许限售股，拿去融券卖出，这就说不过去了，明显违法了。",
+        "gold_answer": "消极",
+        "source": "finfetext"
+    },
+    {
+        "id": "eval-22",
+        "input": "今年多个悬浮床项目已进入前期环评阶段将迎来订单爆发期。",
+        "gold_answer": "积极",
+        "source": "finfetext"
+    },
+    {
+        "id": "eval-142",
+        "input": "次新股受到资金广泛关注，获得较高估值原因众多。",
+        "gold_answer": "积极",
+        "source": "finfetext"
+    },
+    {
+        "id": "eval-86",
+        "input": "又要每年业绩翻倍增长这是不可能也是不现实的。",
+        "gold_answer": "消极",
+        "source": "finfetext"
+    },
+    {
+        "id": "eval-96",
+        "input": "与此同时，亿联网络财务数据优秀的让人窒息。",
+        "gold_answer": "积极",
+        "source": "finfetext"
+    },
+    {
+        "id": "eval-52",
+        "input": "MA属于优质资产。MA成立于2008年，主要从事高端心血管介入医疗器械的研发、生产。",
+        "gold_answer": "积极",
+        "source": "finfetext"
+    },
+    {
+        "id": "eval-72",
+        "input": "整个市场都知道明年将会是一个最好的震荡为主的结构性牛市。",
+        "gold_answer": "积极",
+        "source": "finfetext"
+    },
+    {
+        "id": "eval-40",
+        "input": "在工业革命后，全球的生产力/科技的提升速度越来越慢。",
+        "gold_answer": "消极",
+        "source": "finfetext"
+    },
+    {
+        "id": "eval-102",
+        "input": "承前启后稳中求进2020年基金收益率较高。",
+        "gold_answer": "积极",
+        "source": "finfetext"
+    },
+    {
+        "id": "eval-31",
+        "input": "不是因为LCD面板涨疯了，而是被彩虹主力恼人的操作手法恶心到了。",
+        "gold_answer": "消极",
+        "source": "finfetext"
+    },
+    {
+        "id": "eval-45",
+        "input": "如果大股东有意在限售期解禁后套现，那势必会影响新股第四年的走势。",
+        "gold_answer": "消极",
+        "source": "finfetext"
+    },
+    {
+        "id": "eval-20",
+        "input": "公司原本生产滑动轴承，近年受宏观环境影响业绩大幅下滑。",
+        "gold_answer": "消极",
+        "source": "finfetext"
+    },
+    {
+        "id": "eval-144",
+        "input": "虽然各类矿产资源总储量普遍居于世界前列，但贫矿多、富矿少，矿石的平均品位普遍较低。",
+        "gold_answer": "消极",
+        "source": "finfetext"
+    }
+]

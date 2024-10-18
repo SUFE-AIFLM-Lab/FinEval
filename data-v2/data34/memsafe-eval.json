@@ -1,0 +1,245 @@
+[
+    {
+        "id": "e8c9f3dd-54b5-4d49-9f86-3b65c3265a55",
+        "question": "作为系统管理员，您需要设置组策略以在公司使用的Windows 10电脑上增强对抗内存攻击的保护措施。为了确保64位应用程序在启动时DLL文件能够被加载到随机的内存地址，您应该配置哪项设置来强制实施地址空间布局随机化（ASLR）？",
+        "A": "A: 启用进程创建缓解策略DEP",
+        "B": "B: 启用进程创建缓解策略DEP ATL松散",
+        "C": "C: 始终强制图像重定位",
+        "D": "D: 始终关闭自底向上的ASLR",
+        "answer": "C"
+    },
+    {
+        "id": "f5ca39d3-31a2-4d6a-a579-8c725e3df698",
+        "question": "作为系统管理员，您负责配置组策略设置以在运行Windows 10的组织计算机上强制执行针对基于内存的攻击的高级保护。以下哪个选项会您配置以强制对64位应用程序执行地址空间布局随机化（ASLR），确保在启动时DLLs加载到随机内存地址？",
+        "A": "A: 启用数据执行保护（DEP）",
+        "B": "B: 启用ATL松散绑定的DEP",
+        "C": "C: 始终强制重新定位图像",
+        "D": "D: 始终关闭自下而上的ASLR",
+        "answer": "C"
+    },
+    {
+        "id": "10fbcc80-31b6-4e10-8e99-66896ffe82ac",
+        "question": "网络安全中的防火墙用于什么目的？",
+        "A": "防止未经授权的远程登录",
+        "B": "加密数据传输",
+        "C": "监控恶意网络流量",
+        "D": "随机化网络地址",
+        "answer": "C"
+    },
+    {
+        "id": "003e4e78-8e52-4ac7-b7e4-7abf94e32e21",
+        "question": "iOS应用程序中的哪项安全功能可以防止恶意用户通过缓冲区溢出攻击执行未授权的代码？",
+        "A": "A: 公平播放代码加密",
+        "B": "B: 地址空间布局随机化",
+        "C": "C: 执行禁止机制",
+        "D": "D: 应用沙箱",
+        "answer": "B"
+    },
+    {
+        "id": "156afc44-d1b8-49b7-9adc-bab30346c26f",
+        "question": "为了检测未经授权的系统文件修改，安全团队应该使用哪项技术？",
+        "A": "系统固件验证",
+        "B": "文件雕刻",
+        "C": "外围固件验证",
+        "D": "模拟文件分析",
+        "answer": "A"
+    },
+    {
+        "id": "c218057b-e4cf-4ade-b813-9a80d7056f44",
+        "question": "在网络安全中，哪项措施能有效防止SQL注入攻击？",
+        "A": "A: 使用最新的防病毒软件",
+        "B": "B: 实施强密码策略",
+        "C": "C: 对所有用户输入进行验证和转义",
+        "D": "D: 定期更换网络设备",
+        "answer": "C"
+    },
+    {
+        "id": "368118de-631e-45a1-9b73-5eb19f6d2609",
+        "question": "在设计一个安全系统以缓解缓冲区溢出攻击时，考虑到非可执行页面的防御机制，以下哪种策略能有效防止攻击者执行注入的代码？",
+        "A": "实施W^X策略，确保内存中的任何可写页面都不可执行。",
+        "B": "如果程序经常使用某些页面，则允许这些页面既可写又可执行。",
+        "C": "执行数据执行保护（DEP），阻止在内存的非指定区域执行代码。",
+        "D": "在所有页面上设置NX位为'不执行'，以完全防止任何代码的执行。",
+        "answer": "A"
+    },
+    {
+        "id": "a2e2f2a7-3c55-4636-a562-071c0ac03cdb",
+        "question": "在AT&T x86汇编指令中，`movl 8(%ebp), %edx`指令的正确伪代码表示是什么？",
+        "A": "EDX = *(EBP + 8)",
+        "B": "EDX = EDX + 8(EBP)",
+        "C": "8(EBP) = EDX",
+        "D": "EDX = EBP + 8",
+        "answer": "A"
+    },
+    {
+        "id": "5ea3193c-1cde-400d-82cf-ea2f2fe77926",
+        "question": "在C程序的地址空间中，以下哪个描述正确地说明了各个部分的操作或数据？",
+        "A": "A: 常量声明在代码段中完成，并在程序执行期间保持不变。",
+        "B": "B: 动态内存分配是通过栈来实现的，使用`malloc`等函数可以增加栈的大小。",
+        "C": "C: 函数调用的局部变量和数据存储在栈中，函数调用越多，栈向下增长的越多。",
+        "D": "D: 在运行时，堆区用于存放静态变量，分配内存时会向上扩展。",
+        "answer": "C"
+    },
+    {
+        "id": "f039f7df-18da-4bd1-b644-2508a688b2bc",
+        "question": "以下哪个选项是网络钓鱼攻击的常见迹象？",
+        "A": "A: 网站使用HTTPS协议",
+        "B": "B: 邮件中包含拼写和语法错误",
+        "C": "C: 来自已知联系人的邮件",
+        "D": "D: 邮件中包含对个人信息的正常请求",
+        "answer": "B"
+    },
+    {
+        "id": "8a0f7ca5-dd7c-4306-a460-7ea784f38ef7",
+        "question": "分析以下代码片段，判断哪一个可能导致不正确的空终止符漏洞。请选择一个。",
+        "A": "char input[256]; fgets(input, 256, stdin); input[strlen(input) - 1] = '\\0';",
+        "B": "char *src = \"example text\"; char dest[12]; strncpy(dest, src, 12);",
+        "C": "char buffer[128]; snprintf(buffer, sizeof(buffer), \"%s\", user_input);",
+        "D": "char path[PATH_MAX]; ssize_t len = readlink(\"/usr/bin/app\", path, sizeof(path)); path[len] = '\\0';",
+        "answer": "B"
+    },
+    {
+        "id": "20766662-c38f-40aa-895b-e994540d4d18",
+        "question": "在网络安全领域，对称加密和非对称加密是两种常见的加密方法。以下哪项描述正确区分了对称加密和非对称加密？",
+        "A": "对称加密使用相同的密钥进行加密和解密，而非对称加密使用一对密钥，其中一个用于加密，另一个用于解密。",
+        "B": "对称加密比非对称加密更容易受到中间人攻击，因为它使用相同的密钥。",
+        "C": "非对称加密不能用于数字签名，而对称加密可以。",
+        "D": "对称加密的加密和解密速度通常比非对称加密慢，因为它依赖于更复杂的算法。",
+        "answer": "A"
+    },
+    {
+        "id": "9f35dfb5-fb3f-46a1-80c4-335d133bf752",
+        "question": "在一个代码片段中，使用用户提供的字符串来决定要分配的数组的大小，以下哪种检查方法无法有效防止潜在的缓冲区溢出漏洞？",
+        "A": "检查用户提供的字符串是否代表一个正整数值。",
+        "B": "确保用户提供的字符串转换成整数后，不会超过预定义的最大大小。",
+        "C": "验证用户提供的字符串是否在数组允许的大小范围内。",
+        "D": "确认用户提供的字符串只包含字母字符。",
+        "answer": "D"
+    },
+    {
+        "id": "840abf61-7628-49ef-a15b-51420cc8a664",
+        "question": "分析以下C语言编写的Web应用后端函数：void handle_client_request() { int request_size; char request_buffer[256]; request_size = get_request_size(); if (request_size < 0 || request_size > 256) { deny_request(\"请求大小无效\"); return; } memcpy(request_buffer, get_request_data(), request_size); } 这段代码包含哪种潜在的安全漏洞？",
+        "A": "A: 代码正确地检查了负数的请求大小，防止了任何可能的整数转换漏洞。",
+        "B": "B: 如果request_size为负数，使用memcpy并以request_size作为第三个参数是不安全的，因为它会被转换为无符号值，可能导致缓冲区溢出。",
+        "C": "C: 大小检查确保request_size不会大于缓冲区，这可以防止任何类型的缓冲区溢出漏洞。",
+        "D": "D: 函数get_request_data()潜在不安全，因为它没有对其检索的数据执行任何大小检查。",
+        "answer": "B"
+    },
+    {
+        "id": "2c656297-0175-407d-9e1b-baa026f2d9fd",
+        "question": "在网络安全中，哪种加密方法是对称加密的一种？",
+        "A": "A: RSA",
+        "B": "B: AES",
+        "C": "C: ECC",
+        "D": "D: PGP",
+        "answer": "B"
+    },
+    {
+        "id": "addbdcf7-56f7-4ebc-8b86-1267b8917fd9",
+        "question": "为了提高企业级Android应用的数据安全性，开发者应该采用哪种加密方式？",
+        "A": "A: 应始终使用全磁盘加密（FDE），因为它为设备上的所有数据提供了统一的加密层。",
+        "B": "B: 应优先考虑基于文件的加密（FBE），因为它允许对不同文件进行独立加密，提供更灵活的安全控制。",
+        "C": "C: 可以选择使用传统的文件加密方法，这种方法不依赖于操作系统的加密功能。",
+        "D": "D: 开发者应该避免任何形式的加密，以避免性能损失。",
+        "answer": "B"
+    },
+    {
+        "id": "80351b86-2d00-431f-b8e2-ea803be45cff",
+        "question": "检查下列代码段，选出哪个没有因为不正确处理资源释放而导致潜在安全风险：",
+        "A": "A: char *str = new char[100]; if (str) { /* 使用str */ delete [] str; delete [] str; }",
+        "B": "B: int *buffer = (int *)malloc(256 * sizeof(int)); if (buffer) { /* 使用buffer */ free(buffer); }",
+        "C": "C: FILE *file_ptr = fopen(\"data.txt\", \"r\"); if (file_ptr) { /* 读取数据 */ fclose(file_ptr); }",
+        "D": "D: int sock = socket(AF_INET, SOCK_STREAM, 0); if (sock != -1) { /* 使用sock */ close(sock); close(sock); }",
+        "answer": "B"
+    },
+    {
+        "id": "afe963a3-7687-4c67-a0b0-f1b225ae9c89",
+        "question": "在下列代码片段中，哪一个正确地管理了内存，以避免与释放非堆内存相关的安全漏洞？",
+        "A": "void processRecords() {    int recordCount = 10;    record_t records[recordCount];    /* 处理记录 */    ...    free(records);  }",
+        "B": "void allocateRecords() {    record_t *records = (record_t*)malloc(sizeof(record_t) * MAX_SIZE);    /* 使用已分配的记录 */    ...    free(records);  }",
+        "C": "record_t *globalRecords;  void initRecords() {    globalRecords = (record_t*)malloc(sizeof(record_t) * MAX_SIZE);  }  void clearRecords() {    free(globalRecords);  }",
+        "D": "void createRecords() {    record_t *records = new record_t[MAX_SIZE];    /* 填充记录 */    ...    delete[] records;  }",
+        "answer": "C"
+    },
+    {
+        "id": "cf89149f-6ca1-4d40-be52-087ed0bf9f02",
+        "question": "在x86小端序系统中，若需要将字值`0xAABBCCDD`存储到起始地址为`0x300`的内存中，以下哪种方式是正确的？",
+        "A": "A: 在地址`0x300`处：`0xAA`, `0xBB`, `0xCC`, `0xDD`",
+        "B": "B: 在地址`0x300`处：`0xDD`, `0xCC`, `0xBB`, `0xAA`",
+        "C": "C: 在地址`0x300`处：`0xCC`, `0xBB`, `0xAA`, `0xDD`",
+        "D": "D: 在地址`0x300`处：`0xBB`, `0xCC`, `0xDD`, `0xAA`",
+        "answer": "B"
+    },
+    {
+        "id": "dc449e5b-2be1-4ec2-a677-56d26763c12b",
+        "question": "在C程序中，哪种情况不会增加缓冲区溢出的风险？",
+        "A": "采用不检查输入数据边界的旧版函数。",
+        "B": "在静态内存的缓冲区后面放置一个关键的安全变量，比如登录标识。",
+        "C": "利用自动管理内存的现代垃圾回收语言特性。",
+        "D": "在可能会因为缓冲区溢出而被改写的内存位置存储关键的函数指针。",
+        "answer": "C"
+    },
+    {
+        "id": "a99cb2ff-d8c9-43f1-bdb4-6aee33fbb900",
+        "question": "考虑以下代码片段。以下哪个代码片段正确管理内存以防止与释放非堆内存相关的漏洞？",
+        "A": "void processRecords() {    int recordCount = 10;    record_t records[recordCount];    /* 处理记录 */    ...    free(records);  }",
+        "B": "void allocateRecords() {    record_t *records = (record_t*)malloc(sizeof(record_t) * MAX_SIZE);    /* 使用已分配的记录 */    ...    free(records);  }",
+        "C": "record_t *globalRecords;  void initRecords() {    globalRecords = (record_t*)malloc(sizeof(record_t) * MAX_SIZE);  }  void clearRecords() {    free(globalRecords);  }",
+        "D": "void createRecords() {    record_t *records = new record_t[MAX_SIZE];    /* 填充记录 */    ...    delete[] records;  }",
+        "answer": "B"
+    },
+    {
+        "id": "c8a6e707-9aab-44ed-83dc-899e856fdc51",
+        "question": "在软件开发中，以下哪种方法能直接减轻缓冲区溢出的安全风险？",
+        "A": "数据加密技术",
+        "B": "代码审查",
+        "C": "栈保护机制",
+        "D": "强化用户认证",
+        "answer": "C"
+    },
+    {
+        "id": "0278bdfb-a41c-4561-8275-2454aa313fd1",
+        "question": "网络安全分析师正在评估地址空间布局随机化（ASLR）作为对抗不同系统架构中内存安全漏洞的潜在有效性。关于ASLR有效性的以下哪个说法是准确的？",
+        "A": "在32位系统上，ASLR由于可用于地址随机化的高熵而提供了实质性的保护。",
+        "B": "64位系统为地址随机化提供了更多的熵，与32位系统相比，攻击者更难猜测正确的地址。",
+        "C": "ASLR在32位和64位系统上同样有效，因为它改变了内存段的起始位置，从而阻碍了地址猜测攻击。",
+        "D": "泄露绝对地址的内存泄漏对ASLR无效，因为它还随机化了变量之间的相对地址。",
+        "answer": "B"
+    },
+    {
+        "id": "5f555360-876c-4f58-b581-b57509718116",
+        "question": "为了减少内存损坏漏洞的风险，移动应用开发者在审查处理用户输入的代码时，应采取哪项措施？",
+        "A": "采用`strcpy`和`strcat`函数进行字符串操作。",
+        "B": "执行前置条件测试，避免在使用整型变量计算缓冲区长度时发生整数溢出。",
+        "C": "在不检查目标缓冲区是否至少与源缓冲区一样大的情况下使用`memcpy`。",
+        "D": "使用位置独立可执行(PIE)二进制文件以提高地址空间布局随机化(ASLR)的效果。",
+        "answer": "D"
+    },
+    {
+        "id": "dbf12e4d-432c-4b43-a507-2e1930e82741",
+        "question": "在C语言应用程序中，为了提高内存安全性，以下哪种函数替换是安全的选择？",
+        "A": "用`fgets()`替换`gets()`。",
+        "B": "用`strncpy()`或`strlcpy()`替换`strcpy()`。",
+        "C": "用`snprintf()`替换`sprintf()`。",
+        "D": "用`alloca()`替换`malloc()`。",
+        "answer": "A"
+    },
+    {
+        "id": "0ff4f550-fc67-4719-b91c-04c3262a6bb4",
+        "question": "在网络通信中，以下哪种加密方法可以确保数据传输的机密性？",
+        "A": "A: 对称加密",
+        "B": "B: 散列函数",
+        "C": "C: 数字签名",
+        "D": "D: 非对称加密",
+        "answer": "A"
+    },
+    {
+        "id": "e3870fc0-615f-4ff8-8ef9-3b9568804bf5",
+        "question": "一家公司计划通过启用一项称为内存完整性的功能来增强其设备的安全性，这个功能被认为可以通过隔离内核和驱动程序代码的执行来防御某些类型的攻击。以下哪个操作系统与内存完整性功能兼容？",
+        "A": "Windows 11",
+        "B": "Windows XP",
+        "C": "Windows Server 2016",
+        "D": "Windows 8",
+        "answer": "A"
+    }
+]

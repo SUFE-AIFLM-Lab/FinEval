@@ -1,7 +1,7 @@
 # 快速上手
 我们将介绍FinEval金融学术知识测评、金融行业知识测评以及金融安全知识与金融智能体开源部分测评代码的使用方法。
 
-你可以再本项目[code/opensource_eval](/code/opensource_eval)文件夹下找到3个部分的代码，分别为1academic_eval、2industry_eval、34security+agenteval。
+你可以在本项目[code/opensource_eval](/code/opensource_eval)文件夹下找到3个部分的代码，分别为1academic_eval、2industry_eval、34security+agenteval。
 
 ## 1. 金融学术知识测评
 ### 测评Llama-2-7b-hf模型

@@ -64,11 +64,16 @@ python eval.py --with_prompt False --ntrain 5 --temperature 0.1 --n_times 1 --do
 - If the model runs correctly, the screen will display:
 
 ```text
-exp_date: timestamp
+exp_date: 时间戳
 output_path: your output_path
 [2023-08-17 22:37:28,483] [INFO] [real_accelerator.py:133:get_accelerator] Setting ds_accelerator to cuda (auto detect)
 Namespace(constrained_decoding=True, cot=False, do_save_csv=True, do_test=False, few_shot=False, gpus='0,1', lora_model='', \
-model_path=your model_path, model_type='llama', n_times=1, ntrain=5, only_cpu='False'...
+model_path=your model_path, model_type='llama', n_times=1, ntrain=5, only_cpu='False', output_dir=your output_path, temperature=0.2, with_prompt=False)
+cuda:0
+The argument `trust_remote_code` is to be used with Auto classes. It has no effect here and is ignored.
+Loading checkpoint shards: 100%|█████████████████████████████████████████████████████████████████████████████2/2 [00:02<00:00,  1.28s/it]
+0.0 Inference starts at exp_date on your model_path with subject of banking_practitioner_qualification_certificate!
+  0%|                                                                                                                                                                                                            | 0/116 [00:00<?, ?it/s]
 ```
 
 ## 2. Financial Industry Knowledge Evaluation

@@ -4,7 +4,7 @@ We will introduce the usage of FinEval for academic financial knowledge evaluati
 
 You can find the code for all three parts in the [code/opensource_eval](/code/opensource_eval) folder of this project, divided into academic_eval, industry_eval, and security+agenteval.
 
-## 1. Academic Financial Knowledge Evaluation
+## 1. Financial Academic  Knowledge Evaluation
 ### Evaluating the Llama-2-7b-hf Model
 We will take the evaluation of the Llama-2-7b-hf model as an example to help you become familiar with some basic FinEval functionalities, which default to `zero-shot` and `answer-only`.
 
@@ -71,7 +71,7 @@ Namespace(constrained_decoding=True, cot=False, do_save_csv=True, do_test=False,
 model_path=your model_path, model_type='llama', n_times=1, ntrain=5, only_cpu='False'...
 ```
 
-## 2. Industry Financial Knowledge Evaluation
+## 2. Financial Industry Knowledge Evaluation
 The directory structure for 2industry_eval is as follows:
 
 ```text

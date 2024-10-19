@@ -1,24 +1,27 @@
 # 快速上手
+我们将介绍FinEval金融学术知识测评、金融行业知识测评以及金融安全知识与金融智能体开源部分测评代码的使用方法。
 
-## 1. 测试Llama-2-7b-hf模型
+你可以再本项目[code/opensource_eval](code/opensource_eval)文件夹下找到3个部分的代码，分别为1academic_eval、2industry_eval、34security+agenteval。
 
-我们会以测评Llama-2-7b-hf模型为例，带你熟悉FinEval的一些基本功能，默认为`zero-shot`和`answer-only`。
+## 1. 金融学术知识测评
+### 测评Llama-2-7b-hf模型
+我们会以测评Llama-2-7b-hf模型为例，带你熟悉的一些FinEval基本功能，默认为`zero-shot`和`answer-only`。
 
 - 运行前确保已经安装了FinEval，本次实验在单张A800显卡上成功运行。更大的参数量，请参考不同模型的推理资源大小，合理选择计算资源。
 
-- FinEval/code文件夹下放置数据集，并命名为data。
+- 1academic_eval/code文件夹下放置数据集，并命名为data。
 
-- 下载模型权重，Llama-2-7b-hf权重到FinEval/code文件夹下(与data同级)。
+- 下载模型权重，Llama-2-7b-hf权重到1academic_eval/code文件夹下(与data同级)。
 
 ```text
-cd FinEval/code
+cd 1academic_eval/code
 git clone https://huggingface.co/NousResearch/Llama-2-7b-hf
 ```
 
-  以下为该项目结构目录
+  以下为1academic_eval结构目录
 
 ```text
-Fineval/
+1academic_eval/
 ├── requirements
 ├── docs
 ├── README.md
@@ -41,8 +44,20 @@ Fineval/
 │   └── run_chatgpt_eval.sh # chatgpt的测评脚本
 ```
 
-- FinEval的评测配置文件以配置.sh脚本为主，使用`run_eval.sh`启动。
+- 1academic_eval的评测配置文件以配置.sh脚本为主，使用`run_eval.sh`启动。
+  脚本示例如下：
+```
+xuanyuan3_70b=/Llama3-XuanYuan3-70B-Chat
 
+python eval.py --with_prompt False --ntrain 5 --temperature 0.1 --n_times 1 --do_save_csv True --only_cpu False \
+    --model_type  ${model_type} \
+    --model_path ${xuanyuan3_70b} \
+    --cot False \
+    --few_shot False \
+    --do_test True \
+    --gpus 0,1 \
+    --output_dir ${output_path}\
+```
 - 模型如果一切正常，屏幕上会出现
 
 ```text
@@ -60,7 +75,7 @@ Loading checkpoint shards: 100%|████████████████
 
 注：可以使用`ctrl+c`中断程序执行。运行测评期间，屏幕上会打印题目信息。
 
-## 2. 最终运行结果
+### 最终运行结果
 
 最终运行结果如下：
 
@@ -110,7 +125,7 @@ Avg:
 32.580364900086884
 ```
 
-## 3. 测评分数解读：
+### 3. 测评分数解读：
 
 ​		1、Accuracy_subject下分数为每个科目的具体分数、Accuracy_grouped为各个科目所属类别的具体分数、Avg为该模型的最终分数（即基于类别总数对四个类别加权平均的结果）
 
@@ -121,4 +136,79 @@ Avg:
 ​		4、CoT 的模式下，目前只评价最终答案对不对，不评价中间过程对不对，这是因为中间过程和最终答案在大部分时候显著正相关，最终答案对了，中间不会错到哪里去；中间错的多了，最终答案不会对；这种做法可以绕开中间过程难以评价的问题。
 
 ​		5、具体的分数的显著性还跟模型天生的 variance 相关，因此推荐多跑实验观察。
+
+
+## 2. 金融行业知识测评
+  以下为2industry_eval结构目录
+
+```text
+├── data
+│   ├── fincqa-eval.jsonl
+│   ├── fincustomer-eval.jsonl
+│   ├── finfeforum-eval.jsonl
+│   ├── ...
+├── eval.py # 基于本地模型权重的模型运行文件
+├── eval.sh # 基于本地模型权重的测评脚本
+├── evaluate.py # 进行数据集评测的文件
+├── finllm.py
+├── ...
+├── requirements.txt
+└── utils.py
+```
+
+- 2industry_eval的评测配置文件以配置.sh脚本为主，使用`eval.sh`启动。
+  脚本示例如下：
+```
+qwen2_7b=qwen2-7b
+
+python eval.py --model qwen2-7b --model_name_or_path ${qwen2_7b} --gpus 0,1 --eval_data all
+python eval.py --model qwen2-7b --model_name_or_path ${qwen2_7b} --gpus 0,1 --eval_data all --cot
+```
+
+
+## 3. 金融安全知识与金融智能体测评
+  以下为34security+agenteval结构目录
+
+```text
+├── data
+│   ├── apifind-eval.json
+│   ├── apiutil-eval.json
+│   ├── appsafe-eval.json
+│   ├── crypsafe-eval.json
+│   ├── ...
+├── eval_agent.py # agent模型运行文件(调用本地大模型生成回答)
+├── eval_security.py # security模型运行文件
+├── eval.sh # 测评脚本
+├── evaluate.py # 进行数据集评测的文件
+├── finllm.py
+├── gpt4eval.py # agent模型运行文件(调用api进行评分)
+├── gpt4eval.sh #agent测评脚本
+├── security
+│   ├── cryptography_val.csv
+│   ├── malwareannalysis_val.csv
+│   ├── ...
+└── utils.py
+```
+
+- 34security+agenteval的评测配置文件以配置.sh脚本为主。
+- 进行金融安全知识评测时，运行`eval.sh`脚本。
+  脚本示例如下：
+```
+xuanyuan3_70b=llama3-xuanyuan3-70b-chat
+
+python eval_security.py --model xuanyuan3-70b-chat  --model_name_or_path $xuanyuan3_70b --gpus 2,3 --eval_data all 
+python eval_security.py --model xuanyuan3-70b-chat  --model_name_or_path $xuanyuan3_70b --gpus 2,3 --eval_data all --cot
+```
+  
+- 进行金融智能体评测时，先运行`eval.sh`再运行`gpt4eval.sh`脚本。
+  脚本示例如下：
+  `eval.sh`中：
+```
+python eval_agent.py --model xuanyuan3-70b-chat  --model_name_or_path $xuanyuan3_70b --gpus 2,3 --eval_data all
+```
+  `gpt4eval.sh`中：
+```
+python gpt4eval.py --model xuanyuan3-70b-chat  --model_name_or_path ...  --gpus 1 --eval_data all
+```
+
 

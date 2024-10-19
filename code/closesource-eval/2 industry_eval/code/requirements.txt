@@ -1,0 +1,6 @@
+tqdm
+jieba
+rouge_chinese
+nltk
+FlagEmbedding
+peft

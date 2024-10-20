@@ -84,6 +84,7 @@ MODEL_CLASSES = {
         return response
 ```
 2. 加入自定义模型修改信息，修改`eval.py`文件
+```
    model_lists = {
     "disc":DISCVFINLLMBaichuan13BBase,
     "chatglm4-9b":GLM49B,
@@ -97,6 +98,7 @@ MODEL_CLASSES = {
 
     'qwen2-72b':Qwen2_7BChat,#新增模型
 }
+```
 
 ## 金融安全知识和金融智能体评测
 - 评测代码在34safety+agenteval下

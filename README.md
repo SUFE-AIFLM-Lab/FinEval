@@ -27,10 +27,10 @@ By evaluating state-of-the-art LLMs on FinEval, the textual performance results 
 - [Financial Industry Knowledge](#Financial-Industry-Knowledge)
 - [Financial Security Knowledge](#Financial-Security-Knowledge)
 - [Financial Agent](#Financial-Agent)
-- [Financial Multimodal Capabilities](#Financial Multimodal Capabilities)
-- [Financial Rigor Testing](#Financial Rigor Testing)
-- [Text Performance Leaderboard](#Text Performance Leaderboard)
-- [Multimodal Performance Leaderboard](#Multimodal Performance Leaderboard)
+- [Financial Multimodal Capabilities](#Financial-Multimodal-Capabilities)
+- [Financial Rigor Testing](#Financial-Rigor-Testing)
+- [Text Performance Leaderboard](#Text-Performance-Leaderboard)
+- [Multimodal Performance Leaderboard](#Multimodal-Performance-Leaderboard)
 ## Usage
 - [Installation](#Installation)
 - [Evaluation](#Evaluation)
@@ -425,7 +425,6 @@ Answer: Krutrim becoming India's first AI unicorn signifies India's rise and pot
 
 ### Financial Multimodal Capabilities
 
-ChatGPT 说：
 FinEval's financial multimodal evaluation assesses the ability of multimodal large language models to process and reason over Chinese financial visual-text data within end-to-end real-world financial business scenarios, using content such as financial statements and charts from research reports.
 
 The evaluation is designed based on actual financial business workflows, covering assessment dimensions aligned with practical needs across the full process—from foundational front-office financial data recognition, to mid-office analysis and decision-making, and finally to high-level back-office strategic decision-making. The selected modalities are based not only on high-frequency usage demands in real financial contexts but also on structured modeling of business processes across functional layers, thereby constructing an evaluation framework that comprehensively covers the entire financial workflow.

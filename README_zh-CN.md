@@ -297,7 +297,7 @@ A. 金融市场流动性紧张 B. 金融市场流动性宽松 C. 金融市场风
 ```
 
 <div align="center">
-  <img src="docs/en/_static/image/Visfineval-eg2.png" width="700px" height="600px"/>
+  <img src="docs/en/_static/image/VisFineval-eg2.png" width="700px" height="600px"/>
   <br />
   <br /></div>
 

@@ -286,7 +286,7 @@ FinEval金融多模态通过财务报表、研究报告中的图表等内容评�
 以下是金融多模态的数据示例：
 
 <div align="center">
-  <img src="docs/en/_static/image/v3.png" width="700px" height="600px"/>
+  <img src="docs/en/_static/image/Visfineval-eg1.png" width="700px" height="600px"/>
   <br />
   <br /></div>
 

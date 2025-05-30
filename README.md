@@ -14,9 +14,11 @@
 
 Welcome to **FinEval**
 
-Large Language Models (LLMs) have demonstrated remarkable performance in various natural language processing tasks, but their effectiveness in more challenging and domain-specific tasks remains largely unexplored. This article introduces FinEval, a benchmark designed specifically for financial domain knowledge in LLMs.
+Currently, while Large Language Models (LLMs) demonstrate excellent performance in general domains, their security and complex task processing capabilities in the highly specialized and risk-sensitive financial industry remain uncertain. This paper introduces FinEval, a pioneering Chinese benchmark dataset constructed to comprehensively evaluate the professional capabilities and security of LLMs in the financial domain, providing a solid foundation for addressing this challenge.
 
-FinEval, a benchmark for evaluating financial domain knowledge in LLMs, is based on quantitative foundational methods. It consists of 8,351 question types that closely align with real-world application scenarios, including multiple-choice questions, subjective open-ended questions and objective short-answer  questions, reasoning planning, and retrieval-based QA. These questions cover topics such as Financial Academic Knowledge, Financial Industry Knowledge, Financial Security Knowledge and Financial Agent. To ensure a comprehensive assessment of model performance, FinEval combines objective and subjective evaluation criteria such as Accuracy, Rouge-L, and expert evaluation guidelines, utilizing zero-shot, five-shot, zero-shot CoT and five-shot CoT methods for evaluation. By evaluating state-of-the-art LLMs on FinEval, the results show that Claude 3.5-Sonnet achieves the highest weighted average score of 72.9 across all financial domain categories under zero-shot setting, indicating significant growth potential of LLMs in financial domain knowledge. Our work provides a more comprehensive benchmark for evaluating financial knowledge, incorporating simulated exam data and open-ended questions, covering a wide range of evaluation scopes for large language models.
+The FinEval financial domain evaluation benchmark, based on quantitative fundamental methods and developed through long-term objective research, summarization, and rigorous manual screening, utilizes over 26,000 diverse question types that are highly consistent with real-world application scenarios. These include multiple-choice questions, subjective and objective short-answer questions, reasoning and planning tasks, and retrieval-based question answering, covering financial academic knowledge, financial industry knowledge, financial security knowledge, financial intelligent agents, financial multi-modality, and financial rigor. It aims to comprehensively examine the overall application capabilities of large models in the financial domain. To ensure a comprehensive evaluation of model performance, FinEval combines subjective and objective scoring standards in its textual capability tests, including Accuracy, Rouge-L, and detailed expert evaluation criteria. It employs zero-shot, five-shot, zero-shot Chain-of-Thought (CoT), and five-shot CoT methods for evaluation.
+
+By evaluating state-of-the-art LLMs on FinEval, the textual performance results show that Claude 3.5-Sonnet, under a zero-shot setting, achieved the highest average score of 72.9 across all financial domain tasks, indicating significant growth potential for LLMs in financial domain knowledge. In the multi-modal performance results, Qwen-VL-max performed the best among all evaluated models, achieving an average score of 76.3 and securing the top scores among evaluated models in ten sub-scenarios. This strongly suggests that Qwen-VL-max possesses stable and robust capabilities across multi-modal business scenarios of varying depths within finance. Our work provides a more comprehensive benchmark for financial knowledge assessment, utilizing common images from financial business scenarios, simulated examination data, and some open-ended questions, covering a broad scope of LLM evaluation.
 
 
 # Content
@@ -25,7 +27,10 @@ FinEval, a benchmark for evaluating financial domain knowledge in LLMs, is based
 - [Financial Industry Knowledge](#Financial-Industry-Knowledge)
 - [Financial Security Knowledge](#Financial-Security-Knowledge)
 - [Financial Agent](#Financial-Agent)
-- [Performance Leaderboard](#Performance-Leaderboard)
+- [Financial Multimodal Capabilities](#Financial Multimodal Capabilities)
+- [Financial Rigor Testing](#Financial Rigor Testing)
+- [Text Performance Leaderboard](#Text Performance Leaderboard)
+- [Multimodal Performance Leaderboard](#Multimodal Performance Leaderboard)
 ## Usage
 - [Installation](#Installation)
 - [Evaluation](#Evaluation)
@@ -418,8 +423,59 @@ Question: What does Krutrim becoming India's first AI unicorn mean for India and
 Answer: Krutrim becoming India's first AI unicorn signifies India's rise and potential in the global AI field. It not only showcases the growth of Indian AI technology and innovation capabilities but may also attract more investments, foster the development of the local AI ecosystem, and accelerate the diversification and innovation of AI technologies globally.
 ```
 
+### Financial Multimodal Capabilities
 
-### Performance Leaderboard
+ChatGPT 说：
+FinEval's financial multimodal evaluation assesses the ability of multimodal large language models to process and reason over Chinese financial visual-text data within end-to-end real-world financial business scenarios, using content such as financial statements and charts from research reports.
+
+The evaluation is designed based on actual financial business workflows, covering assessment dimensions aligned with practical needs across the full process—from foundational front-office financial data recognition, to mid-office analysis and decision-making, and finally to high-level back-office strategic decision-making. The selected modalities are based not only on high-frequency usage demands in real financial contexts but also on structured modeling of business processes across functional layers, thereby constructing an evaluation framework that comprehensively covers the entire financial workflow.
+Below is an example of multimodal data from an Investment Analysis scenario.
+
+<div align="center">
+  <img src="docs/en/_static/image/Visfineval-eg1.png" width="700px" height="600px"/>
+  <br />
+  <br /></div>
+
+```text
+Question：If the federal funds rate remains consistently lower than the overnight bank financing rate, what impact would this have on financial markets?
+A. Tight financial market liquidity B. Loose financial market liquidity C. Increased financial market risk
+Answer：B
+```
+
+<div align="center">
+  <img src="docs/en/_static/image/Visfineval-eg2.png" width="700px" height="600px"/>
+  <br />
+  <br /></div>
+
+```text
+Question：From the K-line chart, it can be seen that this stock had a clear long lower shadow on December 6, 2024. What does this pattern usually indicate?
+A：The stock price will continue to decline. B ：The stock price will rebound. C ：The stock price will fluctuate sideways.
+Answer：B
+```
+
+### Financial Rigor Testing
+
+The FinEval Financial Rigor Test evaluates the rigor and factual accuracy of model outputs, examining whether issues such as "hallucinations" occur during the generation process.
+
+```text
+Question：Please answer the user's question based on the following retrieved content. The retrieved content will include article titles, publication dates, and article content.
+The user's question is: Bought 150 shares of CATL yesterday at 58 yuan/share, sold them today at 62 yuan/share. What is the net profit?
+Retrieved content: 
+Authoritative Financial Search Result 1: Article Title: Real-time Market and Stock Price of CATL  
+Publication Date: Friday, May 16, 2025  
+Article Content: As of 15:08 on May 16, 2025, CATL's current trading status is closed; as of 15:00 on May 16, 2025, the latest price was 259.36 yuan, a decrease of 0.82 yuan or -0.32%. The opening price was 259.14 yuan, the highest was 261.73 yuan, and the lowest was 257.73 yuan. The previous closing price on May 15, 2025, was 260.18 yuan. As of May 9, 2025, CATL's total trading volume for the previous week was 10.595 million lots, with a turnover of 25.561 billion yuan. As of May 15, 2025, the monthly price change was +16.36%, and the weekly change was +6.38%.  
+Authoritative Search Result: The commission rate for buying and selling is 0.12%. Net profit is calculated by subtracting the total cost (including commissions) from the total revenue (minus commissions).
+Web Search Result 4: Article Title: How Is the Valuation and Market Price Discount of CATL's H-Share Offering?  
+Publication Date: Monday, May 12, 2025  
+Article Content: Based on comparable companies, CATL's valuation is still reasonable. However, CATL is already listed on the A-share market, so the A-H share premium index must be considered. As of the close on May 12, the market cap of CATL’s A-shares was 1.13 trillion yuan, and the H-share offering was valued at 119 million HKD, equivalent to 11,000 RMB per share, reflecting a 5% discount. While this leaves little room for the secondary market, it is understandable given the strong performance of the Hong Kong market recently. Future decisions should continue to monitor the A-share trend.
+Current time: 16:00:00, Friday, May 16, 2025  
+Based on the retrieved content, answer the user’s question.  
+Only output the calculated result, do not output anything else. Just output the most accurate value you determine.
+A. Tight financial market liquidity   B. Loose financial market liquidity   C. Increased financial market risk  
+Answer：578.4 yuan
+```
+
+### Text Performance Leaderboard
 
 Here are the average accuracy (%) and average similarity (%) of our evaluation model on each section of the test questions. The average accuracy per category represents the average accuracy across all subjects or scenarios in that category, and the last column represents the overall average accuracy or average similarity of the model across all subjects or scenarios. Additionally, we only provide the results for the 4 prompt settings that yielded the highest average accuracy or average similarity across all subjects or scenarios.
 
@@ -595,6 +651,39 @@ From the results, Claude 3.5-sonnet stands out with an impressive average score 
 
 
 The "FinEval Chinese Financial Domain Evaluation Overall Ranking" presents the weighted averages of all results from FinEval.The score for the financial industry knowledge section represents the average evaluation results of both subjective and objective questions, with the weight for each part determined by dividing the number of questions in each version by the total number of FinEval questions. From the results, Claude 3.5-Sonnet stands out with the highest average score of 72.9 across the four major dimensions, showcasing its strong performance. GPT-4o also performs well with an average score above 70, indicating that GPT models remain highly competitive. Among domestic open-source models, Qwen2.5-72B-Instruct, Qwen2.5-7B-Instruct and Yi1.5-34B-Chat rank high, both scoring above 60. XuanYuan3-70B-Chat also performs well, surpassing some general models with an average score neraly 60. While general models exhibit stronger capabilities overall, financial-specific models like DISC-FinLLM and FinGPTv3.1 show promising potential, though they still trail behind the top performers. Larger models generally demonstrate stronger performance across financial tasks.
+
+### Multimodal Performance Leaderboard
+
+The table below summarizes the performance of different models in the multimodal performance evaluation. In the table, higher values indicate greater model accuracy. Financial Analysis and Decision Support is assessed through tasks such as Financial Data Statistics (FDS), Candlestick Chart Analysis (CCA), Financial Indicator Assessment (FIA), Financial Entity Relationship Interpretation (FERI), Stock Selection Strategy Backtesting (SSSB), Financial Information Extraction (FIE), and Financial Seal Recognition (FSR). It is also evaluated using Financial Scenario Analysis (FSA), Industry Analysis and Inference (IAI), Investment Analysis (IA), and Financial Market Sentiment Analysis (FMSA).
+
+Financial Risk Control and Asset Optimization is evaluated through tasks such as Financial Strategy Optimization (FSO), Financial Risk and Policy Analysis (FRPA), Financial Data Reasoning and Interpretation (FDRI), and Asset Allocation Analysis (AAA), with a final Weighted Average (WA) score calculated for each model.
+
+Additionally, the table highlights certain operational limitations encountered by some models in multi-image tasks, such as multi-image input restrictions and context window limitations.
+
+| Model                          | Size    | Limit                | FDS  | CCA  | FIA  | FERI | SSSB | FIE  | FSR  | FSA  | FMSA | FSO  | FRPA | FDRI | AAA  | WA   |
+| ------------------------------ | ------- | -------------------- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
+| Qwen-VL-max                    | Unknown | /                    | 78.8 | 90.5 | 87.4 | 89.2 | 86.2 | 90.6 | 77.9 | 65.3 | 83.1 | 82.3 | 76.8 | 49.1 | 58.2 | 76.3 |
+| Qwen-VL-max-latest             | Unknown | /                    | 76.0 | 84.5 | 86.1 | 87.1 | 79.3 | 88.6 | 84.4 | 59.6 | 82.6 | 82.8 | 79.3 | 44.0 | 52.2 | 73.8 |
+| InternVL3-78B                  | 78B     | /                    | 71.2 | 83.5 | 71.4 | 86.7 | 79.5 | 87.8 | 87.4 | 64.3 | 82.1 | 80.4 | 78.7 | 49.1 | 52.8 | 72.5 |
+| Doubao-1.5-vision-pro-32k      | Unknown | /                    | 75.6 | 79.0 | 84.2 | 85.5 | 76.8 | 91.7 | 74.4 | 56.7 | 80.2 | 79.8 | 77.3 | 30.0 | 54.5 | 71.7 |
+| InternVL2.5-78B                | 78B     | /                    | 73.3 | 77.9 | 72.3 | 84.2 | 84.0 | 88.4 | 82.9 | 63.3 | 81.5 | 80.1 | 75.2 | 41.0 | 53.1 | 71.5 |
+| Qwen2.5-VL-72B                 | 72B     | /                    | 75.9 | 77.0 | 72.8 | 85.4 | 81.5 | 88.3 | 80.4 | 57.4 | 82.4 | 80.3 | 74.5 | 41.4 | 53.4 | 71.0 |
+| GPT-4o-2024-11-20              | Unknown | /                    | 72.0 | 76.8 | 74.9 | 81.7 | 71.8 | 83.8 | 83.9 | 61.9 | 77.9 | 78.5 | 73.2 | 41.0 | 40.5 | 68.5 |
+| Step-1o-vision-32k             | Unknown | /                    | 48.9 | 78.4 | 80.2 | 84.1 | 75.3 | 88.2 | 98.0 | 40.3 | 78.8 | 78.6 | 76.1 | 39.2 | 45.2 | 68.4 |
+| Moonshot-V1-32k-vision-preview | Unknown | /                    | 56.2 | 82.8 | 73.4 | 80.5 | 73.9 | 87.6 | 68.3 | 61.9 | 77.7 | 77.0 | 72.3 | 39.2 | 55.8 | 68.3 |
+| Qwen2.5-VL-7B                  | 7B      | /                    | 71.4 | 75.9 | 69.2 | 80.9 | 74.0 | 85.5 | 69.9 | 53.4 | 79.7 | 76.5 | 70.7 | 37.2 | 37.6 | 65.4 |
+| InternVL3-8B                   | 8B      | /                    | 68.2 | 78.0 | 62.8 | 87.0 | 74.1 | 84.0 | 77.4 | 56.5 | 76.1 | 76.8 | 71.7 | 29.7 | 46.2 | 65.4 |
+| Gemini-2.5-pro-exp-03-25       | Unknown | /                    | 73.6 | 76.7 | 72.6 | 81.0 | 73.0 | 89.4 | 87.4 | 53.2 | 72.4 | 70.8 | 75.5 | 28.4 | 38.0 | 64.7 |
+| Claude-3-7-Sonnet-20250219     | Unknown | /                    | 70.5 | 73.4 | 80.3 | 71.1 | 77.5 | 83.2 | 34.7 | 48.0 | 76.1 | 75.5 | 64.0 | 26.8 | 50.3 | 62.9 |
+| Qwen2.5-VL-3B                  | 3B      | /                    | 69.5 | 81.1 | 65.9 | 76.6 | 73.6 | 83.4 | 72.4 | 50.0 | 75.4 | 74.7 | 66.6 | 22.9 | 34.8 | 62.4 |
+| MiniCPM-V-2.6                  | 8B      | /                    | 61.3 | 83.5 | 56.9 | 76.7 | 75.2 | 73.4 | 80.9 | 48.3 | 69.7 | 70.7 | 69.1 | 20.6 | 35.5 | 60.1 |
+| Llama-3.2-11B-Vision-Instruct  | 11B     | /                    | 56.9 | 40.8 | 59.3 | 63.9 | 62.9 | 73.1 | 70.4 | 45.3 | 69.7 | 67.1 | 63.4 | 18.0 | 22.1 | 50.9 |
+| Molmo-7B-D-0924                | 7B      | /                    | 60.1 | 74.8 | 54.5 | 62.2 | 59.1 | 60.5 | 42.2 | 39.7 | 64.4 | 62.8 | 63.4 | 23.4 | 31.7 | 49.8 |
+| GLM-4v-Plus-20250111           | Unknown | Multi-image Limit    | 73.8 | 86.6 | 87.9 | 87.5 | 81.2 | 89.3 | 72.7 | 56.5 | 78.1 | 74.9 | 74.6 | 45.1 | 54.1 | 72.0 |
+| LLaVA-NEXT-34B                 | 34B     | Context Window Limit | 55.3 | 79.8 | 92.3 | 63.2 | 87.8 | 55.0 | 58.8 | 54.3 | 88.2 | 88.1 | 66.9 | 13.1 | 17.5 | 56.0 |
+| LLaVA-v1.6-Mistral-7B          | 7B      | Context Window Limit | 54.6 | 73.4 | 65.9 | 62.1 | 47.4 | 47.0 | 62.3 | 42.3 | 58.3 | 56.4 | 63.7 | 10.2 | 16.3 | 47.8 |
+| LLaVA-NEXT-13B                 | 13B     | Context Window Limit | 50.2 | 64.8 | 43.9 | 57.2 | 62.5 | 50.2 | 38.7 | 34.7 | 59.2 | 59.0 | 52.9 | 14.7 | 10.8 | 43.0 |
+
 
 ## Usage
 

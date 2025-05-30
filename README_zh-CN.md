@@ -296,6 +296,7 @@ A. 金融市场流动性紧张 B. 金融市场流动性宽松 C. 金融市场风
 答案：B
 ```
 
+股票选择策略回测场景示例
 <div align="center">
   <img src="docs/en/_static/image/VisFineval-eg2.png" width="700px" height="600px"/>
   <br />

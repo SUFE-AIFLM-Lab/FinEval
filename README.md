@@ -442,7 +442,7 @@ Answer：B
 ```
 
 <div align="center">
-  <img src="docs/en/_static/image/Visfineval-eg2.png" width="700px" height="600px"/>
+  <img src="docs/en/_static/image/VisFineval-eg2.png" width="700px" height="600px"/>
   <br />
   <br /></div>
 

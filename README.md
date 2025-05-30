@@ -436,9 +436,9 @@ Below is an example of multimodal data from an Investment Analysis scenario.
   <br /></div>
 
 ```text
-Question：If the federal funds rate remains consistently lower than the overnight bank financing rate, what impact would this have on financial markets?
-A. Tight financial market liquidity B. Loose financial market liquidity C. Increased financial market risk
-Answer：B
+问题：如果联邦基金利率持续低于银行隔夜融资利率，对金融市场会产生什么影响？
+A. 金融市场流动性紧张 B. 金融市场流动性宽松 C. 金融市场风险增加
+答案：B
 ```
 
 <div align="center">
@@ -447,9 +447,9 @@ Answer：B
   <br /></div>
 
 ```text
-Question：From the K-line chart, it can be seen that this stock had a clear long lower shadow on December 6, 2024. What does this pattern usually indicate?
-A：The stock price will continue to decline. B ：The stock price will rebound. C ：The stock price will fluctuate sideways.
-Answer：B
+问题：从K线图中可以看出，该股票在 2024年12月6日出现了明显的长下影线。请问这种形态通常预示着什么?
+A：股价将继续下跌 B ：股价将出现反弹 C ：股价将横盘整理
+答案：B
 ```
 
 ### Financial Rigor Testing

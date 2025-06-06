@@ -457,21 +457,13 @@ A：股价将继续下跌 B ：股价将出现反弹 C ：股价将横盘整理
 The FinEval Financial Rigor Test evaluates the rigor and factual accuracy of model outputs, examining whether issues such as "hallucinations" occur during the generation process.
 
 ```text
-Question：Please answer the user's question based on the following retrieved content. The retrieved content will include article titles, publication dates, and article content.
-The user's question is: Bought 150 shares of CATL yesterday at 58 yuan/share, sold them today at 62 yuan/share. What is the net profit?
-Retrieved content: 
-Authoritative Financial Search Result 1: Article Title: Real-time Market and Stock Price of CATL  
-Publication Date: Friday, May 16, 2025  
-Article Content: As of 15:08 on May 16, 2025, CATL's current trading status is closed; as of 15:00 on May 16, 2025, the latest price was 259.36 yuan, a decrease of 0.82 yuan or -0.32%. The opening price was 259.14 yuan, the highest was 261.73 yuan, and the lowest was 257.73 yuan. The previous closing price on May 15, 2025, was 260.18 yuan. As of May 9, 2025, CATL's total trading volume for the previous week was 10.595 million lots, with a turnover of 25.561 billion yuan. As of May 15, 2025, the monthly price change was +16.36%, and the weekly change was +6.38%.  
-Authoritative Search Result: The commission rate for buying and selling is 0.12%. Net profit is calculated by subtracting the total cost (including commissions) from the total revenue (minus commissions).
-Web Search Result 4: Article Title: How Is the Valuation and Market Price Discount of CATL's H-Share Offering?  
-Publication Date: Monday, May 12, 2025  
-Article Content: Based on comparable companies, CATL's valuation is still reasonable. However, CATL is already listed on the A-share market, so the A-H share premium index must be considered. As of the close on May 12, the market cap of CATL’s A-shares was 1.13 trillion yuan, and the H-share offering was valued at 119 million HKD, equivalent to 11,000 RMB per share, reflecting a 5% discount. While this leaves little room for the secondary market, it is understandable given the strong performance of the Hong Kong market recently. Future decisions should continue to monitor the A-share trend.
-Current time: 16:00:00, Friday, May 16, 2025  
-Based on the retrieved content, answer the user’s question.  
-Only output the calculated result, do not output anything else. Just output the most accurate value you determine.
-A. Tight financial market liquidity   B. Loose financial market liquidity   C. Increased financial market risk  
-Answer：578.4 yuan
+Question：请从如下检索内容中，根据检索内容，回答用户问题。检索内容会包含文章标题、发布时间和文章内容。
+用户的问题是：若投资本金为50000元，持有长城短债债券A持有30天获得150元收益，年化收益率是多少？
+检索内容是：平台专业服务内容检索1: 使用描述：基金基本信息 内容：“长城短债债券型证券投资基金A类”是一只债券型-短债基金，追求较低的风险和稳定的收益。该产品长期收益能力强，回撤控制能力强，投资策略稳定。从历史数据看，该产品表现良好，具备较强竞争力。 长期收益能力强：产品近3年年化收益3.74%，超过基准指数1.54%，长期收益能力优异。 回撤控制能力强：近1年净值创新高，风控能力优秀。 投资策略稳定：基金经理管理该产品时间超过2年，有助于维持策略运作的稳定性。 * 历史业绩不代表未来表现。 * 以上关于该产品的数据指标统计时间截止到2025年05月15日。
+当前时间是：2025年05月16日 16:00:00 星期五
+请根据检索内容，回答用户问题。
+你只需输出计算后的结果，不要输出其它内容。只输出你认为最正确的数值是多少。 
+Answer：3.65%
 ```
 
 ### Text Performance Leaderboard

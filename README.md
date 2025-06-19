@@ -676,6 +676,21 @@ Additionally, the table highlights certain operational limitations encountered b
 | LLaVA-NEXT-13B                 | 13B     | Context Window Limit | 50.2 | 64.8 | 43.9 | 57.2 | 62.5 | 50.2 | 38.7 | 34.7 | 59.2 | 59.0 | 52.9 | 14.7 | 10.8 | 43.0 |
 
 
+# FinEval 6.0 Evaluation Report
+This evaluation brings together nine representative large language models from Ant Group, Hangzhou DeepSeek, Alibaba, Zhipu AI, Shanghai Artificial Intelligence Laboratory, OpenAI, and Meta AI, covering both open-source and closed-source models, as well as general-purpose base models and models for the financial vertical.The evaluation report focuses on the core business needs of the financial industry and the specific adaptability of large models in financial scenarios. It conducts an in-depth assessment of the participating models across five key dimensions: "Financial Academic Knowledge," "Financial Industry Understanding," "Financial Safety Awareness," "Financial Agent Application," and "Financial Rigor Evaluation." Please see the table below for details.
+
+| Rank | Model | Total Score | Academic Knowledge | Safety Awareness | Industry Understanding | Agent Application | Financial Rigor |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| 1 | Ant Group<br>Finix-CI-72B | 86.07 | 89.24 | 82.87 | 86.26 | 83.34 | 87.05 |
+| 2 | DeepSeek<br>DeepSeek-RI | 85.25 | 88.66 | 81.03 | 82.35 | 83.70 | 82.15 |
+| 3 | Alibaba<br>Qwen3-32B (think) | 84.53 | 87.19 | 82.25 | 82.02 | 84.62 | 73.07 |
+| 4 | Alibaba<br>Qwen3-32B | 80.93 | 80.55 | 81.61 | 81.00 | 83.05 | 72.97 |
+| 5 | Zhipu AI<br>GLM-ZI-32B-0414 | 80.13 | 83.49 | 79.16 | 79.80 | 74.52 | 58.63 |
+| 6 | Alibaba<br>Qwen3-30B-A3B | 79.91 | 86.38 | 60.51 | 80.70 | 81.53 | 71.48 |
+| 7 | Shanghai AI Lab<br>Internlm3-8b-Instruct | 78.48 | 83.36 | 73.52 | 77.56 | 72.51 | 42.37 |
+| 8 | OpenAI<br>GPT-4o | 77.65 | 73.87 | 79.84 | 81.66 | 82.15 | 80.59 |
+| 9 | Meta AI<br>Llama-3.3-70B | 77.25 | 74.20 | 83.31 | 79.76 | 78.48 | 64.13|
+
 ## Usage
 
 Currently, we have only open-sourced the initial version of FinEval, which includes all the data related to academic knowledge in the field of finance. Subsequently, we have developed three additional parts: financial industry knowledge, financial security knowledge, and financial agents. However, these three parts of data are not currently open-source. If you need to evaluate them, please contact us to obtain authorization. All authorized institutions or individuals will be mentioned in the FinEval documentation.
